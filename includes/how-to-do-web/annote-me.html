@@ -28,6 +28,9 @@
 	<!-- markdown classes -->
 	<link rel="stylesheet" type="text/css" href="../../assets/css/classes/markClasses.css">
 
+	<!-- modal classess -->
+	<link rel="stylesheet" type="text/css" href="../../assets/css/classes/modalClasses.css">
+	
 	<!-- footer style -->
 	<link rel="stylesheet" type="text/css" href="../../assets/css/structures/footer.css">
 </head>
@@ -135,15 +138,14 @@
         				
         				<center>
 	        				
-	        					<figure>
-							  		<a href="../../assets/images/how-to-do/web/annote-me-index-html.svg" target="_blank">
-							  			<img class="imgMark2" src="../../assets/images/how-to-do/web/annote-me-index-html.svg">
-							  		</a>
+	        				<figure>
+							  	<img id="indexHtml" class="imgMark2 imagem" src="../../assets/images/how-to-do/web/annote-me-index-html.svg">
+							  		
 
-							  		<br><br>
+							  	<br><br>
 
-							  		<figcaption>Fig.1 - Index.html. Touch the image to open in another window.</figcaption>
-								</figure>
+							  	<figcaption>Fig.1 - Index.html. Touch the image to zoom.</figcaption>
+							</figure>
 							
 						</center>
         			</li>
@@ -154,15 +156,13 @@
 
         				<center>
 	        				
-	        					<figure>
-							  		<a href="../../assets/images/how-to-do/web/annote-me-layout-css.svg" target="_blank">
-							  			<img class="imgMark2" src="../../assets/images/how-to-do/web/annote-me-layout-css.svg">
-							  		</a>
+	        				<figure>							  		
+							  	<img id="layoutCss" class="imgMark2 imagem" src="../../assets/images/how-to-do/web/annote-me-layout-css.svg">
 
-							  		<br><br>
+							  	<br><br>
 
-							  		<figcaption>Fig.2 - Layout.css. Touch the image to open in another window.</figcaption>
-								</figure>
+							  	<figcaption>Fig.2 - Layout.css. Touch the image to zoom.</figcaption>
+							</figure>
 							
 						</center>
         			</li>
@@ -173,15 +173,13 @@
         				
         				<center>
 	        				
-	        					<figure>
-							  		<a href="../../assets/images/how-to-do/web/annote-me-script-js.svg" target="_blank">
-							  			<img class="imgMark2" src="../../assets/images/how-to-do/web/annote-me-script-js.svg">
-							  		</a>
+	        				<figure>
+							 	<img id="scriptJs" class="imgMark2 imagem" src="../../assets/images/how-to-do/web/annote-me-script-js.svg">
 
-							  		<br><br>
+							  	<br><br>
 							  		
-							  		<figcaption>Fig.3 - Script.js. Touch the image to open in another window.</figcaption>
-								</figure>
+							  	<figcaption>Fig.3 - Script.js. Touch the image to zoom.</figcaption>
+							</figure>
 							
 						</center>
         			</li>
@@ -202,6 +200,42 @@
         				</ul>
         			</li>
         		</ul>
+			
+			<!--
+        			*************
+					*** Modal ***
+					*************
+        		-->
+
+        		<div id="myModal1" class="modal">
+  					<span id="close1" class="close">&times;</span>
+  					<img class="modal-content" id="img01">
+  					<div id="caption">Fig1. index.html</div>
+				</div>
+
+				<!--
+        			*************
+					*** Modal ***
+					*************
+        		-->
+
+        		<div id="myModal2" class="modal">
+  					<span id="close2" class="close">&times;</span>
+  					<img class="modal-content" id="img02">
+  					<div id="caption">Fig2. Layout.css.</div>
+				</div>
+
+				<!--
+        			*************
+					*** Modal ***
+					*************
+        		-->
+
+        		<div id="myModal3" class="modal">
+  					<span id="close3" class="close">&times;</span>
+  					<img class="modal-content" id="img03">
+  					<div id="caption">Fig3. Script.js</div>
+				</div>
         		
         		<br><br>
         		<hr>
@@ -281,6 +315,7 @@
         </div>
 	</section>
 </body>
+	<script type="text/javascript" src="../../assets/js/modal/modal-how-to-do-web-annote-me.js"></script>
 	
 	<script type="text/javascript" src="../../assets/js/easter-eggs/easter-eggs.js"></script>
 	<script type="text/javascript" src="../../assets/js/easter-eggs/import-easter-eggs.js"></script>
