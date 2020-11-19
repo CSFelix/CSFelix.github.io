@@ -27,6 +27,9 @@
 
 	<!-- markdown classes -->
 	<link rel="stylesheet" type="text/css" href="../../assets/css/classes/markClasses.css">
+	
+	<!-- modal classess -->
+	<link rel="stylesheet" type="text/css" href="../../assets/css/classes/modalClasses.css">
 
 	<!-- footer style -->
 	<link rel="stylesheet" type="text/css" href="../../assets/css/structures/footer.css">
@@ -150,13 +153,11 @@
         				<center>
 	        				
 	        					<figure>
-							  		<a href="../../assets/images/how-to-do/python/motion-detection.svg" target="_blank">
-							  			<img class="imgMark2" src="../../assets/images/how-to-do/python/motion-detection.svg">
-							  		</a>
+							  		<img id="motionDetection" class="imgMark2 imagem" src="../../assets/images/how-to-do/python/motion-detection.svg">
 
 							  		<br><br>
 
-							  		<figcaption>Fig.1 - Eye Detection Code. Touch the image to open in another window.</figcaption>
+							  		<figcaption>Fig.1 - Motion Detection Code. Touch the image to zoom.</figcaption>
 								</figure>
 							
 						</center>
@@ -175,6 +176,18 @@
         				5 - Press <b>q</b> to stop the video.
         			</li>
         		</ul>
+			
+			<!--
+        			*************
+					*** Modal ***
+					*************
+        		-->
+
+        		<div id="myModal1" class="modal">
+  					<span id="close1" class="close">&times;</span>
+  					<a href="../../assets/images/how-to-do/python/motion-detection.svg" target="_blank"><img class="modal-content" id="img01"></a>/
+  					<div id="caption">Fig1. Motion-detection.py. Touch again to max zoom.</div>
+				</div>
 
         		<br><br>
         		<hr>
@@ -254,7 +267,7 @@
         </div>
 	</section>
 </body>
-	
+	<script type="text/javascript" src="../../assets/js/modal/modal-how-to-do-python-motion-detection.js"></script>	
 	<script type="text/javascript" src="../../assets/js/easter-eggs/easter-eggs.js"></script>
 	<script type="text/javascript" src="../../assets/js/easter-eggs/import-easter-eggs.js"></script>
 </html>
