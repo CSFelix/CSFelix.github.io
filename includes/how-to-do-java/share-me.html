@@ -27,6 +27,9 @@
 
 	<!-- markdown classes -->
 	<link rel="stylesheet" type="text/css" href="../../assets/css/classes/markClasses.css">
+	
+	<!-- modal classess -->
+	<link rel="stylesheet" type="text/css" href="../../assets/css/classes/modalClasses.css">
 
 	<!-- footer style -->
 	<link rel="stylesheet" type="text/css" href="../../assets/css/structures/footer.css">
@@ -180,6 +183,21 @@
         		<br><br><br><br>
 
         		<ul class="listMark">
+        			<li>In this post I gonna show just the storage (set and get) of the files in MongoDB</li>
+        			<br>
+
+        			<li>The complete project is available in my GitHub Repository. To check it out, <a href="https://github.com/CSFelix/JAVA-JSP-CS-JAVASCRIPT-SHAREME" target="_blank">click here</a></li>
+        			<br>
+
+        			<li>This project will just runs if <b>MongoDB and TomCat Server are enabled/started</b></li>
+        		</ul>
+
+        		<br><br><br><br>
+
+        		<span class="rowMark">Preparing MongoDB</span>
+        		<br><br><br><br>
+
+        		<ul class="listMark">
         			<li>1 - Create a database called <b>chatme</b></li>
         			<br>
 
@@ -210,13 +228,11 @@
 
         				<center>
 	        				<figure>
-							  	<a href="../../assets/images/how-to-do/java/share-me-conexao-mongo-db-grid-fs-bucket-java.svg" target="_blank">
-							  		<img class="imgMark2" src="../../assets/images/how-to-do/java/share-me-conexao-mongo-db-grid-fs-bucket-java.svg">
-							  	</a>
+							  	<img id="gridFs" class="imgMark2 imagem" src="../../assets/images/how-to-do/java/share-me-conexao-mongo-db-grid-fs-bucket-java.svg">
 
 							  	<br><br>
 
-							  	<figcaption>Fig.1 - ConexaoMongoDBGridFSBucket class (inside BancoDados package). Touch the image to open in another window.</figcaption>
+							  	<figcaption>Fig.1 - ConexaoMongoDBGridFSBucket class (inside BancoDados package). Touch the image to zoom.</figcaption>
 							</figure>
 						</center>
         			</li>
@@ -229,13 +245,11 @@
         				<center>
 	        				
 	        					<figure>
-							  		<a href="../../assets/images/how-to-do/java/share-me-arquivo-bean-java.svg" target="_blank">
-							  			<img class="imgMark2" src="../../assets/images/how-to-do/java/share-me-arquivo-bean-java.svg">
-							  		</a>
+							  		<img id="arquivoBean" class="imgMark2 imagem" src="../../assets/images/how-to-do/java/share-me-arquivo-bean-java.svg">
 
 							  		<br><br>
 
-							  		<figcaption>Fig.2 - ShareMeArquivoBean class (inside Bean package). Touch the image to open in another window.</figcaption>
+							  		<figcaption>Fig.2 - ShareMeArquivoBean class (inside Bean package). Touch the image to zoom.</figcaption>
 								</figure>
 							
 						</center>
@@ -249,13 +263,11 @@
         				<center>
 	        				
 	        					<figure>
-							  		<a href="../../assets/images/how-to-do/java/share-me-arquivo-dao-java.svg" target="_blank">
-							  			<img class="imgMark2" src="../../assets/images/how-to-do/java/share-me-arquivo-dao-java.svg">
-							  		</a>
+							  		<img id="arquivoDao" class="imgMark2 imagem" src="../../assets/images/how-to-do/java/share-me-arquivo-dao-java.svg">
 
 							  		<br><br>
 							  		
-							  		<figcaption>Fig.3 - ShareMeArquivoDao class (inside Dao package). Touch the image to open in another window.</figcaption>
+							  		<figcaption>Fig.3 - ShareMeArquivoDao class (inside Dao package). Touch the image to zoom.</figcaption>
 								</figure>
 							
 						</center>
@@ -280,6 +292,42 @@
         			<li>3 - I put the anchor link to GitHub's Repository twice already and, just in case, gonna put it here again, so, <a href="https://github.com/CSFelix/JAVA-JSP-CS-JAVASCRIPT-SHAREME" target="_blank">click here</a> to check out!</li>
         			<br>
         		</ul>
+			
+			<!--
+        			*************
+					*** Modal ***
+					*************
+        		-->
+
+        		<div id="myModal1" class="modal">
+  					<span id="close1" class="close">&times;</span>
+  					<a href="../../assets/images/how-to-do/java/share-me-conexao-mongo-db-grid-fs-bucket-java.svg" target="_blank"><img class="modal-content" id="img01"></a>/
+  					<div id="caption">Fig1. Motion-detection.py. Touch again to max zoom.</div>
+				</div>
+
+				<!--
+        			*************
+					*** Modal ***
+					*************
+        		-->
+
+        		<div id="myModal2" class="modal">
+  					<span id="close2" class="close">&times;</span>
+  					<a href="../../assets/images/how-to-do/java/share-me-arquivo-bean-java.svg" target="_blank"><img class="modal-content" id="img02"></a>/
+  					<div id="caption">Fig2. ShareMeArquivoBean Class. Touch again to max zoom.</div>
+				</div>
+
+				<!--
+        			*************
+					*** Modal ***
+					*************
+        		-->
+
+        		<div id="myModal3" class="modal">
+  					<span id="close3" class="close">&times;</span>
+  					<a href="../../assets/images/how-to-do/java/share-me-arquivo-dao-java.svg" target="_blank"><img class="modal-content" id="img03"></a>/
+  					<div id="caption">Fig3. ShareMeArquivoDao Class. Touch again to max zoom.</div>
+				</div>
 
         		<br><br>
         		<hr>
@@ -360,7 +408,7 @@
 	</section>
 </body>
 
-	<script type="text/javascript" src="assets/js/window-location-projects.js"></script>
+	<script type="text/javascript" src="../../assets/js/modal/modal-how-to-do-java-share-me.js"></script>
 	
 	<script type="text/javascript" src="../../assets/js/easter-eggs/easter-eggs.js"></script>
 	<script type="text/javascript" src="../../assets/js/easter-eggs/import-easter-eggs.js"></script>
