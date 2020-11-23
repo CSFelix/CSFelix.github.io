@@ -1,5 +1,5 @@
 # 🌟 Portfolio 🌟
-
+markdown: kramdown
 ----
 ### `❓ What's it? ❓`
 
@@ -9,7 +9,7 @@
 
 * OBS. 1: don't worry about my English, I'm trynna improve it and, some day, I gonna be fluent in it!!!!
 
-* OBS. 2: follow my Instagram Account: [C0dePlus](https://www.instagram.com/c0deplus/)
+* OBS. 2: follow my Instagram Account: <a href="https://www.instagram.com/c0deplus/" target="_blank">C0dePlus</a>
 
 ----
 ### `⚒️ Tools ⚒️`
