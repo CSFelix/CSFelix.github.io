@@ -44,24 +44,24 @@ p { text-indent: 3rem; text-align: justify; text-justify: inter-word; }
 p a { color: var(--style-secondary-purple); }
 p a:hover { color: var(--style-primary-purple); text-decoration: underline;  }
 
-table { border-collapse: separate; width: 100%; overflow: auto; }
+.contentTable { border-collapse: separate; width: 100%; overflow: auto; }
 /*
     ** I commented this code in order to take off x-overflow in mobiles **
     table td, table th { padding: 0 8px; }
 */
 
-table tr:nth-child(even){background-color: var(--secondary-color);}
-table tr:nth-child(odd){background-color: var(--terciary-color);}
-table tr:hover { background-color: var(--style-secondary-purple); cursor: pointer; }
-table th:hover { cursor: default; }
+.contentTable tr:nth-child(even){background-color: var(--secondary-color);}
+.contentTable tr:nth-child(odd){background-color: var(--terciary-color);}
+.contentTable tr:hover { background-color: var(--style-secondary-purple); cursor: pointer; }
+.contentTable th:hover { cursor: default; }
 
-table th {
+.contentTable th {
     padding-top: 12px; padding-bottom: 12px;
     text-align: center; vertical-align: middle; border: none;
     background-color: var(--style-terciary-purple); color: var(--secondary-color);
 }
 
-table td { text-align: center; color: var(--primary-color); vertical-align: middle; padding: 5px; }
+.contentTable td { text-align: center; color: var(--primary-color); vertical-align: middle; padding: 5px; }
 
 .tag { 
     border-radius: 5px; background-color: var(--style-terciary-purple); 
