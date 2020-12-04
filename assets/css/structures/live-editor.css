@@ -1,5 +1,6 @@
 #questionList li { border-left: 3px solid var(--style-terciary-purple); text-indent: 1rem; }
 #questionButton, #runButton { float: left; margin-left: 10px; }
+#sampleButton { margin-left: 10px; }
 #saveButton, #deleteButton, #downloadButton, #runButton { float: right; margin-right: 10px; }
 
 .circleButton {
