@@ -18,7 +18,7 @@
 }
 
 .listMark { padding-left: 2rem; }
-.listMark li { text-indent: 1rem; border-left: 3px solid var(--style-terciary-purple); }
+.listMark li { text-indent: 1rem; border-left: 3px solid var(--style-terciary-purple); padding-left: 10px; }
 .listMark li a { color: var(--secondary-color); text-decoration: underline;}
 .listMark li a:hover { color: var(--style-primary-purple); }
 
