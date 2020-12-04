@@ -1,4 +1,4 @@
-* { margin: 0; padding: 0; text-decoration: none; list-style: none; vertical-align: baseline; }
+* { margin: 0; padding: 0; text-decoration: none; list-style: none; vertical-align: baseline; scroll-behavior: smooth; }
 
 :root {
 	--primary-color: #363636;
