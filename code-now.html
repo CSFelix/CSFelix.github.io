@@ -88,16 +88,20 @@
 
         		<!--
         			- question: <i class="fas fa-question"></i>
-					- save: <i class="fas fa-save"></i>
-					- delete: <i class="fas fa-trash"></i>
-					- download: <i class="fas fa-download"></i>
-					- run: <i class="fas fa-play"></i>
+        			- laptop-code: <i class="fas fa-laptop-code"></i>
+				- save: <i class="fas fa-save"></i>
+				- delete: <i class="fas fa-trash"></i>
+				- download: <i class="fas fa-download"></i>
+				- run: <i class="fas fa-play"></i>
         		-->
 
         		<div id="questionDescription">
         			<center><span class="tag">Options Buttons</span></center>
         			<br><br>
         			<ul id="questionList">
+        				<li><i class="fas fa-laptop-code"></i> >> Show Sample Code</li>
+        				<br><br>
+
         				<li><i class="fas fa-save"></i> >> Save the Code</li>
         				<br><br>
 
@@ -121,22 +125,12 @@
 
         		<div class="menuButtons">
         			<button id="questionButton" title="How does it work?" class="circleButton fas fa-question"></button>
+        			<a href="#output"><button id="sampleButton" title="Sample Code" class="circleButton fas fa-laptop-code"></button></a>
 
         			<button id="runButton" title="Run the Code" class="circleButton fas fa-play"></button>
         			<button id="downloadButton" title="Download the Code" class="circleButton fas fa-download"></button>
         			<button id="deleteButton" title="Delete the Saved Code" class="circleButton fas fa-trash"></button>
         			<button id="saveButton" title="Save the Code" class="circleButton fas fa-save"></button>
-        		</div>
-
-				<br><br><br>
-        		
-				<div class="editor">
-        			<center><textarea id="html-code" class="codeArea" placeholder="Your HTML code..."></textarea>
-        			<textarea id="css-code" class="codeArea" placeholder="Your CSS code..."></textarea>
-        			<textarea id="js-code" class="codeArea" placeholder="Your JS code..."></textarea>
-
-        			<br><br>
-        			<iframe id="output" class="outputArea"></iframe></center>
         		</div>
 				
         		<br><br>
