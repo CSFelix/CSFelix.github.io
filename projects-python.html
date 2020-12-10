@@ -27,6 +27,9 @@
 
 	<!-- footer style -->
 	<link rel="stylesheet" type="text/css" href="assets/css/structures/footer.css">
+	
+	<!-- ani js library -->
+	<link rel="stylesheet" href="assets/css/libraries/ani-collection.css">
 </head>
 <body>
 
@@ -86,7 +89,7 @@
         		
         		<br><br>
         		
-        		<table class="contentTable">
+        		<table class="contentTable" data-anijs="if: load, on: window, do: rubberBand animated">
         			<tr>
         				<th>Project Title</th>
         				<th>Technologies</th>
@@ -127,7 +130,7 @@
 					*** Footer ***
 					**************
         		-->
-        		<footer>
+        		<footer data-anijs="if: load, on: window, do: swing animated">
         			<br><br>
         			<h3>📫 Reach Me 📫</h3>
         			<br><br>
@@ -183,7 +186,7 @@
         </div>
 	</section>
 </body>
-
+	<script type="text/javascript" src="assets/js/libraries/anijs-min.js"></script>
 	<script type="text/javascript" src="assets/js/window-location/window-location-projects-python.js"></script>
 	
 	<script type="text/javascript" src="assets/js/easter-eggs/easter-eggs.js"></script>
