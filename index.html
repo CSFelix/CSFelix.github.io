@@ -27,6 +27,9 @@
 	
 	<!-- footer style -->
 	<link rel="stylesheet" type="text/css" href="assets/css/structures/footer.css">
+	
+	<!-- ani js library -->
+	<link rel="stylesheet" href="assets/css/libraries/ani-collection.css">
 </head>
 <body>
 
@@ -87,15 +90,15 @@
         		<br><br>
 
         		<!-- hello, I'm here -->
-        		<h3 class="subtopic">👋 Hi everybody, how's it going? Thank a million to visit my portfolio, I'm so glad! 👋</h3>
+        		<h3 class="subtopic" data-anijs="if: load, on: window, do: fadeInLeft animated">👋 Hi everybody, how's it going? Thank a million to visit my portfolio, I'm so glad! 👋</h3>
 
         		<br><br>
 
-        		<p>In this website, I gonna share projects, step-by-step tutorials and blogs (this last is coming soon) about Computer Science with the following markup and programming languages: <i>Java, Python, HTML, CSS and JavaScript</i>. Besides, in the last tab, you can play to code web pages with HTML, CSS and JS in an online editor.</p>
+        		<p data-anijs="if: load, on: window, do: fadeInRight animated">In this website, I gonna share projects, step-by-step tutorials and blogs (this last is coming soon) about Computer Science with the following markup and programming languages: <i>Java, Python, HTML, CSS and JavaScript</i>. Besides, in the last tab, you can play to code web pages with HTML, CSS and JS in an online editor.</p>
 
         		<br><br>
 
-        		<p>I'm currently Computer Science Bachelor Student at 7 degree and, when finish my course, gonna study about <i>Data Science and Machine Learning</i>. When this day come, I will post contents about the area.</p>
+        		<p data-anijs="if: load, on: window, do: fadeInUpBig animated">I'm currently Computer Science Bachelor Student at 7 degree and, when finish my course, gonna study about <i>Data Science and Machine Learning</i>. When this day come, I will post contents about the area.</p>
 
         		<br><br>
         		<hr>
@@ -182,7 +185,7 @@
         </div>
 	</section>
 </body>
-	
+	<script type="text/javascript" src="assets/js/libraries/anijs-min.js"></script>
 	<script type="text/javascript" src="assets/js/easter-eggs/easter-eggs.js"></script>
 	<script type="text/javascript" src="assets/js/easter-eggs/import-easter-eggs.js"></script>
 </html>
