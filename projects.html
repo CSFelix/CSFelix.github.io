@@ -27,6 +27,9 @@
 
 	<!-- footer style -->
 	<link rel="stylesheet" type="text/css" href="assets/css/structures/footer.css">
+	
+	<!-- ani js library -->
+	<link rel="stylesheet" href="assets/css/libraries/ani-collection.css">
 </head>
 <body>
 
@@ -90,11 +93,11 @@
 
         		<br><br>
         		<center>
-        			<a href="projects-java.html"><button class="botao">Java</button></a>
+        			<a href="projects-java.html"><button class="botao" data-anijs="if: load, on: window, do: rubberBand animated">Java</button></a>
         			&nbsp&nbsp
-        			<a href="projects-python.html"><button class="botao">Python</button></a>
+        			<a href="projects-python.html"><button class="botao" data-anijs="if: load, on: window, do: rubberBand animated">Python</button></a>
         			<br><br>
-        			<a href="projects-web.html"><button class="botao">Web</button></a>
+        			<a href="projects-web.html"><button class="botao" data-anijs="if: load, on: window, do: rubberBand animated">Web</button></a>
         		</center>
         		<br><br>
 
@@ -106,7 +109,7 @@
 					*** Footer ***
 					**************
         		-->
-        		<footer>
+        		<footer data-anijs="if: load, on: window, do: swing animated">
         			<br><br>
         			<h3>📫 Reach Me 📫</h3>
         			<br><br>
@@ -161,7 +164,7 @@
         </div>
 	</section>
 </body>
-	
+	<script type="text/javascript" src="assets/js/libraries/anijs-min.js"></script>	
 	<script type="text/javascript" src="assets/js/easter-eggs/easter-eggs.js"></script>
 	<script type="text/javascript" src="assets/js/easter-eggs/import-easter-eggs.js"></script>
 </html>
