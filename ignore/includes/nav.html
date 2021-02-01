@@ -1,0 +1,73 @@
+<nav id="mainNav">
+
+			<!-- visuals -->
+			<span id="titleSpan" class="navSpan" data-anijs="if: mouseover, do: swing animated">
+				<a href="https://instagram.com/c0deplus/" target="_blank"><h1>C0dePlus</h1></a>
+			</span>
+
+			<span id="notificationSpan" class="navSpan buttonSpan flexCenter" data-anijs="if: click, do: rubberBand animated"><i class="fas fa-bell"></i></span>
+
+			<span id="configSpan" class="navSpan buttonSpan flexCenter" data-anijs="if: click, do: rubberBand animated"><i class="fas fa-ellipsis-v"></i></span>
+
+			<!-- toogles -->
+			<section id="toastNavMessage" class="navToast">
+				<div class="toastNavHeader"><h3>{{ notificacaoTituloAtiva }}</h3></div>
+				<br><br>
+				<div class="toastNavContent">{{ notificacaoConteudoAtiva }}</div>
+			</section>
+
+			<section id="toastNavConfig" class="navToast">
+				<div class="toastNavHeader"><h3>{{ configTituloAtiva }}</h3></div>
+				<br><br>
+				
+				<div class="toastNavContent">
+					<!-- 
+						Dark and Light Mode Switch
+					<i class="fas fa-moon"></i> >> darkmode
+					<i class="fas fa-sun"></i> >> light mode
+					-->
+					<section id="sectionSwitchMode" class="navConfigOptions">
+						<i class="fas fa-moon"></i>
+						
+						<div>
+							<span>{{ configConteudoModoAtiva }}</span>
+						</div>
+						
+						<label id="switchMode" class="switch">
+  							<input type="checkbox">  							
+  							<span class="slider round"></span>
+						</label>
+
+						<span id="modoAtivado"></span>
+					</section>
+
+					<br>
+
+					<!-- 
+						Language Swtich 
+					<i class="fas fa-arrow-up"></i> >> list selection off
+					<i class="fas fa-arrow-down"></i> >> list selection on
+					-->
+					<section id="sectionSwitchLanguage" class="navConfigOptions">
+						<i class="fas fa-language"></i>
+
+						<span>{{ configConteudoIdiomaAtiva }}</span>
+
+						<i id="listIcon" class="fas fa-arrow-up"></i>
+
+						<span id="idiomaAtivado"></span>
+					</section>
+
+					<!-- 
+						Language List
+					-->
+					<section class="navSubConfigOptions">
+						<select id="languageList">
+							<option value="1">Português (Brasil)</option>
+							<option value="2">English (United States)</option>
+						</select>
+					</section>
+
+				</div>
+			</section>
+		</nav>

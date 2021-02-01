@@ -1,0 +1,4 @@
+.formLogin { width: 300px; height: fit-content; border-radius: 5px; background: var(--background-color); }
+.formLogin .formLoginHeader { border-bottom: 2px solid var(--style-secondary-color); padding-top: 1.25rem; text-indent: 1.25rem; }
+
+@media screen and (max-width: 700px) { .formLogin { width: 98%; } }

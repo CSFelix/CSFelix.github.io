@@ -1,0 +1,6 @@
+.campoLabel {
+	top: 50%; left: 32px; position: absolute;
+	color: var(--theme-color); font-size: 15px;
+	line-height: 15px; pointer-events: none;
+	transform: translateY(-50%); transition: 180ms ease;
+}

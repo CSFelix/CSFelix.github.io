@@ -1,0 +1,13 @@
+.campoInput {
+	width: 250px; padding: 11px 8px 6px 8px;
+	color: var(--cor-fundo-secundario); border-bottom: solid 4px var(--style-terciary-color);
+	line-height: 15px; font-size: 12px; transition: 240ms ease; border-radius: 5px;
+	background: var(--background-opacity-color);
+}
+
+.campoInput:focus, .campoInput:active { 
+	border-bottom: solid 4px var(--style-secondary-color); outline: none; 
+	box-shadow: 0px 0px 5px var(--style-terciary-color),
+				0px 0px 10px var(--style-terciary-color),
+				0px 0px 20px var(--style-terciary-color);
+}

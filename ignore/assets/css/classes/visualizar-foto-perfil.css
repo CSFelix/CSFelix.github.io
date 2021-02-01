@@ -1,0 +1,21 @@
+#selecionarAvatar { visibility: hidden; position: absolute; }
+
+.containerAvatar {
+	width: 100px; height: 100px; border-radius: 50%;
+	background-size: cover; background-position: center; background-blend-mode: multiply;
+}
+
+.containerAvatar:hover {
+	box-shadow: 0px 0px 5px var(--style-primary-color),
+				0px 0px 10px var(--style-primary-color),
+				0px 0px 20px var(--style-primary-color);
+}
+
+.containerAvatar #avatarVisualizacao { 
+	width: 100px; height: 100px; border-radius: 50%; text-align: center; background-color: transparent; 
+	background-image: url("C:/Users/gabri/Desktop/TCC/Codigo-Original/images/avatar/avatar.png"); 
+}
+
+.containerAvatar #avatarVisualizacao:hover { cursor: pointer; }
+
+.tipSpan { color: var(--style-primary-color); border-radius: 5px; border: 2px dashed var(--style-primary-color); padding: 2px; }

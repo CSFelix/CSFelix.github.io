@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html lang="pt-br, en">
+	<head>
+		<title>ScanMe</title>
+
+		<!-- logotipo -->
+		<link rel="icon" href="images/logos/">
+
+		<!-- metas -->
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Language" content="pt-br, en">
+		<meta name="author" content="@CSFelix">
+		<meta name="keywords" content="scan, escanemanto, qrcode, qr-code, sells, vendas, buy, compras, products, produtos, business, negocios, whatsapp, telegram">
+		<meta name="description" content="Sell and Buy products scanning QR Code and integrating your WhatsApp and Telegram">
+		<meta property="og:image" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+		<!-- css reset and vars -->
+		<link rel="stylesheet" type="text/css" href="assets/css/configs/reset-vars.css">
+
+		<!-- css layout -->
+		<link rel="stylesheet" type="text/css" href="assets/css/configs/layout-desktop.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/configs/layout-mobile.css">
+
+		<!-- css structures -->
+		<link rel="stylesheet" type="text/css" href="assets/css/structures/nav.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/structures/content.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/structures/footer.css">
+
+		<!-- css classes -->
+		<link rel="stylesheet" type="text/css" href="assets/css/classes/botao.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/classes/campo-div-form.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/classes/campo-input.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/classes/campo-label.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/classes/esqueceu-senha.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/classes/flex-center.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/classes/flex-space.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/classes/form-login.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/classes/horizontal-line.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/classes/label-ativa.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/classes/language-list.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/classes/nav-config-options.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/classes/nav-toast.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/classes/neon.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/classes/slider-toogle.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/classes/visualizar-senha.css">
+
+		<!-- css libraries -->
+		<link rel="stylesheet" type="text/css" href="assets/css/libraries/ani-collection.css">
+	</head>
+
+	<body>
+		<nav id="mainNav">
+
+			<!-- visuals -->
+			<span id="titleSpan" class="navSpan" data-anijs="if: mouseover, do: swing animated">
+				<a href="https://instagram.com/c0deplus/" target="_blank"><h1>C0dePlus</h1></a>
+			</span>
+
+			<span id="notificationSpan" class="navSpan buttonSpan flexCenter" data-anijs="if: click, do: rubberBand animated"><i class="fas fa-bell"></i></span>
+
+			<span id="configSpan" class="navSpan buttonSpan flexCenter" data-anijs="if: click, do: rubberBand animated"><i class="fas fa-ellipsis-v"></i></span>
+
+			<!-- toogles -->
+			<section id="toastNavMessage" class="navToast">
+				<div class="toastNavHeader"><h3>{{ notificacaoTituloAtiva }}</h3></div>
+				<br><br>
+				<div class="toastNavContent">{{ notificacaoConteudoAtiva }}</div>
+			</section>
+
+			<section id="toastNavConfig" class="navToast">
+				<div class="toastNavHeader"><h3>{{ configTituloAtiva }}</h3></div>
+				<br><br>
+				
+				<div class="toastNavContent">
+					<!-- 
+						Dark and Light Mode Switch
+					<i class="fas fa-moon"></i> >> darkmode
+					<i class="fas fa-sun"></i> >> light mode
+					-->
+					<section id="sectionSwitchMode" class="navConfigOptions">
+						<i class="fas fa-moon"></i>
+						
+						<div>
+							<span>{{ configConteudoModoAtiva }}</span>
+						</div>
+						
+						<label id="switchMode" class="switch">
+  							<input type="checkbox">  							
+  							<span class="slider round"></span>
+						</label>
+
+						<span id="modoAtivado"></span>
+					</section>
+
+					<br>
+
+					<!-- 
+						Language Swtich 
+					<i class="fas fa-arrow-up"></i> >> list selection off
+					<i class="fas fa-arrow-down"></i> >> list selection on
+					-->
+					<section id="sectionSwitchLanguage" class="navConfigOptions">
+						<i class="fas fa-language"></i>
+
+						<span>{{ configConteudoIdiomaAtiva }}</span>
+
+						<i id="listIcon" class="fas fa-arrow-up"></i>
+
+						<span id="idiomaAtivado"></span>
+					</section>
+
+					<!-- 
+						Language List
+					-->
+					<section class="navSubConfigOptions">
+						<select id="languageList">
+							<option value="1">Português (Brasil)</option>
+							<option value="2">English (United States)</option>
+						</select>
+					</section>
+
+				</div>
+			</section>
+		</nav>
+
+		<section id="mainContent">
+				<section class="formLogin neon">
+					<div class="formLoginHeader"><h3>{{ tituloFormAtiva }}</h3></div>
+					<br><br>
+
+					<div class="formLoginContent">
+						<!-- nickname -->
+						<div class="campoDivForm flexCenter">
+							<label id="labelNickname" class="campoLabel">{{ labelNicknameAtiva }}</label>
+							<p>📛</p>&nbsp&nbsp<input title="Somente letras maiúsculas e minúsculas, números e underlines são aceitos! Até 200 caracteres!" 
+										type="text" name="nickname" id="inputNickname" class="campoInput" onkeyup="checkLabel('labelNickname', this)" onkeydown="checkLabel('labelNickname', this)" autofocus required>
+						</div>
+						<br><br>
+
+						<!-- email -->
+						<div class="campoDivForm flexCenter">
+							<label id="labelLogin" class="campoLabel">{{ labelLoginAtiva }}</label>
+							<p>👤</p>&nbsp&nbsp<input title="Somente letras maiúsculas e minúsculas, números e underlines são aceitos! Até 200 caracteres!" 
+										type="email" name="email" id="inputEmail" class="campoInput" onkeyup="checkLabel('labelLogin', this)" onkeydown="checkLabel('labelLogin', this)" autofocus required>
+						</div>
+						
+						<br>
+						<hr class="horizontalLine">
+						<br>
+				
+						<!-- senha -->
+						<div class="campoDivForm flexCenter">
+							<label id="labelSenha" class="campoLabel">{{ labelSenhaAtiva }}</label>
+							<p>🔒</p>&nbsp&nbsp<input title="Somente letras maiúsculas e minúsculas, números e underlines são aceitos! Até 15 caracteres!" 
+										type="password" name="senha" id="inputSenha" class="campoInput" onkeyup="checkLabel('labelSenha', this)" onkeydown="checkLabel('labelSenha', this)"  required>
+
+							<!-- 
+								Visualizar senha em texto:
+								<i class="fas fa-eye"></i> >> ativar visualização
+								<i class="far fa-eye-slash"></i> >> desativar visualização
+							-->
+							&nbsp&nbsp<i class="fas fa-eye visualizarSenha"></i>
+						</div>
+						<br><br>
+
+						<!-- confirmar senha -->
+						<div class="campoDivForm flexCenter">
+							<label id="labelConfirmarSenha" class="campoLabel">{{ labelConfirmarSenhaAtiva }}</label>
+							<p>🔒</p>&nbsp&nbsp<input title="Somente letras maiúsculas e minúsculas, números e underlines são aceitos! Até 15 caracteres!" 
+										type="password" name="confirmarSenha" id="inputConfirmarSenha" class="campoInput" onkeyup="checkLabel('labelConfirmarSenha', this)" onkeydown="checkLabel('labelConfirmarSenha', this)"  required>
+						</div>
+						
+						<br>
+						<hr class="horizontalLine">
+						<br>
+
+						<!-- whatsapp -->
+						<div class="campoDivForm flexCenter">
+							<label id="labelWhatsapp" class="campoLabel">{{ labelWhatsappAtiva }}</label>
+							<p>📱</p>&nbsp&nbsp<input type="tel" name="whatsapp" id="inputWhatsapp" class="campoInput" onkeyup="checkLabel('labelWhatsapp', this)" onkeydown="checkLabel('labelWhatsapp', this)" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"  required>
+						</div>
+						<br><br>
+
+						<!-- telegram -->
+						<div class="campoDivForm flexCenter">
+							<label id="labelTelegram" class="campoLabel">{{ labelTelegramAtiva }}</label>
+							<p>📱</p>&nbsp&nbsp<input type="tel" name="telegram" id="inputTelegram" class="campoInput" onkeyup="checkLabel('labelTelegram', this)" onkeydown="checkLabel('labelTelegram', this)" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"  required>
+						</div>
+						<br><br>
+					</div>
+
+					<div class="formLoginFooter flexSpace">
+						
+						<a href="index.html"><button class="botaoSecundario" data-anijs="if: mouseover, do: rubberBand animated">{{ botaoVoltarLoginAtiva }}</button></a>
+						<button class="botao" data-anijs="if: mouseover, do: rubberBand animated">{{ botaoCadastrarAtiva }}</button>
+					</div>
+					<br><br>
+
+				</section>
+		</section>
+		
+		<footer id="mainFooter" class="flexCenter">
+			<h4>@CSFelix - 2021 Copyrights!</h4>
+		</footer>
+	</body>
+
+	<!-- vue language -->
+	<script type="text/javascript" src="assets/js/libraries/vue.js"></script>
+	<script type="text/javascript" src="assets/js/vue/languages/nav.js"></script>
+	<script type="text/javascript" src="assets/js/vue/languages/cadastro.js"></script>
+
+	<!-- js libraries -->	
+	<script type="text/javascript" src="assets/js/libraries/anijs-min.js"></script>
+	<script type="text/javascript" src="assets/js/libraries/font-awesome.js"></script>
+	
+	<!-- js effects -->
+	<script type="text/javascript" src="assets/js/effects/nav-options.js"></script>
+	<script type="text/javascript" src="assets/js/effects/label-ativa.js"></script>
+	<script type="text/javascript" src="assets/js/effects/trocar-idioma-login.js"></script>
+	<script type="text/javascript" src="assets/js/effects/trocar-modo.js"></script>
+	<script type="text/javascript" src="assets/js/effects/visualizar-senha-cadastro.js"></script>
+
+	<!-- controllers -->
+	<script type="text/javascript" src="assets/js/controllers/labels-inputs/label-ativa-cadastro.js"></script>
+
+</html>

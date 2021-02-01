@@ -1,0 +1,37 @@
+.toogleMenuVisivel {
+	position: absolute; left: 12.5px; top: 12.5px; font-size: 25px;
+	z-index: 3; color: var(--background-color);
+}
+
+.toogleMenuVisivel:hover { cursor: pointer; }
+
+.verticalMenu {
+	position: absolute; z-index: 2; left: 0; top: 50px;
+	width: 50px; height: calc(100vh - 100px);
+	background: linear-gradient(to bottom, var(--style-secondary-color), var(--style-primary-color));
+	transition: width 0.3s linear, visibility 0.25s linear;
+}
+
+.verticalMenu ul li {
+	font-size: 20px; text-align: center; vertical-align: middle;
+	color: #363636; height: calc((100vh - 100px) / 12);
+	line-height: calc((100vh - 100px) / 12);
+	color: var(--style-secondary-color);
+}
+
+.verticalMenu ul li:hover { cursor: pointer; background: var(--style-terciary-color); }
+.verticalMenu ul li i, .verticalMenu ul li .spanBotaoMenuVertical { color: #363636; }
+
+.verticalMenu ul .active { background: var(--style-terciary-color); }
+.verticalMenu ul .active i, .verticalMenu ul .active .spanBotaoMenuVertical { color: #f0f8ff; }
+
+.verticalMenu ul li .spanBotaoMenuVertical { visibility: hidden; }
+
+.tooltip-personalized {
+	--balloon-border-radius: 5px; --balloon-text-color: #f0f8ff; --balloon-font-size: 15px;
+	--balloon-color: linear-gradient( to right, var(--style-secondary-color), var(--style-primary-color), var(--style-terciary-color));
+}
+
+@media screen and (max-width: 700px) { 
+	
+}

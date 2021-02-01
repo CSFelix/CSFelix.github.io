@@ -1,0 +1,15 @@
+/* Nav */
+#mainNav { grid-area: nav; background: linear-gradient(to right, var(--style-primary-color), var(--style-terciary-color)); color: var(--background-color); }
+
+#mainNav .navSpan {  position: absolute; opacity: 0.85; outline: none; }
+#mainNav .navSpan:hover { cursor: pointer; opacity: 1; }
+
+#mainNav .buttonSpan { border-radius: 50%; top: 1%;  width: 35px; height: 35px; }
+#mainNav .buttonSpan:hover { background: rgba(54, 54, 54, 0.4); }
+
+#mainNav #titleSpan { top: 2%; left: 60px; font-size: 15px; }
+#mainNav #titleSpan a { color: var(--background-color); }
+#mainNav #notificationSpan { right: 7%; font-size: 20px; }
+#mainNav #configSpan { right: 3%; font-size: 20px; }
+
+@media screen and (max-width: 700px) { #mainNav #notificationSpan { right: 15%; } }

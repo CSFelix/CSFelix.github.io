@@ -1,0 +1,9 @@
+.navConfigOptions, .navSubConfigOptions {
+	border-radius: 5px; padding: 5px;
+	display: flex; flex-direction: row;
+	flex-wrap: wrap; justify-content: space-evenly;
+	font-size: 17.5px;
+}
+
+.navConfigOptions:hover { cursor: pointer; background: var(--nav-config-options-color); }
+.navConfigOptions #modoAtivado, .navConfigOptions #idiomaAtivado { font-size: 15.5px; }

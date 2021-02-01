@@ -1,0 +1,2 @@
+/* Footer */
+#mainFooter { grid-area: footer; background: var(--theme-color); color: var(--background-color); }

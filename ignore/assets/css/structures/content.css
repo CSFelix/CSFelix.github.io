@@ -1,0 +1,5 @@
+/* Content */
+#mainContent { 
+	grid-area: content; padding: 20px; overflow-x: none; overflow-y: auto; 
+	display: flex; justify-content: center; background: var(--background-opacity-color); 
+}

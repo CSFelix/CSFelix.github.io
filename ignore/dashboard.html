@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html lang="pt-br, en">
+	<head>
+		<title>ScanMe</title>
+
+		<!-- logotipo -->
+		<link rel="icon" href="images/logos/">
+
+		<!-- metas -->
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Language" content="pt-br, en">
+		<meta name="author" content="@CSFelix">
+		<meta name="keywords" content="scan, escanemanto, qrcode, qr-code, sells, vendas, buy, compras, products, produtos, business, negocios, whatsapp, telegram">
+		<meta name="description" content="Sell and Buy products scanning QR Code and integrating your WhatsApp and Telegram">
+		<meta property="og:image" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+		<!-- css reset and vars -->
+		<link rel="stylesheet" type="text/css" href="assets/css/configs/reset-vars.css">
+
+		<!-- css layout -->
+		<link rel="stylesheet" type="text/css" href="assets/css/configs/layout-desktop.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/configs/layout-mobile.css">
+
+		<!-- css structures -->
+		<link rel="stylesheet" type="text/css" href="assets/css/structures/nav.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/structures/content.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/structures/footer.css">
+
+		<!-- css classes -->
+		<link rel="stylesheet" type="text/css" href="assets/css/classes/botao.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/classes/flex-center.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/classes/flex-space.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/classes/language-list.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/classes/nav-config-options.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/classes/nav-toast.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/classes/neon.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/classes/slider-toogle.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/classes/vertical-menu.css">
+
+		<!-- css libraries -->
+		<link rel="stylesheet" type="text/css" href="assets/css/libraries/ani-collection.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/libraries/balloon.css">
+	</head>
+
+	<body>
+		<nav id="mainNav">
+
+			<!-- visuals -->
+			<span id="titleSpan" class="navSpan" data-anijs="if: mouseover, do: swing animated">
+				<a href="https://instagram.com/c0deplus/" target="_blank"><h1>C0dePlus</h1></a>
+			</span>
+
+			<span id="notificationSpan" class="navSpan buttonSpan flexCenter" data-anijs="if: click, do: rubberBand animated"><i class="fas fa-bell"></i></span>
+
+			<span id="configSpan" class="navSpan buttonSpan flexCenter" data-anijs="if: click, do: rubberBand animated"><i class="fas fa-ellipsis-v"></i></span>
+
+			<!-- toogles -->
+			<section id="toastNavMessage" class="navToast">
+				<div class="toastNavHeader"><h3>{{ notificacaoTituloAtiva }}</h3></div>
+				<br><br>
+				<div class="toastNavContent">{{ notificacaoConteudoAtiva }}</div>
+			</section>
+
+			<section id="toastNavConfig" class="navToast">
+				<div class="toastNavHeader"><h3>{{ configTituloAtiva }}</h3></div>
+				<br><br>
+				
+				<div class="toastNavContent">
+					<!-- 
+						Dark and Light Mode Switch
+					<i class="fas fa-moon"></i> >> darkmode
+					<i class="fas fa-sun"></i> >> light mode
+					-->
+					<section id="sectionSwitchMode" class="navConfigOptions">
+						<i class="fas fa-moon"></i>
+						
+						<div>
+							<span>{{ configConteudoModoAtiva }}</span>
+						</div>
+						
+						<label id="switchMode" class="switch">
+  							<input type="checkbox">  							
+  							<span class="slider round"></span>
+						</label>
+
+						<span id="modoAtivado"></span>
+					</section>
+
+					<br>
+
+					<!-- 
+						Language Swtich 
+					<i class="fas fa-arrow-up"></i> >> list selection off
+					<i class="fas fa-arrow-down"></i> >> list selection on
+					-->
+					<section id="sectionSwitchLanguage" class="navConfigOptions">
+						<i class="fas fa-language"></i>
+
+						<span>{{ configConteudoIdiomaAtiva }}</span>
+
+						<i id="listIcon" class="fas fa-arrow-up"></i>
+
+						<span id="idiomaAtivado"></span>
+					</section>
+
+					<!-- 
+						Language List
+					-->
+					<section class="navSubConfigOptions">
+						<select id="languageList">
+							<option value="1">Português (Brasil)</option>
+							<option value="2">English (United States)</option>
+						</select>
+					</section>
+
+				</div>
+			</section>
+		</nav>
+
+		<section id="mainContent">
+			<!--
+				Toogle Menu Mobile
+				<i class="fas fa-bars"></i> >> expandir menu
+				<i class="fas fa-times"></i> >> desexpandir menu
+			 -->
+			<i class="fas fa-times toogleMenuVisivel"></i>
+
+			<nav class="verticalMenu">
+				<br><br>
+				<ul>
+
+					<!-- 
+						Toogle Menu
+
+						<i class="fas fa-forward"></i> >> expandir menu
+						<i class="fas fa-backward"></i> >> desexpandir menu
+					-->
+					<li id="liToogleMenuVertical" aria-label="Toogle Menu" data-balloon-pos="right" data-balloon-length="medium" class="tooltip-personalized">
+						<i id="toogleMenuVertical" class="fas fa-forward"></i>
+					</li>
+
+					<br>
+					<hr>
+					<br>
+
+					<li aria-label="Dashboard" data-balloon-pos="right" data-balloon-length="medium" class="tooltip-personalized active">
+						<i class="fas fa-chart-line"></i>
+						<span class="spanBotaoMenuVertical">Dashboard</span>
+					</li>
+
+					<li aria-label="Produtos" data-balloon-pos="right" data-balloon-length="medium" class="tooltip-personalized">
+						<i class="fas fa-clipboard-list"></i>
+						<span class="spanBotaoMenuVertical">Produtos</span>
+					</li>
+
+					<li aria-label="Relatórios" data-balloon-pos="right" data-balloon-length="medium" class="tooltip-personalized">
+						<i class="fas fa-paste"></i>
+						<span class="spanBotaoMenuVertical">Relatórios</span>
+					</li>
+
+					<br>
+					<hr>
+					<br>
+					
+					<li aria-label="Market" data-balloon-pos="right" data-balloon-length="medium" class="tooltip-personalized">
+						<i class="fas fa-store-alt"></i>
+						<span class="spanBotaoMenuVertical">Market</span>
+					</li>
+
+					<br>
+					<hr>
+					<br>
+
+					<li aria-label="Configurações" data-balloon-pos="right" data-balloon-length="medium" class="tooltip-personalized">
+						<i class="fas fa-cog"></i>
+						<span class="spanBotaoMenuVertical">Configurações</span>
+					</li>
+
+					<li aria-label="Sign Out" data-balloon-pos="right" data-balloon-length="medium" class="tooltip-personalized">
+						<i class="fas fa-sign-out-alt"></i>
+						<span class="spanBotaoMenuVertical">Sair</span>
+					</li>
+				</ul>
+			</nav>
+		</section>
+		
+		<footer id="mainFooter" class="flexCenter">
+			<h4>@CSFelix - 2021 Copyrights!</h4>
+		</footer>
+	</body>
+
+	<!-- vue language -->
+	<script type="text/javascript" src="assets/js/libraries/vue.js"></script>
+	<script type="text/javascript" src="assets/js/vue/languages/nav.js"></script>
+
+	<!-- js libraries -->	
+	<script type="text/javascript" src="assets/js/libraries/anijs-min.js"></script>
+	<script type="text/javascript" src="assets/js/libraries/font-awesome.js"></script>
+	
+	<!-- js effects -->
+	<script type="text/javascript" src="assets/js/effects/nav-options.js"></script>
+	<script type="text/javascript" src="assets/js/effects/label-ativa.js"></script>
+	<script type="text/javascript" src="assets/js/effects/toogle-menu-vertical.js"></script>
+	<script type="text/javascript" src="assets/js/effects/trocar-idioma-painel.js"></script>
+	<script type="text/javascript" src="assets/js/effects/trocar-modo.js"></script>
+</html>

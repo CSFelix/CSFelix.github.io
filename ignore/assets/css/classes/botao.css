@@ -1,0 +1,25 @@
+.botao {
+	border-radius: 5px; outline: none; background: var(--style-primary-color);
+	color: var(--background-color); padding: 5px; font-size: 15px; border: none;
+	border: 2px solid var(--style-primary-color);
+}
+
+.botao:hover, .botao:active { 
+	cursor: pointer;  background: var(--background-color); color: var(--style-primary-color);
+	box-shadow: 0px 0px 2.5px var(--style-primary-color),
+				0px 0px 5px var(--style-primary-color),
+				0px 0px 10px var(--style-primary-color);
+}
+
+.botaoSecundario {
+	border-radius: 5px; outline: none; color: var(--style-primary-color);
+	background: var(--background-color); padding: 5px; font-size: 15px; border: none;
+	border: 2px solid var(--style-primary-color);
+}
+
+.botaoSecundario:hover, .botaoSecundario:active {
+	cursor: pointer;  color: var(--background-color); background: var(--style-primary-color);
+	box-shadow: 0px 0px 2.5px var(--style-primary-color),
+				0px 0px 5px var(--style-primary-color),
+				0px 0px 10px var(--style-primary-color);
+}

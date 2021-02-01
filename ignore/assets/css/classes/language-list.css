@@ -1,0 +1,3 @@
+#languageList { visibility: hidden; padding: 5px; border-radius: 5px; outline: none; }
+#languageList:hover{ cursor: pointer; }
+#languageList option { padding: 12px; border-radius: 5px; }

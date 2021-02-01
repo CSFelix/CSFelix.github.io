@@ -1,0 +1,23 @@
+.navToast {
+	width: 250px; height: 250px;
+	position: absolute; top: -250px; right: 3%; opacity: 0;
+
+	user-select: none;
+	color: var(--background-color);
+	background: var(--theme-color);
+	border-bottom: 2px solid var(--style-secondary-color);
+
+	padding-top: 1.2rem;
+	border-radius: 5px;
+	box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.4);
+
+	transition: bottom 0.4s ease;
+	overflow-x: none;
+	overflow-y: auto;
+
+	z-index: 3;
+}
+
+.navToast.show { top: 2.5rem; opacity: 1; transition: top 1s ease, opacity 2s ease; }
+.navToast .toastNavHeader { text-indent: 1.25rem; border-bottom: 2px solid var(--style-secondary-color); }
+.navToast .toastNavContent { padding-left: 1.25rem; padding-right: 1.25rem; }

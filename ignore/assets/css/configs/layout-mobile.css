@@ -1,0 +1,7 @@
+@media screen and (max-width: 700px) {
+	/* retirar scrollbar em mobiles */
+	::-webkit-scrollbar { width: 0px; }
+
+	/* Footer's Font Size in 12 px */
+	#mainFooter { font-size: 12px; }
+}
