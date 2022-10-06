@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSFelix - Portfolio</title>
+
+	<!-- logotipo -->
+	<link rel="icon" href="../../assets/images/icon/black-icon.png">
+
+	<!-- metas -->
+	<meta charset="utf-8">
+	<meta name="author" content="@CSFelix">
+	<meta name="keywords" content="java, python, html, css, javascript, projects, programming, codes, protfolio, csfelix">
+	<meta name="description" content="My Personal Portfolio!! Here, I share public projects available in my GitHub page and a step-by-step of how to do some projects and things in Python, Java and Web (HTML, CSS and JavaScript)">
+	<meta property="og:image" content="../../assets/images/icon/black-icon.png">
+	
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	
+	<!-- CSS: reset, variables and layout's configs -->
+	<link rel="stylesheet" type="text/css" href="../../assets/css/configs/reset-vars.css">
+	<link rel="stylesheet" type="text/css" href="../../assets/css/configs/layout.css">
+
+	<!-- nav style -->
+	<link rel="stylesheet" type="text/css" href="../../assets/css/structures/menu.css">
+
+	<!-- section style -->
+	<link rel="stylesheet" type="text/css" href="../../assets/css/structures/section.css">
+
+	<!-- markdown classes -->
+	<link rel="stylesheet" type="text/css" href="../../assets/css/classes/markClasses.css">
+
+	<!-- footer style -->
+	<link rel="stylesheet" type="text/css" href="../../assets/css/structures/footer.css">
+	
+	<!-- ani js library -->
+	<link rel="stylesheet" href="../../assets/css/libraries/ani-collection.css">
+</head>
+<body>
+
+	<!--
+		************
+		*** Menu ***
+		************
+	 -->
+	<input type="checkbox" id="bt_menu">
+	<label for="bt_menu">&#9779;</label>  
+	<nav class="mainNav">
+	    <ul>
+	    	<!-- about me >> who am i? why did i do this portfolio? -->
+	        <li><a href="../../index.html">About Me</a></li>
+	        
+	        <!-- projects in java, python and web -->
+	        <li class="selected"><a href="../../projects.html">Projects</a>
+	        	<ul>
+	        		<li><a href="../../projects-java.html">Java</a></li>
+	        		<li><a class="selected" href="../../projects-python.html">Python</a></li>
+	        		<li><a href="../../projects-web.html">Web</a></li>
+	        	</ul>
+	        </li>
+	        
+	        <!-- step-by-step about java, python and web projects -->
+	        <li><a href="../../how-to-do.html">How to Do</a>
+	        	<ul>
+	        		<li><a href="../../how-to-do-java.html">Java</a></li>
+	        		<li><a href="../../how-to-do-python.html">Python</a></li>
+	        		<li><a href="../../how-to-do-web.html">Web</a></li>
+	        	</ul>
+	        </li>
+		    
+		<!-- short tips about tricks and good practices during programming -->
+		<li><a href="../../wiki.html">Wiki</a>
+		    <ul>
+			<li><a href="../../wiki-good-practices.html">Good Practices</a></li>
+			<li><a href="../../wiki-tricks.html">Tricks</a></li>
+		    </ul>
+		</li>
+	        
+	        <!-- a code playground (code editor in html, css and js) -->
+	        <li><a href="../../code-now.html">Code Now</a></li>
+	    </ul>
+	</nav>
+
+	<!-- 
+		****************
+		**** Section ***
+		****************
+	-->
+
+	<section class="mainContent">
+		<div>
+        	<fieldset  class="refFieldSet">
+        		<legend><code>🐍 Projects - Face, Eye and Motion Detection 🐍</code></legend>
+        		
+        		<br><br>
+        		
+        		<!-- 
+        			******************
+					*** What's it? ***
+					******************
+        		-->
+        		<span class="tagMark">❓ What's it? ❓</span>
+
+        		<br><br>
+
+				<p>Face, Eye and Motion Detection are a set of codes ('out of' can be 'outta', so can 'set of'  be 'setta'??) that detect peoples' faces\eyes and objects' motions using Python and OpenCV packages.</p>
+
+				<br><br>
+				<p>All videos are saved in codes' directory after the program ends. To end any program, press 'q' key.</p>
+
+				<br><br>
+				<p>Try out, change the code, publish, add in projects, and much more!!</p>
+
+        		<br><br>
+
+        		<center>
+        			<a href="https://github.com/CSFelix/PYTHON-OPENCV-WEBCAM-FACE-EYE-MOTION-DETECTION" target="_blank">
+        				<button class="buttonMark" data-anijs="if: load, on: window, do: rubberBand animated">View on GitHub</button>
+        			</a>
+        		</center>
+
+        		<br><br>
+        		<hr>
+        		<br><br>
+
+        		<!-- 
+        			*************
+					*** Tools ***
+					*************
+        		-->
+				<span class="tagMark">⚒️ Tools ⚒️</span>
+
+				<br><br>
+				<ul class="listMark">
+					<li>Camera (notebook, cellphone, webcams...);</li><br>
+					<li>Python 3.7 version or later;</li><br>
+					<li>OpenCV and Pandas packages;</li><br>
+					<li>Jupyter Notebook 7.2 version or later.</li>
+				</ul>
+
+				<br><br>
+        		<hr>
+        		<br><br>
+
+        		<!-- 
+        			***********
+					*** Run ***
+					***********
+        		-->
+        		<span class="tagMark">⚙️ Run ⚙️</span>
+        		<br><br><br><br>
+
+        		<span class="rowMark">Instaling Packages</span>
+        		<br><br>
+
+        		<ul class="listMark">
+        			<li>Open computer's terminal and tip these commands:</li>
+        		</ul>
+
+        		<br><br>
+
+        		<div class="divMark">
+        			pip install pandas<br><br>
+					pip install opencv-python
+        		</div>
+
+        		<br><br><br><br>
+
+        		<span class="rowMark">Running with Python</span>
+        		<br><br>
+
+        		<ul class="listMark">
+        			<li>Download the source code;</li><br>
+					<li>Open cmd and go to <i>Python</i> folder;</li><br>
+					<li>Choice a code file;</li><br>
+					<li>Tip:</li>
+        		</ul>
+
+        		<br><br>
+
+        		<div class="divMark">
+        			python FILE_NAME.py
+        		</div>
+
+        		<br><br><br><br>
+
+        		<span class="rowMark">Running with Jupyter Notebook</span>
+        		<br><br>
+
+        		<ul class="listMark">
+        			<li>Download the source code;</li><br>
+					<li>Open cmd and go to <i>Jupyter Notebook</i> folder;</li><br>
+					<li>Tip:</li>
+        		</ul>
+
+        		<br><br>
+
+        		<div class="divMark">
+        			jupyter notebook
+        		</div>
+
+        		<br><br>
+
+        		<ul class="listMark">
+        			<li>Choice a code and run it!!</li>
+        		</ul>
+
+				<br><br>
+        		<hr>
+        		<br><br>
+
+        		<!-- 
+        			*************
+					*** Notes ***
+					*************
+        		-->
+        		<span class="tagMark">📝 Notes 📝</span>
+        		<br><br>
+
+				<ul class="listMark">
+					<li><b>Eye Detec</<br>tion:</b> detect people' eyes and save the video in mp4 format;</li><br>
+					<li><b>Face Detection:</b> detect people' faces and save the video in mp4 format;</li><br>
+					<li><b>Face Eye Detection:</b> detect people' faces and eyes and save the video in mp4 format;</li><br>
+					<li><b>Motion Detection:</b> detect objects' motions and save the motions' logs in csv file;</li><br>
+					<li><b>Open WebCam:</b> open webcam and save the video in mp4 format.</li>
+				</ul>
+
+				<br><br>
+        		<hr>
+        		<br><br>
+
+        		<!-- 
+        			*************
+					*** Bonus ***
+					*************
+        		-->
+        		<span class="tagMark">🎁 Bonus 🎁</span>
+        		<br><br>
+
+        		<p>If you put pictures on your cellphone\computer or portrait, the AI will detect!!</p>
+
+        		<br><br>
+
+				<p>My next mission is make <b>Recognition</b> with Detection using <b>MongoDB, Python, OpenCV, Java and HTML\CSS\JS</b>. Available coming soon...</p>
+
+        		<br><br>
+        		<hr>
+        		<br><br>
+
+        		<!-- 
+        			**************
+					*** Teaser ***
+					**************
+        		-->
+        		<span class="tagMark">🎥 Teaser 🎥</span>
+        		<br><br>
+
+        		<center>
+				<video class="videoMark" controls>
+					<source src="../../assets/videos/general/eye-detection-teaser.mp4" type="video/mp4">
+				</video>
+			</center>
+			<br><br>
+<!-- 
+        			**************
+					*** Teaser ***
+					**************
+        		-->
+        		<span class="tagMark">🎥 Teaser 🎥</span>
+        		<br><br>
+
+        		<center>
+				<video class="videoMark" controls>
+					<source src="../../assets/videos/general/face-detection-teaser.mp4" type="video/mp4">
+				</video>
+			</center>
+			<br><br>
+<!-- 
+        			**************
+					*** Teaser ***
+					**************
+        		-->
+        		<span class="tagMark">🎥 Teaser 🎥</span>
+        		<br><br>
+
+        		<center>
+				<video class="videoMark" controls>
+					<source src="../../assets/videos/general/motion-detection-teaser.mp4" type="video/mp4">
+				</video>
+			</center>
+
+				<br><br>
+        		<hr>
+        		<br><br>
+
+        		<!--
+        			**************
+					*** Footer ***
+					**************
+        		-->
+        		<footer>
+        			<br><br>
+        			<h3>📫 Reach Me 📫</h3>
+        			<br><br>
+
+        			<section class="container">
+        				<section class="subcontainerContacts">
+	        				<!-- github -->
+		        			<div data-anijs="if: mouseover, do: swing animated">
+		        				<img src="..\..\assets\images\logos\0 - github.svg" alt="GitHub Icon" width="25px">
+		        				<a href="https://github.com/CSFelix" target="_blank"><span class="spanUnderline">github.com/CSFelix</span></a>
+		        			</div>
+		        			
+		        			<br><br>
+
+		        			<!-- linkedin -->
+		        			<div data-anijs="if: mouseover, do: swing animated">
+		        				<img src="..\..\assets\images\logos\0 - linkedin.png" alt="GitHub Icon" width="25px">
+		        				<a href="https://linkedin.com/in/csfelix/" target="_blank"><span class="spanUnderline">linkedin.com/in/csfelix/</span></a>
+		        			</div>
+
+		        			<br><br>
+
+		        			<!-- instagram -->
+		        			<div data-anijs="if: mouseover, do: swing animated">
+		        				<img src="..\..\assets\images\logos\0 - instagram.png" alt="GitHub Icon" width="25px">
+		        				<a href="https://instagram.com/c0deplus/" target="_blank"><span class="spanUnderline">instagram.com/c0deplus/</span></a>
+		        			</div>
+
+		        			<br><br>
+
+		        			<!-- email --->
+		        			<div data-anijs="if: mouseover, do: swing animated">
+		        				<img src="..\..\assets\images\logos\0 - gmail.svg" alt="GitHub Icon" width="25px">
+		        				<a href="mailto:csfelix08@gmail.com?subject=Mail from My Website"><span class="spanUnderline">csfelix08@gmail.com</span></a>
+		        			</div>
+	        			</section>
+
+	        			&nbsp&nbsp&nbsp
+
+	        			<section class="subcontainerImage">
+						<br>
+	        				<img src="../../assets/images/debian.png">	
+	        			</section>
+					
+					<section class="subcontainerImage">
+						<br>
+						<iframe src="https://github.com/sponsors/CSFelix/button" title="Sponsor CSFelix" height="35" width="116" style="border: 0;"></iframe>
+					</section>
+        			</section>
+        		</footer>
+
+        		<br><br>
+
+        	</fieldset>
+        </div>
+	</section>
+</body>
+	<script type="text/javascript" src="../../assets/js/libraries/anijs-min.js"></script>	
+	<script type="text/javascript" src="../../assets/js/easter-eggs/easter-eggs.js"></script>
+	<script type="text/javascript" src="../../assets/js/easter-eggs/import-easter-eggs.js"></script>
+</html>

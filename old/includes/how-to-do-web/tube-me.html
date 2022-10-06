@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSFelix - Portfolio</title>
+
+	<!-- logotipo -->
+	<link rel="icon" href="../../assets/images/icon/black-icon.png">
+
+	<!-- metas -->
+	<meta charset="utf-8">
+	<meta name="author" content="@CSFelix">
+	<meta name="keywords" content="java, python, html, css, javascript, projects, programming, codes, protfolio, csfelix">
+	<meta name="description" content="My Personal Portfolio!! Here, I share public projects available in my GitHub page and a step-by-step of how to do some projects and things in Python, Java and Web (HTML, CSS and JavaScript)">
+	<meta property="og:image" content="../../assets/images/icon/black-icon.png">
+	
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	
+	<!-- CSS: reset, variables and layout's configs -->
+	<link rel="stylesheet" type="text/css" href="../../assets/css/configs/reset-vars.css">
+	<link rel="stylesheet" type="text/css" href="../../assets/css/configs/layout.css">
+
+	<!-- nav style -->
+	<link rel="stylesheet" type="text/css" href="../../assets/css/structures/menu.css">
+
+	<!-- section style -->
+	<link rel="stylesheet" type="text/css" href="../../assets/css/structures/section.css">
+
+	<!-- markdown classes -->
+	<link rel="stylesheet" type="text/css" href="../../assets/css/classes/markClasses.css">
+	
+	<!-- modal classess -->
+	<link rel="stylesheet" type="text/css" href="../../assets/css/classes/modalClasses.css">
+
+	<!-- footer style -->
+	<link rel="stylesheet" type="text/css" href="../../assets/css/structures/footer.css">
+	
+	<!-- ani js library -->
+	<link rel="stylesheet" href="../../assets/css/libraries/ani-collection.css">
+</head>
+<body>
+
+	<!--
+		************
+		*** Menu ***
+		************
+	 -->
+	<input type="checkbox" id="bt_menu">
+	<label for="bt_menu">&#9779;</label>  
+	<nav class="mainNav">
+	    <ul>
+	    	<!-- about me >> who am i? why did i do this portfolio? -->
+	        <li><a href="../../index.html">About Me</a></li>
+	        
+	        <!-- projects in java, python and web -->
+	        <li><a href="../../projects.html">Projects</a>
+	        	<ul>
+	        		<li><a href="../../projects-java.html">Java</a></li>
+	        		<li><a href="../../projects-python.html">Python</a></li>
+	        		<li><a href="../../projects-web.html">Web</a></li>
+	        	</ul>
+	        </li>
+	        
+	        <!-- step-by-step about java, python and web projects -->
+	        <li class="selected"><a href="../../how-to-do.html">How to Do</a>
+	        	<ul>
+	        		<li><a href="../../how-to-do-java.html">Java</a></li>
+	        		<li><a href="../../how-to-do-python.html">Python</a></li>
+	        		<li><a class="selected" href="../../how-to-do-web.html">Web</a></li>
+	        	</ul>
+	        </li>
+		    
+		<!-- short tips about tricks and good practices during programming -->
+		<li><a href="../../wiki.html">Wiki</a>
+		    <ul>
+			<li><a href="../../wiki-good-practices.html">Good Practices</a></li>
+			<li><a href="../../wiki-tricks.html">Tricks</a></li>
+		    </ul>
+		</li>
+	        
+	        <!-- a code playground (code editor in html, css and js) -->
+	        <li><a href="../../code-now.html">Code Now</a></li>
+	    </ul>
+	</nav>
+
+	<!-- 
+		****************
+		**** Section ***
+		****************
+	-->
+
+	<section class="mainContent">
+		<div>
+        	<fieldset  class="refFieldSet">
+        		<legend><code>🌐 How to Do - TubeMe 🌐</code></legend>
+        		
+        		<br><br>
+        		
+        		<!-- 
+        			********************
+					*** Description? ***
+					********************
+        		-->
+        		<span class="tagMark">❓ Description ❓</span>
+        		<br><br>
+
+        		<p>Hi everybody, how's it going? I am CSFelix and today I'm gonna show yall how to make a Youtube Video Downloader with <b>HTML, CSS, JS and NodeJS</b>. So, let's go!</p>
+
+        		<br><br>
+
+        		<center>
+        			<a href="https://github.com/CSFelix/HTML-CSS-JAVASCRIPT-NODEJS-TUBEME" target="_blank">
+					<button class="buttonMark" data-anijs="if: load, on: window, do: rubberBand animated">View on GitHub</button>
+				</a>
+        		</center>
+
+        		<br><br>
+        		<hr>
+        		<br><br>
+
+        		<!-- 
+        			*************
+					*** Tools ***
+					*************
+        		-->
+				<span class="tagMark">⚒️ Tools ⚒️</span>
+
+				<br><br>
+
+				<ul class="listMark">
+					<li>HTML, CSS, JavaScript, NodeJS;</li><br>
+					<li>Any Browser (tested succesfully in Google Chrome, Opera, Opera GX and Microsoft Edge;</li><br>
+					<li>Express cors ytdl-core installed with npm.</li>
+				</ul>
+
+				<br><br>
+        		<hr>
+        		<br><br>
+
+        		<!-- 
+        			***********
+					*** Run ***
+					***********
+        		-->
+        		<span class="tagMark">⚙️ Run ⚙️</span>
+
+        		<br><br>
+				
+        		<span class="rowMark">Project's Structure</span>
+				<br><br>
+
+				<ul class="listMark">
+					<li>Let's create our Project's Structure. In this first step, you need to create folders and empty files like bellow:</li>
+				</ul>
+
+				<br><br>
+
+				<div class="divMark">
+					- TubeMe<br>
+					|<br>
+					|_ index.html<br>
+					|_ script.js<br>
+					|_ style.css<br>
+					|<br>
+					|_ Server<br>
+					|<br>
+					|___ index.js<br>
+				</div>
+
+				<br><br>
+
+        		<span class="rowMark">Installing Node Packages</span>
+				<br><br>
+
+        		<ul class="listMark">
+        			<li>1 - Open the terminal</li><br>
+        			<li>2 - In the terminal, go to project folder: <b>Server</b></li><br>
+        			<li>
+        				3 - Tip:
+        				<br><br>
+
+	        			<div class="divMark">
+	        				<p>npm init</p>
+							<p>npm install express cors ytdl-core</p>
+	        			</div>
+	        			<br>
+        			</li><br>
+        			<li>4 - Use the default Node's Configuration</li>
+        		</ul>
+
+        		<br><br>
+
+        		<span class="rowMark">Client Side</span>
+				<br><br>
+
+				<ul class="listMark">
+					<li>
+						1 - In the <b>index.html</b> file, put the follow code:
+						
+						<br><br>
+						<center>
+							<a href="https://gist.github.com/CSFelix/1a17fcc9fc71942921465f9caa3e7ae3" target="_blank">
+								<button class="buttonMark" data-anijs="if: mouseover, do: swing animated">💗 Gist 💗</button>
+							</a>
+						</center>
+						<br><br>
+						
+						<center>	        				
+	        					<figure>
+							  <img id="indexHtml" class="imgMark2 imagem" src="../../assets/images/how-to-do/web/tube-me-index-html.svg">
+
+							  <br><br>
+
+							  <figcaption>Fig.1 - Index.html. Touch the image to zoom.</figcaption>
+							</figure>							
+						</center>
+					</li><br>
+
+					<li>
+						2 - Now, let's add style into <b>style.css</b>
+						
+						<br><br>
+						<center>
+							<a href="https://gist.github.com/CSFelix/35a7fb8cd7061bfc805ad0fa526207f7" target="_blank">
+								<button class="buttonMark" data-anijs="if: mouseover, do: swing animated">💗 Gist 💗</button>
+							</a>
+						</center>
+						<br><br>
+
+						<center>	        				
+	        					<figure>
+							  <img id="styleCss" class="imgMark2 imagem" src="../../assets/images/how-to-do/web/tube-me-style-css.svg">
+
+							  <br><br>
+
+							  <figcaption>Fig.2 - Style.css. Touch the image to zoom.</figcaption>
+							</figure>							
+						</center>
+					</li><br>
+
+					<li>
+						3 - And the last, add some scripts in <b>script.js</b> file
+						
+						<br><br>
+						<center>
+							<a href="https://gist.github.com/CSFelix/58140de40542b61ad1af2dbe18772f2a" target="_blank">
+								<button class="buttonMark" data-anijs="if: mouseover, do: swing animated">💗 Gist 💗</button>
+							</a>
+						</center>
+						<br><br>
+
+						<center>        				
+	        					<figure>
+							  <img id="scriptJs" class="imgMark2 imagem" src="../../assets/images/how-to-do/web/tube-me-script-js.svg">
+
+							  <br><br>
+
+							  <figcaption>Fig.3 - Script.js. Touch the image to zoom.</figcaption>
+							</figure>							
+						</center>
+					</li><br>
+				</ul>
+
+				<br><br>
+
+        		<span class="rowMark">Server Side</span>
+				<br><br>
+
+				<ul class="listMark">
+					<li>
+						1 - Into <b>Server</b> folder, put this script in <b>index.js</b>:
+						
+						<br><br>
+						<center>
+							<a href="https://gist.github.com/CSFelix/c6063d0ce7f07b898126f7f354537aa1" target="_blank">
+								<button class="buttonMark" data-anijs="if: mouseover, do: swing animated">💗 Gist 💗</button>
+							</a>
+						</center>
+						<br><br>
+
+						<center>	        				
+	        					<figure>
+							  <img id="indexJs" class="imgMark2 imagem" src="../../assets/images/how-to-do/web/tube-me-server-index-js.svg">
+							  		
+							  <br><br>
+							  		
+							  <figcaption>Fig.4 - Index.js. Touch the image to zoom.</figcaption>
+							</figure>							
+						</center>
+					</li>
+				</ul>
+
+				<br><br>
+
+				<span class="rowMark">Start the Project</span>
+				<br><br>
+
+				<ul class="listMark">
+					<li>1 - Open the <b>index.html</b> in any browser</li><br>
+					<li>2 - Open the terminal and go to <b>Server</b> folder</li><br>
+					<li>
+						3 - Tip:<br><br>
+
+						<div class="divMark">
+							node index.js
+						</div>
+					</li><br><br>
+					<li>4 - Choose some youtube video, copy and paste in the project and be happy 😃</li>
+				</ul>
+			
+			<!--
+        			*************
+					*** Modal ***
+					*************
+        		-->
+
+        		<div id="myModal1" class="modal">
+  					<span id="close1" class="close">&times;</span>
+  					<a href="../../assets/images/how-to-do/web/tube-me-index-html.svg" target="_blank"><img class="modal-content" id="img01"></a>/
+  					<div id="caption">Fig1. Index.html. Touch again to max zoom.</div>
+				</div>
+
+				<!--
+        			*************
+					*** Modal ***
+					*************
+        		-->
+
+        		<div id="myModal2" class="modal">
+  					<span id="close2" class="close">&times;</span>
+  					<a href="../../assets/images/how-to-do/web/tube-me-style-css.svg" target="_blank"><img class="modal-content" id="img02"></a>
+  					<div id="caption">Fig2. Style.css. Touch again to max zoom.</div>
+				</div>
+
+				<!--
+        			*************
+					*** Modal ***
+					*************
+        		-->
+
+        		<div id="myModal3" class="modal">
+  					<span id="close3" class="close">&times;</span>
+  					<a href="../../assets/images/how-to-do/web/tube-me-script-js.svg" target="_blank"><img class="modal-content" id="img03"></a>
+  					<div id="caption">Fig3. Script.js. Touch again to max zoom.</div>
+				</div>
+
+				<!--
+        			*************
+					*** Modal ***
+					*************
+        		-->
+
+        		<div id="myModal4" class="modal">
+  					<span id="close4" class="close">&times;</span>
+  					<a href="../../assets/images/how-to-do/web/tube-me-server-index-js.svg" target="_blank"><img class="modal-content" id="img04"></a>
+  					<div id="caption">Fig4. index.js. Touch again to max zoom.</div>
+				</div>
+
+        		<br><br>
+        		<hr>
+        		<br><br>
+
+        		<!-- 
+        			*************
+					*** Bonus ***
+					*************
+        		-->
+				<span class="tagMark">🎁 Bonus 🎁</span>
+				<br><br>
+
+				<p>Curiosity: if the video's title has some uncommon char, like emojis and NON-ASCII, the application won't work. I'll fix this issue in the next commits.</p>
+
+        		<br><br>
+        		<hr>
+        		<br><br>
+
+        		<!-- 
+        			**************
+					*** Teaser ***
+					**************
+        		-->
+        		<span class="tagMark">🎥 Teaser 🎥</span>
+        		<br><br>
+
+        		<center>
+				<video class="videoMark" controls>
+					<source src="../../assets/videos/general/tubeme-teaser.mp4" type="video/mp4">
+				</video>
+			</center>
+        		<br><br>
+        		<hr>
+        		<br><br>
+			
+			<!--
+        			**************
+					*** Footer ***
+					**************
+        		-->
+        		<footer>
+        			<br><br>
+        			<h3>📫 Reach Me 📫</h3>
+        			<br><br>
+
+        			<section class="container">
+        				<section class="subcontainerContacts">
+	        				<!-- github -->
+		        			<div data-anijs="if: mouseover, do: swing animated">
+		        				<img src="..\..\assets\images\logos\0 - github.svg" alt="GitHub Icon" width="25px">
+		        				<a href="https://github.com/CSFelix" target="_blank"><span class="spanUnderline">github.com/CSFelix</span></a>
+		        			</div>
+		        			
+		        			<br><br>
+
+		        			<!-- linkedin -->
+		        			<div data-anijs="if: mouseover, do: swing animated">
+		        				<img src="..\..\assets\images\logos\0 - linkedin.png" alt="GitHub Icon" width="25px">
+		        				<a href="https://linkedin.com/in/csfelix/" target="_blank"><span class="spanUnderline">linkedin.com/in/csfelix/</span></a>
+		        			</div>
+
+		        			<br><br>
+
+		        			<!-- instagram -->
+		        			<div data-anijs="if: mouseover, do: swing animated">
+		        				<img src="..\..\assets\images\logos\0 - instagram.png" alt="GitHub Icon" width="25px">
+		        				<a href="https://instagram.com/c0deplus/" target="_blank"><span class="spanUnderline">instagram.com/c0deplus/</span></a>
+		        			</div>
+
+		        			<br><br>
+
+		        			<!-- email --->
+		        			<div data-anijs="if: mouseover, do: swing animated">
+		        				<img src="..\..\assets\images\logos\0 - gmail.svg" alt="GitHub Icon" width="25px">
+		        				<a href="mailto:csfelix08@gmail.com?subject=Mail from My Website"><span class="spanUnderline">csfelix08@gmail.com</span></a>
+		        			</div>
+	        			</section>
+
+	        			&nbsp&nbsp&nbsp
+
+	        			<section class="subcontainerImage">
+						<br>
+	        				<img src="../../assets/images/debian.png">	
+	        			</section>
+					
+					<section class="subcontainerImage">
+						<br>
+						<iframe src="https://github.com/sponsors/CSFelix/button" title="Sponsor CSFelix" height="35" width="116" style="border: 0;"></iframe>
+					</section>
+        			</section>
+        		</footer>
+
+        		<br><br>
+        		
+        	</fieldset>
+        </div>
+	</section>
+</body>
+	<script type="text/javascript" src="../../assets/js/libraries/anijs-min.js"></script>
+	<script type="text/javascript" src="../../assets/js/modal/modal-how-to-do-web-tube-me.js"></script>
+	<script type="text/javascript" src="../../assets/js/easter-eggs/easter-eggs.js"></script>
+	<script type="text/javascript" src="../../assets/js/easter-eggs/import-easter-eggs.js"></script>
+</html>
