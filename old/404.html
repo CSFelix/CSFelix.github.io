@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSFelix - Portfolio</title>
+
+	<!-- logotipo -->
+	<link rel="icon" href="assets/images/icon/black-icon.png">
+
+	<!-- metas -->
+	<meta charset="utf-8">
+	<meta name="author" content="@CSFelix">
+	<meta name="keywords" content="java, python, html, css, javascript, projects, programming, codes, protfolio, csfelix">
+	<meta name="description" content="My Personal Portfolio!! Here, I share public projects available in my GitHub page and a step-by-step of how to do some projects and things in Python, Java and Web (HTML, CSS and JavaScript)">
+	<meta property="og:image" content="assets/images/icon/black-icon.png">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	
+	<!-- CSS: reset, variables and layout's configs -->
+	<link rel="stylesheet" type="text/css" href="assets/css/configs/reset-vars.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/configs/layout.css">
+
+	<!-- nav style -->
+	<link rel="stylesheet" type="text/css" href="assets/css/structures/menu.css">
+
+	<!-- section style -->
+	<link rel="stylesheet" type="text/css" href="assets/css/structures/section.css">
+
+	<!-- svg classes -->
+	<link rel="stylesheet" type="text/css" href="assets/css/classes/svgClasses.css">
+
+	<!-- mark classes -->
+	<link rel="stylesheet" type="text/css" href="assets/css/classes/markClasses.css">
+	
+	<!-- footer style -->
+	<link rel="stylesheet" type="text/css" href="assets/css/structures/footer.css">
+
+	<!-- ani js library -->
+	<link rel="stylesheet" href="assets/css/libraries/ani-collection.css">
+</head>
+<body>
+	<!--
+		************
+		*** Menu ***
+		************
+	 -->
+	<input type="checkbox" id="bt_menu">
+	<label for="bt_menu">&#9779;</label>  
+	<nav class="mainNav">
+	    <ul>
+	    	<!-- about me >> who am i? why did i do this portfolio? -->
+	        <li class="selected"><a href="index.html">About Me</a></li>
+	        
+	        <!-- projects in java, python and web -->
+	        <li><a href="projects.html">Projects</a>
+	        	<ul>
+	        		<li><a href="projects-java.html">Java</a></li>
+	        		<li><a href="projects-python.html">Python</a></li>
+	        		<li><a href="projects-web.html">Web</a></li>
+	        	</ul>
+	        </li>
+	        
+	        <!-- step-by-step about java, python and web projects -->
+	        <li><a href="how-to-do.html">How to Do</a>
+	        	<ul>
+	        		<li><a href="how-to-do-java.html">Java</a></li>
+	        		<li><a href="how-to-do-python.html">Python</a></li>
+	        		<li><a href="how-to-do-web.html">Web</a></li>
+	        	</ul>
+	        </li>
+		    
+		<!-- short tips about tricks and good practices during programming -->
+		<li><a href="wiki.html">Wiki</a>
+		    <ul>
+			<li><a href="wiki-good-practices.html">Good Practices</a></li>
+			<li><a href="wiki-tricks.html">Tricks</a></li>
+		    </ul>
+		</li>
+	        
+	        <!-- a code playground (code editor in html, css and js) -->
+	        <li><a href="code-now.html">Code Now</a></li>
+	    </ul>
+	</nav>
+
+	<!-- 
+		****************
+		**** Section ***
+		****************
+	-->
+
+	<section class="mainContent">
+		<div>
+        	<fieldset  class="refFieldSet">
+        		<legend><code>😲 Are you lost? 😲</code></legend>
+
+        		
+        		<center>
+        			<div data-anijs="if: load, on: window, do: tada animated">
+        			<svg class="svg404">
+        			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          				
+          				<!-- body -->
+          				<g fill="#ffd93b">
+            				<circle cx="256" cy="256" r="256"/>
+            				<path d="M512 256A256 256 0 0 1 56.8 416.7a256 256 0 0 0 360-360c58 47 95.2 118.8 95.2 199.3z"/>
+          				</g>
+
+          				<!-- glassess -->
+          				<path d="M512 99.4v165.1c0 11-8.9 19.9-19.7 19.9h-187c-13 0-23.5-10.5-23.5-23.5v-21.3c0-12.9-8.9-24.8-21.6-26.7-16.2-2.5-30 10-30 25.5V261c0 13-10.5 23.5-23.5 23.5h-187A19.7 19.7 0 0 1 0 264.7V99.4c0-10.9 8.8-19.7 19.7-19.7h472.6c10.8 0 19.7 8.7 19.7 19.7z" fill="#e9eff4"/>
+          				
+          				<!-- left lens -->
+          				<path d="M204.6 138v88.2a23 23 0 0 1-23 23H58.2a23 23 0 0 1-23-23v-88.3a23 23 0 0 1 23-23h123.4a23 23 0 0 1 23 23z" fill="#45cbea"/>
+
+          				<!-- right lens -->
+          				<path d="M476.9 138v88.2a23 23 0 0 1-23 23H330.3a23 23 0 0 1-23-23v-88.3a23 23 0 0 1 23-23h123.4a23 23 0 0 1 23 23z" fill="#e84d88"/>
+
+          				<!-- left lens' detail -->
+          				<g fill="#38c0dc">
+            				<path d="M95.2 114.9l-60 60v15.2l75.2-75.2zM123.3 114.9L35.1 203v23.2c0 1.8.3 3.7.7 5.4l116.8-116.7h-29.3z"/>
+          				</g>
+
+          				<!-- right lens' detail -->
+          				<g fill="#d23f77">
+            				<path d="M373.3 114.9l-66 66V196l81.3-81.2zM401.5 114.9l-94.1 94v17.3c0 3.5.8 6.8 2.2 9.8l121.1-121.1h-29.2z"/>
+          				</g>
+
+          				<!-- mouth -->
+          				<path d="M329.5 395.2c0 44.7-33 81-73.4 81-40.7 0-73.5-36.3-73.5-81s32.8-81 73.5-81c40.5 0 73.4 36.3 73.4 81z" fill="#3e4347"/>
+          				
+          				<!-- tongue -->
+          				<path d="M256 476.2a70 70 0 0 0 53.3-25.5 34.6 34.6 0 0 0-58-25 34.4 34.4 0 0 0-47.8 26 69.9 69.9 0 0 0 52.6 24.5z" fill="#e24b4b"/>
+
+          				<!-- tongue's detail -->
+          				<path d="M290.3 434.8c-1 3.4-5.8 5.2-11 3.9s-8.4-5.1-7.4-8.7c.8-3.3 5.7-5 10.7-3.8 5.1 1.4 8.5 5.3 7.7 8.6z" fill="#fff" opacity=".2"/>
+        			</svg>
+        			</svg>
+        		</div>
+        		</center>
+
+        		<br><br>
+        			
+        		<div data-anijs="if: load, on: window, do: wobble animated" class="divMark text404">Uh-Oh!<br>This page doesn't exist...</div>	
+        	</fieldset>
+        </div>
+	</section>
+</body>
+
+<script type="text/javascript" src="assets/js/libraries/anijs-min.js"></script>
+</html>
