@@ -1,0 +1,88 @@
+/*
+    Computer and Notebook
+*/
+
+/*fieldset { margin: 15px 0; padding: 20px; border-radius: 20px; font-size: 18px;  }*/
+
+fieldset {
+    border: 2px solid var(--style-secondary-purple);
+    box-shadow: 0px 0px 10px var(--style-terciary-purple),
+                0px 0px 20px var(--style-terciary-purple),
+                0px 0px 40px var(--style-terciary-purple);
+    background: rgba(189, 111, 242, 0.2);
+    padding: 20px; border-radius: 20px; font-size: 18px; margin: 15px 0;
+}
+
+figure figcaption { font-size: 13px; }
+hr { background-color: var(--style-primary-purple); border: 2px solid var(--style-primary-purple); width: 100%; }
+.subtopic { text-decoration: underline; text-decoration-color: var(--style-primary-purple); text-indent: 3rem; }
+
+.list { padding-left: 4rem; }
+
+.list li {
+    border-left: 3px solid var(--style-terciary-purple);
+    text-indent: 1rem;
+}
+
+.list li a { color: var(--secondary-color); }
+.list li a:hover { text-decoration: underline; text-decoration-color: var(--secondary-color); }
+
+.spanMarkground {
+    padding: 3.5px; border-radius: 3px;
+    background-color: rgba(157, 59, 225, 0.5);
+}
+
+.botao {
+    background-color: var(--style-primary-purple);
+    color: var(--secondary-color);
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 5px; border: none; width: 100px; height: 35px;
+    outline: none; font-weight: bolder;
+
+    border: 2px solid var(--style-primary-purple);
+    box-shadow: 2px 2px 8px var(--style-secondary-purple);
+}
+
+.botao:hover {
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    color: var(--style-primary-purple);
+}
+
+p { text-indent: 3rem; text-align: justify; text-justify: inter-word; }
+p a { color: var(--style-secondary-purple); }
+p a:hover { color: var(--style-primary-purple); text-decoration: underline;  }
+
+.contentTable { border-collapse: separate; width: 100%; overflow: auto; }
+/*
+    ** I commented this code in order to take off x-overflow in mobiles **
+    table td, table th { padding: 0 8px; }
+*/
+
+.contentTable tr:nth-child(even){background-color: var(--secondary-color);}
+.contentTable tr:nth-child(odd){background-color: var(--terciary-color);}
+.contentTable tr:hover { background-color: var(--style-secondary-purple); cursor: pointer; }
+.contentTable th:hover { cursor: default; }
+
+.contentTable th {
+    padding-top: 12px; padding-bottom: 12px;
+    text-align: center; vertical-align: middle; border: none;
+    background-color: var(--style-terciary-purple); color: var(--secondary-color);
+}
+
+.contentTable td { text-align: center; color: var(--primary-color); vertical-align: middle; padding: 5px; }
+
+.tag { 
+    border-radius: 5px; background-color: var(--style-terciary-purple); 
+    padding: 5px; color: var(--secondary-color);
+}
+
+/*
+    Mobile and Tablet
+*/
+
+@media screen and (max-width: 700px) {
+    .refFieldSet legend { font-size: 25px; }
+    figure caption { font-size: 20px; }
+}

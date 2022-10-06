@@ -1,0 +1,43 @@
+/*
+    Computer and Notebook
+*/
+
+.mainNav ul { position: relative; }
+.mainNav ul li { float: left; width: 150px; }
+.mainNav ul .selected { background-color: var(--style-terciary-purple); }
+
+.mainNav a {
+    display: block; color: var(--secondary-color);
+    text-align: center; height: 20px; padding: 15px;
+}
+
+.mainNav ul ul { display: none; }
+.mainNav ul li:hover ul { display: block; }
+
+.mainNav ul a:hover {
+    background-color: var(--secondary-color);
+    color: var(--style-secondary-purple);
+}
+
+.mainNav ul ul li a { background-color: var(--style-secondary-purple); }
+.mainNav ul ul li { float: none; border-bottom: solid 1px var(--style-terciary-purple); }
+#bt_menu { display: none; }
+
+label[for="bt_menu"] {
+    background-color: var(--style-terciary-purple);
+    padding: 5px 0; text-align: center; font-size: 30px;
+    width: 100vw; height: 40px; display: none;
+}
+
+/*
+    Mobile and Tablet
+*/
+
+@media screen and (max-width: 700px) {
+    /* menu */
+    #bt_menu:checked ~ .mainNav { margin-left: 0; width: 100%; }
+    label[for="bt_menu"] { grid-area: content; display: block; z-index: 1000; }
+    .mainNav ul li { width: 100%; float: none; }
+    .mainNav ul ul { position: static; overflow: hidden; max-height: 0; transition: all .4s; }
+    .mainNav ul li:hover ul { height: auto; max-height: 500px; }
+}

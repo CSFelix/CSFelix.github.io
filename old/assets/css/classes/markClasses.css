@@ -1,0 +1,60 @@
+/*
+	Computer and Notebook
+*/
+
+.tagMark { 
+    border-radius: 5px; background-color: var(--style-terciary-purple); 
+    padding: 5px; color: var(--secondary-color); margin-left: 3rem; 
+}
+
+.divMark {
+    border: 2px solid var(--style-secondary-purple);
+    box-shadow: 0px 0px 10px var(--style-terciary-purple),
+                0px 0px 20px var(--style-terciary-purple),
+                0px 0px 40px var(--style-terciary-purple);
+    background: rgba(189, 111, 242, 0.2);
+    border-radius: 5px; width: fit-content;
+    margin-left: auto; margin-right: auto; padding: 5px;
+}
+
+.listMark { padding-left: 2rem; }
+.listMark li { text-indent: 1rem; border-left: 3px solid var(--style-terciary-purple); padding-left: 10px; }
+.listMark li a { color: var(--secondary-color); text-decoration: underline;}
+.listMark li a:hover { color: var(--style-primary-purple); }
+
+.buttonMark {
+    background-color: var(--style-primary-purple);
+    color: var(--secondary-color);
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 5px; border: none; width: 100px; height: 40px;
+    outline: none; font-weight: bolder;
+
+    border: 2px solid var(--style-primary-purple);
+    box-shadow: 2px 2px 8px var(--style-secondary-purple);
+}
+
+.buttonMark:hover {
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    color: var(--style-primary-purple);
+}
+
+.rowMark { 
+	border-radius: 5px; padding: 5px;
+	background-color: var(--terciary-color);
+	color: var(--style-terciary-purple);
+	margin-left: 3rem;
+}
+
+.imgMark, .videoMark { 
+	width: 90%; height: auto;
+	border-radius: 5px;
+	border: 2px solid black;
+}
+
+.imgMark2 {
+    width: 85%; height: auto;
+    border-radius: 5px;
+    border: 2px solid black;
+}

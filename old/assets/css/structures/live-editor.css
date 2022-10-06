@@ -1,0 +1,22 @@
+#questionList li { border-left: 3px solid var(--style-terciary-purple); text-indent: 1rem; }
+#questionButton, #runButton { float: left; margin-left: 10px; }
+#sampleButton { margin-left: 10px; }
+#saveButton, #deleteButton, #downloadButton, #runButton { float: right; margin-right: 10px; }
+
+.circleButton {
+	padding: 5px; border-radius: 50%;
+	width: 45px; height: 45px;
+	font-size: 22.5px; text-align: center;
+	border: none; outline: none;
+}
+
+.circleButton:hover { cursor: pointer; background-color: var(--style-secondary-purple); }
+
+.codeArea, .outputArea { border-radius: 5px; background-color: var(--secondary-color); color: var(--primary-color); }
+.codeArea { resize: none; width: 350px; height: 350px; }
+.outputArea { width: 92.5%; height: 350px; }
+
+@media screen and (max-width: 1150px) { 
+	.codeArea, .outputArea { width: 95%; }
+	.circleButton { width: 40px; height: 40px; font-size: 18.5px; }
+}

@@ -1,0 +1,17 @@
+* { margin: 0; padding: 0; text-decoration: none; list-style: none; vertical-align: baseline; scroll-behavior: smooth; }
+
+:root {
+	--primary-color: #363636;
+	--secondary-color: #f8f8ff;
+	--terciary-color: #cccccc;
+
+	--style-primary-purple: #9d3be1;
+	--style-secondary-purple: #bd6ff2;
+	--style-terciary-purple: #6c0bb0;
+
+	--style-pink: #ee3ec9;
+	--style-blue: #5e94dd;
+
+	--primary-font: Helvetica;
+	--secondary-font: Arial;
+}

@@ -1,0 +1,36 @@
+/*
+	Computer and Notebook
+*/
+
+footer {
+	background-color: var(--secondary-color);
+	color: var(--primary-color);
+	border-radius: 5px;
+	padding: 1.5rem;
+}
+
+footer h3 { 
+	text-decoration: underline;
+	text-decoration-color: var(--style-primary-purple);
+	text-align: center;
+}
+
+footer .container {
+	display: flex; justify-content: space-around;
+	flex-direction: row; flex-wrap: wrap;
+}
+
+footer div { padding-left: 1rem; border-left: 4px solid var(--style-terciary-purple); }
+
+.container .subcontainerContacts a { color: var(--primary-color); }
+
+.spanUnderline { text-decoration: underline; text-decoration-color: var(--style-primary-purple); font-weight: bolder; }
+.spanUnderline:hover { cursor: pointer; color: var(--style-terciary-purple); }
+
+/*
+	Mobile and Tablet
+*/
+
+@media screen and (max-width: 700px) {
+	.spanUnderline { font-weight: none;  }
+}
