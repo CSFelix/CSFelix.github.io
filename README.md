@@ -27,6 +27,19 @@
 ----
 <br>
 
+### `😊 Emojipedia 😊`
+
+> **🎉 - Inserts**
+
+> **📦 - Updates**
+
+> **❌ - Deletes**
+
+> **🕸️ - Old Versions**
+
+----
+<br>
+
 ### `📫 Reach Me 📫`
 
 > **Email:** **[csfelix08@gmail.com](mailto:csfelix08@gmail.com?)**
