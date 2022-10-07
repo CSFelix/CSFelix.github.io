@@ -33,12 +33,12 @@ header nav #gitHubProfile:hover {
 	-webkit-filter: brightness(87%);
 }
 
-header nav ul {
+header nav #desktopMenu {
 	display: flex;
 	justify-content: center;
 }
 
-header nav ul > li {
+header nav #desktopMenu > li {
 	margin-right: 50px;
 	cursor:  pointer;
 
@@ -48,12 +48,12 @@ header nav ul > li {
   transition: all 0.3s ease;
 }
 
-header nav ul > li:hover {
+header nav #desktopMenu > li:hover {
 	-webkit-filter: brightness(87%);
 	border-bottom-style: solid;
 }
 
-header nav div a #sponsorBtn, header nav div #themeBtn {
+header nav #sponsorThemeBtn a #sponsorBtn, header nav #sponsorThemeBtn #themeBtn {
 	height: 35px;
 	border:  0;
 	border-radius: 5px;
@@ -61,11 +61,11 @@ header nav div a #sponsorBtn, header nav div #themeBtn {
 	transition: -webkit-filter 0.3s ease;
 }
 
-header nav div a #sponsorBtn { width: 116px; }
-header nav div #themeBtn { width: 50px; }
+header nav #sponsorThemeBtn a #sponsorBtn { width: 116px; }
+header nav #sponsorThemeBtn #themeBtn { width: 50px; }
 
-header nav div a #sponsorBtn:hover,
-header nav div #themeBtn:hover
+header nav #sponsorThemeBtn a #sponsorBtn:hover,
+header nav #sponsorThemeBtn #themeBtn:hover
 { -webkit-filter: brightness(80%); }
 
 #titleAndSubtitle {
@@ -147,8 +147,8 @@ header nav div #themeBtn:hover
 */
 
 @media only screen and (max-width: 850px) {
-  header nav,
-  #titleAndSubtitle
+  header nav #sponsorThemeBtn,
+  header nav #desktopMenu
   { display:  none; }
 
   #mobileMenuToggle { display: inline-block; }
@@ -156,5 +156,7 @@ header nav div #themeBtn:hover
 }
 
 @media only screen and (max-width: 625px) {
+	header nav #gitHubProfile { display: none; }
+	#titleAndSubtitle { display: none; }
   #headerImg { content:url("../images/header-mobile.jpg"); }
 }
