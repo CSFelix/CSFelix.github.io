@@ -1,7 +1,7 @@
 const toggleMobileMenuBtn = document.getElementById('mobileMenuToggle');
 const toggleMobileMenu = document.getElementById('mobileMenu');
 
-toggleMobileMenuBtn.addEventListener("click", function() {
+toggleMobileMenuBtn.addEventListener("click", () => {
 
 	// if the mmenu is not toggled (right == -150px)
 	// we toggle it! (right = 15px)

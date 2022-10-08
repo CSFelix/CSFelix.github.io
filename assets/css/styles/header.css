@@ -1,0 +1,166 @@
+/*
+	**********************
+	** Header - Desktop ** 
+	**********************
+*/
+
+header #headerImg {
+	width:  100vw;
+	height:  auto;
+}
+
+header nav {
+	width:  100vw;
+
+	display:  flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding-top: 1%;
+	padding-left: 2%;
+	padding-right: 2%;
+
+	position: absolute;
+	top: 8px;
+  left: 16px;
+
+  color:  ghostwhite;
+}
+
+header nav #gitHubProfile { transition: all 0.3s ease; }
+
+header nav #gitHubProfile:hover {
+	border-bottom-style: dashed;
+  border-bottom-width: 3.1px;
+	-webkit-filter: brightness(87%);
+}
+
+header nav #desktopMenu {
+	display: flex;
+	justify-content: center;
+}
+
+header nav #desktopMenu > li {
+	margin-right: 50px;
+	cursor:  pointer;
+
+  border-bottom-style: dashed;
+  border-bottom-width: 3.1px;
+
+  transition: all 0.3s ease;
+}
+
+header nav #desktopMenu > li:hover {
+	-webkit-filter: brightness(87%);
+	border-bottom-style: solid;
+}
+
+header nav #sponsorThemeBtn a #sponsorBtn, header nav #sponsorThemeBtn #themeBtn {
+	height: 35px;
+	border:  0;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: -webkit-filter 0.3s ease;
+}
+
+header nav #sponsorThemeBtn a #sponsorBtn { width: 116px; }
+header nav #sponsorThemeBtn #themeBtn { width: 50px; }
+
+header nav #sponsorThemeBtn a #sponsorBtn:hover,
+header nav #sponsorThemeBtn #themeBtn:hover
+{ -webkit-filter: brightness(80%); }
+
+#titleAndSubtitle {
+	width: 100vw;
+	position: absolute;
+	top: 100px;
+
+	color:  #c3c3c3;
+	font-weight: bold;
+	text-align: center;
+
+	text-shadow: 2px 2px #7159c1;
+}
+
+#titleAndSubtitle span { font-size: 20px; }
+
+/*
+	*********************
+	** Header - Mobile ** 
+	*********************
+*/
+
+#mobileMenuToggle {
+	width: auto;
+
+  display: none;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  border-radius:  5px;
+  padding:  5px;
+  cursor: pointer;
+  z-index:  999;
+}
+
+#bar1, #bar2, #bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: ghostwhite;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change #bar1 { transform: translate(0, 11px) rotate(-45deg); }
+.change #bar2 {opacity: 0;}
+.change #bar3 { transform: translate(0, -11px) rotate(45deg); }
+
+#mobileMenu {
+	width:  auto;
+
+	display: none;
+	position:  absolute;
+
+	top: 75px;
+  right: -150px;
+
+  background-color: ghostwhite;
+  color:  #707070;
+  border-radius: 5px;
+
+  transition: all 0.7s ease;
+  z-index:  999;
+}
+
+#mobileMenu li {
+	padding: 10px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+#mobileMenu li:hover {
+	background-color: #c6c6c6;
+	color:  ghostwhite;
+}
+
+/*
+	**************************
+	** Screen - Controllers ** 
+	**************************
+*/
+
+@media only screen and (max-width: 850px) {
+  header nav #sponsorThemeBtn,
+  header nav #desktopMenu
+  { display:  none; }
+
+  #mobileMenuToggle { display: inline-block; }
+  #mobileMenu { display: inline-block; }
+}
+
+@media only screen and (max-width: 625px) {
+	header nav #gitHubProfile { display: none; }
+	#titleAndSubtitle { display: none; }
+  #headerImg { content:url("../../images/header-mobile.jpg"); }
+}
