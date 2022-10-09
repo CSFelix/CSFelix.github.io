@@ -4,12 +4,27 @@
 	***********
 */
 
+#linkStartVideo {
+	display: none;
+	z-index: 999;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height:  100vh;
+	background-color: aliceblue;
+}
+
+/* don't show video controls on FullScreen */
+#linkStartVideo::-webkit-media-controls { display:none !important; }
+
 #container404 {
 	display:  flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	flex-wrap: wrap;
+	min-height: 0;
 
 	width:  100vw;
 	height:  100vh;
@@ -38,6 +53,7 @@
 	align-items: center;
 	flex-wrap: wrap;
 	gap: 20px;
+	min-height: 0;
 }
 
 #container404 #btnContainer404 button {
