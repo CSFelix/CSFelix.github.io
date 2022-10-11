@@ -1,21 +1,87 @@
-.container {
-	width: 100vw;
-	margin-bottom: 5px;
-	background-color: #efefef;
-	color:  #707070;
+/*
+	********************
+	** All Containers **
+	********************
+*/
+.container { width: 100vw; padding:  20px; color:  #707070; }
+#skillsContainer, #reachMeContainer { background-color: #ededed; }
+.containerTitle { text-align:  center; font-size: 30px; }
+.containerTitleText { text-decoration: underline; text-decoration-style: dashed; }
+
+.containerContent {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 20px;
 }
 
-.containerTitle {
-	text-align:  center;
-	font-size: 30px;
+.sticker { width: 200px; height: auto; }
+
+/*
+	**********************
+	** Skills Container **
+	**********************
+*/
+.skillsSubContainer .skillsInfoContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.containerTitle .containerTitleText {
+.skillsSubContainer .skillsInfoContainer a { color:  #707070; cursor: pointer; }
+
+.skillsSubContainer .skillsInfoContainer a span { 
+	font-size: 25px; 
 	text-decoration: underline;
 	text-decoration-style: dashed;
+	transition:  all 0.3s ease;
+}
+.skillsSubContainer .skillsInfoContainer a span:hover { text-decoration-style: solid; }
+
+.skillsSubContainer .skillsInfoContainer .skillsLogo { width: 60px;  height: auto; }
+
+.skillsSubContainer .skillsStarsContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 15px;
 }
 
-.sticker {
-	width: 200px;
-	height: auto;
+.skillsSubContainer .skillsStarsContainer img { width:  50px; height:  auto; }
+.skillsSubContainer .skillsStarsContainer .inactive { -webkit-filter: grayscale(100%); filter: grayscale(100%); }
+
+/*
+	************************
+	** Projects Container **
+	************************
+*/
+
+/*
+	****************
+	** Animations **
+	****************
+*/
+
+@keyframes scrollSign {
+	0%   { 
+		opacity: 100%; 
+		transform: translateY(0px);
+	}
+
+	50%  { 
+		opacity: 65%; 
+		transform: translateY(5px);
+	}
+
+	100% { 
+		opacity: 100%; 
+		transform: translateY(0px);
+	}
+}
+
+.scrollBellow {
+	animation-name: scrollSign;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
 }
