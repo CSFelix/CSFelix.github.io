@@ -13,6 +13,7 @@
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+	text-align: center;
 	gap: 20px;
 }
 
@@ -27,6 +28,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin-bottom:  15px;
 }
 
 .skillsSubContainer .skillsInfoContainer a { color:  #707070; cursor: pointer; }
@@ -56,6 +58,71 @@
 	** Projects Container **
 	************************
 */
+
+#projectsSubContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 15px;
+}
+
+#projectsSubContainer .projectBtn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 15px;
+
+	cursor: pointer;
+	padding:  20px;
+	width:  200px;
+
+	background-color: #ededed;
+	border-radius:  5px;
+	border:  2px solid #707070;
+
+	transition:  all 0.3s ease;
+}
+
+#projectsSubContainer .projectBtn:hover {
+	-webkit-filter: brightness(87%);
+	transform: translateY(-5px);
+}
+
+#projectsSubContainer .projectBtn img {
+	width: 60px;  height: auto;
+}
+
+/*
+	***********************
+	** ReachMe Container **
+	***********************
+*/
+.reachMeSubContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap:  15px;
+}
+
+.reachMeSubContainer img {
+	width:  50px;
+	height:  auto;
+}
+
+.reachMeSubContainer a {
+	color:  #707070;
+	font-weight: bold;
+	transition: all 0.3s ease;
+}
+
+.reachMeSubContainer a:hover {
+	border-bottom-style: dashed;
+  	border-bottom-width: 2.5px;
+	-webkit-filter: brightness(87%);	
+}
 
 /*
 	****************
