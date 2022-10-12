@@ -22,11 +22,13 @@
 		<link rel="stylesheet" type="text/css" href="./assets/css/styles/header.css">
 		<link rel="stylesheet" type="text/css" href="./assets/css/styles/sections.css">
 		<link rel="stylesheet" type="text/css" href="./assets/css/styles/footer.css">
+		<link rel="stylesheet" type="text/css" href="./assets/css/styles/modal.css">
 
 		<!-- JS Libraries -->
 		<script type="text/javascript" src="./assets/js/libraries/shuffle-text.js" defer></script>
 
 		<!-- scripts pre-loading -->
+		<script type="text/javascript" src="./assets/js/scripts/themes-toggle.js" defer></script>
 		<script type="text/javascript" src="./assets/js/scripts/text-shuffling-effect.js" defer></script>
 	</head>
 
@@ -47,14 +49,14 @@
 
 		<!-- mobile menu -->
 		<ul id="mobileMenu">
-			<li>About Me</li>
-			<li>Skills</li>
-			<li>Projects</li>
-			<li>Reach Me</li>
+			<a href="#aboutMeContainer"><li>About Me</li></a>
+			<a href="#skillsContainer"><li>Skills</li></a>
+			<a href="#projectsContainer"><li>Projects</li></a>
+			<a href="#reachMeContainer"><li>Reach Me</li></a>
 
 			<hr />
 
-			<li>Settings</li>
+			<li id="mobileThemeBtn">Settings</li>
 		</ul>
 
 		<!--
@@ -79,10 +81,10 @@
 
 				<!-- Menu Options -->
 				<ul id="desktopMenu">
-					<li>About Me</li>
-					<li>Skills</li>
-					<li>Projects</li>
-					<li>Reach Me</li>
+					<li><a href="#aboutMeContainer">About Me</a></li>
+					<li><a href="#skillsContainer">Skills</a></li>
+					<li><a href="#projectsContainer">Projects</a></li>
+					<li><a href="#reachMeContainer">Reach Me</a></li>
 				</ul>
 
 				<!-- Sponsor Me and Theme Buttons -->
@@ -125,7 +127,7 @@
 
 			<!-- content -->
 			<div class="containerContent">
-				<img class="sticker" src="./assets/stickers/default/hi.png" alt="Hey there!"/>
+				<img class="sticker" id='aboutMeSticker' alt="Hey there!"/>
 				
 				<span>🌱 I'm CSFelix, a passionate Programmer and Student from Brazil.</span>
 				
@@ -159,7 +161,7 @@
 
 			<!-- content -->
 			<div class="containerContent">
-				<img class="sticker" src="./assets/stickers/default/cool.png" alt="Hey there!"/>
+				<img class="sticker" id="skillsSticker" alt="Hey there!"/>
 				
 				<br />
 
@@ -357,7 +359,7 @@
 
 			<!-- content -->
 			<div class="containerContent">
-				<img class="sticker" src="./assets/stickers/default/amazed.png" alt="Hey there!"/>
+				<img class="sticker" id="projectsSticker" alt="Hey there!"/>
 				
 				<br />
 
@@ -367,7 +369,7 @@
 						** Kaggle Notebooks **
 						**********************
 					-->
-					<div class="projectBtn">
+					<div id="kaggleBtn" class="projectBtn">
 						<img src="./assets/icons/kaggle.svg" alt="Kaggle Logo" />
 						<span>Kaggle</span>
 					</div>
@@ -379,7 +381,7 @@
 						** ML Algorithms **
 						*******************
 					-->
-					<div class="projectBtn">
+					<div id="mlAlgorithmsBtn" class="projectBtn">
 						<img src="./assets/icons/tensorflow.svg" alt="Tensor Flow Logo" />
 						<span>ML Algorithms</span>
 					</div>
@@ -391,7 +393,7 @@
 						** DS Tools **
 						**************
 					-->
-					<div class="projectBtn">
+					<div id="dsToolsBtn" class="projectBtn">
 						<img src="./assets/icons/dstools.svg" alt="DS Tools Logo" />
 						<span>DS Tools</span>
 					</div>
@@ -418,7 +420,7 @@
 
 			<!-- content -->
 			<div class="containerContent">
-				<img class="sticker" src="./assets/stickers/default/excited.png" alt="Hey there!"/>
+				<img class="sticker" id="reachMeSticker" alt="Hey there!"/>
 				
 				<br />
 
@@ -494,9 +496,199 @@
 			<span>GNU General Public License v3.0  - Copyrights 2018 - 2022</span>
 		</footer>
 
+		<!-- 
+			************
+			** Modals **
+			************
+		-->
+
+		<!-- Themes -->
+		<div id="themesModal" class="modal">
+		  
+		  <div class="modalContent">
+
+		  	<!-- close button -->
+		    <span id="themesClose" class="close">&times;</span>
+
+		    <!-- title -->
+		    <div class="modalTitle">
+		    	<span>🎨</span>
+		    	&nbsp
+		    	<span>Themes</span>
+		    </div>
+
+		    <br /><br />
+
+		    <!-- items -->
+		    <div class="modalItems">
+		    	
+		    	<!--
+		    		*******************
+					** Default Theme **
+					*******************
+		    	-->
+		    	<div class="themeGroup">
+		    		<img id="defaultOptionSticker" alt="Default Theme" />
+		    		&nbsp
+		    		<input id="defaultOptionRadio" type="radio" name="actualTheme" value="0" />
+		    		&nbsp
+		    		<span>Default</span>
+		    	</div>
+
+		    	<!--
+		    		*********************
+					** Halloween Theme **
+					*********************
+		    	-->
+		    	<div class="themeGroup">
+		    		<img id="halloweenOptionSticker" alt="Halloween Theme" />
+		    		&nbsp
+		    		<input id="halloweenOptionRadio" type="radio" name="actualTheme" value="1" />
+		    		&nbsp
+		    		<span>Halloween</span>
+		    	</div>
+
+		    	<!--
+		    		*********************
+					** Christmas Theme **
+					*********************
+		    	-->
+		    	<div class="themeGroup">
+		    		<img id="christmasOptionSticker" alt="Christmas Theme" />
+		    		&nbsp
+		    		<input id="christmasOptionRadio" type="radio" name="actualTheme" value="2" />
+		    		&nbsp
+		    		<span>Christmas</span>
+		    	</div>
+
+		    	<!--
+		    		******************
+					** Easter Theme **
+					******************
+		    	-->
+		    	<div class="themeGroup">
+		    		<img id="easterOptionSticker" alt="Easter Theme" />
+		    		&nbsp
+		    		<input id="easterOptionRadio" type="radio" name="actualTheme" value="3" />
+		    		&nbsp
+		    		<span>Easter</span>
+		    	</div>
+
+		    </div>
+
+		    <!--
+		    	*****************
+		    	** Sponsor Btn **
+		    	*****************
+		    -->
+		    <hr />
+		    <br />
+
+		    <div class="sponsorGroup">
+
+		    	<!-- title -->
+			    <div class="modalTitle">
+			    	<span>💗</span>
+			    	&nbsp
+			    	<span>Sponsorship</span>
+			    </div>
+
+		    	<a 
+				  href="https://github.com/sponsors/CSFelix" 
+				  target="_blank">
+				    <button>💗 Sponsor Me!</button>	
+				</a>
+		    </div>
+		   
+		  </div>
+
+		</div>
+
+		<!-- Kaggle Notebooks -->
+		<div id="kaggleModal" class="modal">
+		  
+		  <div class="modalContent">
+
+		  	<!-- close button -->
+		    <span id="kaggleClose" class="close">&times;</span>
+
+		    <!-- title -->
+		    <div class="modalTitle">
+		    	<img src="./assets/icons/kaggle.svg" alt="Kaggle Logo" />
+		    	&nbsp
+		    	<span>Kaggle Notebooks</span>
+		    </div>
+
+		    <br />
+
+		    <!-- items -->
+		    <div class="modalItems">
+		    	<img src="./assets/stickers/default/sleepy.png" alt="Hey There" />
+		    	&nbsp
+		    	<span>Coming soon on January 2023...</span>
+		    </div>
+		  </div>
+
+		</div>
+
+		<!-- ML Algorithms -->
+		<div id="mlAlgorithmsModal" class="modal">
+		  
+		  <div class="modalContent">
+
+		  	<!-- close button -->
+		    <span id="mlAlgorithmsClose" class="close">&times;</span>
+
+		    <!-- title -->
+		    <div class="modalTitle">
+		    	<img src="./assets/icons/tensorflow.svg" alt="Kaggle Logo" />
+		    	&nbsp
+		    	<span>ML Algorithms</span>
+		    </div>
+
+		    <br />
+
+		    <!-- items -->
+		    <div class="modalItems">
+		    	<img src="./assets/stickers/default/sleepy.png" alt="Hey There" />
+		    	&nbsp
+		    	<span>Coming soon on January 2023...</span>
+		    </div>
+		  </div>
+
+		</div>
+
+		<!-- DSTools -->
+		<div id="dsToolsModal" class="modal">
+		  
+		  <div class="modalContent">
+
+		  	<!-- close button -->
+		    <span id="dsToolsClose" class="close">&times;</span>
+
+		    <!-- title -->
+		    <div class="modalTitle">
+		    	<img src="./assets/icons/dstools.svg" alt="Kaggle Logo" />
+		    	&nbsp
+		    	<span>DS Tools</span>
+		    </div>
+
+		    <br />
+
+		    <!-- items -->
+		    <div class="modalItems">
+		    	<img src="./assets/stickers/default/sleepy.png" alt="Hey There" />
+		    	&nbsp
+		    	<span>Coming soon on March 2023...</span>
+		    </div>
+		  </div>
+
+		</div>
+
 		<!-- scripts pos-loading -->
 		<script type="text/javascript" src="./assets/js/scripts/mobile-menu-btn-effect.js"></script>
 		<script type="text/javascript" src="./assets/js/scripts/mobile-menu-toggle-effect.js"></script>
+		<script type="text/javascript" src="./assets/js/scripts/modal-toggle.js"></script>
 
 		<!-- JS libraries -->
 		<script type="text/javascript" src="./assets/js/libraries/easter-eggs.js"></script>
