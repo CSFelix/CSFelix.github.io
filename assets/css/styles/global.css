@@ -1,7 +1,16 @@
+/*
+	***********
+	** Fonts **
+	***********
+*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap');
 
-/* Reset  */
+/*
+	***********
+	** Reset **
+	***********
+*/
 * {
 	margin:  0;
 	padding:  0;
@@ -13,17 +22,40 @@
 	vertical-align: baseline;
 }
 
-/* Variables  */
-:root {  }
+/*
+	***************
+	** Variables **
+	***************
+*/
+:root {
+	--background-color-1: aliceblue;
+	--background-color-2: #ededed;
+	--background-color-3: #f8f8ff; /* footer */
+	--background-color-4: #c6c6c6; /* mobile menu options on hover */
 
-/* Body */
+	--color-1: #707070;
+	--color-2: ghostwhite;
+	--color-3: #c3c3c3;
+
+	--text-shadow-color: #7159c1; /* header */
+
+	--font-1: Roboto Mono;
+	--font-2: Roboto;
+	--font-3: sans-serif;
+}
+
+/*
+	**************
+	** Defaults **
+	**************
+*/
 body {
 	overflow-x: hidden;
-	font: 400 18px Roboto Mono, sans-serif;
+	font: 400 18px var(--font-1), var(--font-3);
 	
-    background: aliceblue;
+    background: var(--background-color-1);
     -webkit-font-smoothing: antialiased;
 }
 
-a { color: ghostwhite; }
-button { font: 400 14px Roboto, sans-serif; }
+a { color: var(--color-2); }
+button { font: 400 14px var(--font-2), var(--font-3); }

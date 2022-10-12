@@ -4,10 +4,7 @@
 	**********************
 */
 
-header #headerImg {
-	width:  100vw;
-	height:  auto;
-}
+header #headerImg { width: 100vw; height: auto; }
 
 header nav {
 	width:  100vw;
@@ -24,7 +21,7 @@ header nav {
 	top: 8px;
   left: 16px;
 
-  color:  ghostwhite;
+  color: var(--color-2);
 }
 
 header nav #gitHubProfile { transition: all 0.3s ease; }
@@ -35,10 +32,7 @@ header nav #gitHubProfile:hover {
 	-webkit-filter: brightness(87%);
 }
 
-header nav #desktopMenu {
-	display: flex;
-	justify-content: center;
-}
+header nav #desktopMenu { display: flex; justify-content: center; }
 
 header nav #desktopMenu > li {
 	margin-right: 50px;
@@ -75,11 +69,11 @@ header nav #sponsorThemeBtn #themeBtn:hover
 	position: absolute;
 	top: 100px;
 
-	color:  #c3c3c3;
+	color: var(--color-3);
 	font-weight: bold;
 	text-align: center;
 
-	text-shadow: 2px 2px #7159c1;
+	text-shadow: 2px 2px var(--text-shadow-color);
 }
 
 #titleAndSubtitle span { font-size: 20px; }
@@ -107,7 +101,7 @@ header nav #sponsorThemeBtn #themeBtn:hover
 #bar1, #bar2, #bar3 {
   width: 35px;
   height: 5px;
-  background-color: ghostwhite;
+  background-color: var(--color-2);
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -125,8 +119,8 @@ header nav #sponsorThemeBtn #themeBtn:hover
 	top: 75px;
   right: -150px;
 
-  background-color: ghostwhite;
-  color:  #707070;
+  background-color: var(--color-2);
+  color:  var(--color-1);
   border-radius: 5px;
 
   transition: all 0.7s ease;
@@ -139,10 +133,9 @@ header nav #sponsorThemeBtn #themeBtn:hover
 	transition: all 0.3s ease;
 }
 
-#mobileMenu li:hover {
-	background-color: #c6c6c6;
-	color:  ghostwhite;
-}
+#mobileMenu a { color: var(--color-1); }
+
+#mobileMenu li:hover { background-color: var(--background-color-4); color: var(--color-2); }
 
 /*
 	**************************

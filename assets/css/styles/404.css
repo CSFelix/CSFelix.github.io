@@ -12,7 +12,7 @@
 	left: 0;
 	width: 100vw;
 	height:  100vh;
-	background-color: aliceblue;
+	background-color: var(--background-color-1);
 }
 
 /* don't show video controls on FullScreen */
@@ -34,7 +34,7 @@
 #container404 h2 { 
 	text-align:  center; 
 	font-size:  30px; 
-	text-shadow: 2px 2px #7159c1; 
+	text-shadow: 2px 2px var(--text-shadow-color); 
 }
 
 #container404 #stickersContainer404 {
