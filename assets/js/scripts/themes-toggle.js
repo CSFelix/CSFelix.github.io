@@ -28,6 +28,17 @@ const negativeHalloweenTheme = './assets/stickers/halloween/sad.png';
 const negativeChristmasTheme = './assets/stickers/christmas/sad.png';
 const negativeEasterTheme = './assets/stickers/easter/sad.png';
 
+// projects modals img
+const kaggleModalSticker = document.getElementById('kaggleModalSticker');
+const mlAlgorithmsModalSticker = document.getElementById('mlAlgorithmsModalSticker');
+const dsToolsModalSticker = document.getElementById('dsToolsModalSticker');
+
+// projects modals stickers
+const defaultComingSoonSticker = './assets/stickers/default/sleepy.png';
+const halloweenComingSoonSticker = './assets/stickers/halloween/yoga.png';
+const christmasComingSoonSticker = './assets/stickers/christmas/sleep.png';
+const easterComingSoonSticker = './assets/stickers/easter/yoga.png';
+
 // img tags
 const aboutMeSticker = document.getElementById('aboutMeSticker');
 const skillsSticker = document.getElementById('skillsSticker');
@@ -86,6 +97,11 @@ function changeTheme() {
         halloweenOptionRadio.checked = true;
         christmasOptionRadio.checked = false;
         easterOptionRadio.checked = false;
+
+        // other modals stickers
+        kaggleModalSticker.src = halloweenComingSoonSticker;
+        mlAlgorithmsModalSticker.src = halloweenComingSoonSticker;
+        dsToolsModalSticker.src = halloweenComingSoonSticker;
     }
 
     // Christmas Theme
@@ -108,6 +124,11 @@ function changeTheme() {
         halloweenOptionRadio.checked = false;
         christmasOptionRadio.checked = true;
         easterOptionRadio.checked = false;
+
+        // other modals stickers
+        kaggleModalSticker.src = christmasComingSoonSticker;
+        mlAlgorithmsModalSticker.src = christmasComingSoonSticker;
+        dsToolsModalSticker.src = christmasComingSoonSticker;
     }
 
     // Easter Theme
@@ -130,6 +151,11 @@ function changeTheme() {
         halloweenOptionRadio.checked = false;
         christmasOptionRadio.checked = false;
         easterOptionRadio.checked = true;
+
+        // other modals stickers
+        kaggleModalSticker.src = easterComingSoonSticker;
+        mlAlgorithmsModalSticker.src = easterComingSoonSticker;
+        dsToolsModalSticker.src = easterComingSoonSticker;
     }
 
     // Default Theme
@@ -152,6 +178,11 @@ function changeTheme() {
         halloweenOptionRadio.checked = false;
         christmasOptionRadio.checked = false;
         easterOptionRadio.checked = false;
+
+        // other modals stickers
+        kaggleModalSticker.src = defaultComingSoonSticker;
+        mlAlgorithmsModalSticker.src = defaultComingSoonSticker;
+        dsToolsModalSticker.src = defaultComingSoonSticker;
     }
 }
 
