@@ -14,6 +14,7 @@
 
 * HTML, CSS, JS;
 * [Shuffle Text Library](https://webcodeflow.com/text-shuffle-text-js/);
+* [Easter Eggs Library](https://github.com/WeiChiaChang/easter-egg-collection);
 
 ----
 <br>
