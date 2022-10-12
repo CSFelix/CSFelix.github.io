@@ -20,6 +20,22 @@
 .sticker { width: 200px; height: auto; }
 
 /*
+	************************
+	** About Me Container **
+	************************
+*/
+#aboutMeContainer .containerContent span a {
+	color:  var(--color-1);
+	border-bottom-style: dashed;
+	border-bottom-width: 3.1px;
+}
+
+#aboutMeContainer .containerContent span a:hover {
+	border-bottom-style: solid;
+	-webkit-filter: brightness(87%);
+}
+
+/*
 	**********************
 	** Skills Container **
 	**********************
