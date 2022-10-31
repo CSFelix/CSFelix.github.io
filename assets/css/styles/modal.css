@@ -57,6 +57,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .modalContent .modalItems .themeGroup {
@@ -96,3 +97,42 @@
 */
 .close { color: var(--color-1); float: right; font-size: 28px; font-weight: bold; }
 .close:hover, .close:focus { color: #000; text-decoration: none; cursor: pointer; }
+
+/*
+  ***********
+  ** Cards **
+  ***********
+*/
+.modalContent .modalItems .cardsGroup {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.modalContent .modalItems .cardsGroup a { color: var(--color-1);  }
+
+.modalContent .modalItems .cardsGroup .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 15px;
+
+    background-color: var(--background-color-2);
+    border-radius: 15px;
+    border: 2px solid black;
+    padding: 20px;
+
+    cursor: pointer;
+    transition:  all 0.3s ease;
+}
+
+.modalContent .modalItems .cardsGroup .card:hover {
+    -webkit-filter: brightness(87%);
+    transform: translateY(-5px);
+}
+
+.modalContent .modalItems .cardsGroup .card img { width: 100px; height: auto; }
