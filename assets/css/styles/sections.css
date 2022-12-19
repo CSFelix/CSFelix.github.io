@@ -109,6 +109,19 @@
 
 #projectsSubContainer .projectBtn img { width: 60px;  height: auto; }
 
+.badge {
+	border-radius:  15px;
+	color: var(--background-color-1);
+	padding:  5px;
+	font-size: 15px;
+	position: relative;
+	float: left;
+}
+
+.regressionBadge { background-color: #1aa7ec; }
+.classificationBadge { background-color: #eb455f; }
+.deepLearningBadge { background-color: #68b984; }
+
 /*
 	***********************
 	** ReachMe Container **
