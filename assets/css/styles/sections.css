@@ -119,7 +119,7 @@
 }
 
 .regressionBadge { background-color: #1aa7ec; }
-.classificationBadge { background-color: #eb455f; }
+.classifierBadge { background-color: #eb455f; }
 .deepLearningBadge { background-color: #68b984; }
 
 /*
