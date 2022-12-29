@@ -25,17 +25,17 @@ mlAlgorithmsBtn.onclick = function() { mlAlgorithmsModal.style.display = "block"
 mlAlgorithmsClose.onclick = function() { mlAlgorithmsModal.style.display = "none"; }
 
 /* DS Tools */
-const dsToolsModal = document.getElementById('dsToolsModal');
-const dsToolsBtn = document.getElementById('dsToolsBtn');
-const dsToolsClose = document.getElementById('dsToolsClose');
+const blogModal = document.getElementById('blogModal');
+const blogBtn = document.getElementById('blogBtn');
+const blogClose = document.getElementById('blogClose');
 
-dsToolsBtn.onclick = function() { dsToolsModal.style.display = "block"; }
-dsToolsClose.onclick = function() { dsToolsModal.style.display = "none"; }
+blogBtn.onclick = function() { blogModal.style.display = "block"; }
+blogClose.onclick = function() { blogModal.style.display = "none"; }
 
 /* Closing modals when user taps outside the modal */
 window.onclick = function(event) {
   if (event.target == themesModal) { themesModal.style.display = "none"; }
   else if (event.target == kaggleModal) { kaggleModal.style.display = "none"; }
   else if (event.target == mlAlgorithmsModal) { mlAlgorithmsModal.style.display = "none"; }
-  else if (event.target == dsToolsModal) { dsToolsModal.style.display = "none"; }
+  else if (event.target == blogModal) { blogModal.style.display = "none"; }
 }

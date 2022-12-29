@@ -31,7 +31,7 @@ const negativeEasterTheme = './assets/stickers/easter/sad.png';
 // projects modals img
 const kaggleModalSticker = document.getElementById('kaggleModalSticker');
 const mlAlgorithmsModalSticker = document.getElementById('mlAlgorithmsModalSticker');
-const dsToolsModalSticker = document.getElementById('dsToolsModalSticker');
+const blogModalSticker = document.getElementById('blogModalSticker');
 
 // projects modals stickers
 const defaultComingSoonSticker = './assets/stickers/default/sleepy.png';
@@ -101,7 +101,7 @@ function changeTheme() {
         // other modals stickers
         kaggleModalSticker.src = halloweenComingSoonSticker;
         mlAlgorithmsModalSticker.src = halloweenComingSoonSticker;
-        dsToolsModalSticker.src = halloweenComingSoonSticker;
+        blogModalSticker.src = halloweenComingSoonSticker;
     }
 
     // Christmas Theme
@@ -128,7 +128,7 @@ function changeTheme() {
         // other modals stickers
         kaggleModalSticker.src = christmasComingSoonSticker;
         mlAlgorithmsModalSticker.src = christmasComingSoonSticker;
-        dsToolsModalSticker.src = christmasComingSoonSticker;
+        blogModalSticker.src = christmasComingSoonSticker;
     }
 
     // Easter Theme
@@ -155,7 +155,7 @@ function changeTheme() {
         // other modals stickers
         kaggleModalSticker.src = easterComingSoonSticker;
         mlAlgorithmsModalSticker.src = easterComingSoonSticker;
-        dsToolsModalSticker.src = easterComingSoonSticker;
+        blogModalSticker.src = easterComingSoonSticker;
     }
 
     // Default Theme
@@ -182,7 +182,7 @@ function changeTheme() {
         // other modals stickers
         kaggleModalSticker.src = defaultComingSoonSticker;
         mlAlgorithmsModalSticker.src = defaultComingSoonSticker;
-        dsToolsModalSticker.src = defaultComingSoonSticker;
+        blogModalSticker.src = defaultComingSoonSticker;
     }
 }
 
