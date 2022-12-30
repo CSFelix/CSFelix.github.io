@@ -24,18 +24,18 @@ const mlAlgorithmsClose = document.getElementById('mlAlgorithmsClose');
 mlAlgorithmsBtn.onclick = function() { mlAlgorithmsModal.style.display = "block"; }
 mlAlgorithmsClose.onclick = function() { mlAlgorithmsModal.style.display = "none"; }
 
-/* DS Tools */
-const blogModal = document.getElementById('blogModal');
-const blogBtn = document.getElementById('blogBtn');
-const blogClose = document.getElementById('blogClose');
+/* Dashboards */
+const dashboardModal = document.getElementById('dashboardModal');
+const dashboardBtn = document.getElementById('dashboardBtn');
+const dashboardClose = document.getElementById('dashboardClose');
 
-blogBtn.onclick = function() { blogModal.style.display = "block"; }
-blogClose.onclick = function() { blogModal.style.display = "none"; }
+dashboardBtn.onclick = function() { dashboardModal.style.display = "block"; }
+dashboardClose.onclick = function() { dashboardModal.style.display = "none"; }
 
 /* Closing modals when user taps outside the modal */
 window.onclick = function(event) {
   if (event.target == themesModal) { themesModal.style.display = "none"; }
   else if (event.target == kaggleModal) { kaggleModal.style.display = "none"; }
   else if (event.target == mlAlgorithmsModal) { mlAlgorithmsModal.style.display = "none"; }
-  else if (event.target == blogModal) { blogModal.style.display = "none"; }
+  else if (event.target == dashboardModal) { dashboardModal.style.display = "none"; }
 }
