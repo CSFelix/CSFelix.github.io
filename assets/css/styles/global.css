@@ -28,12 +28,14 @@
 	***************
 */
 :root {
-	--background-color-1: aliceblue;
-	--background-color-2: #ededed;
+	/*--background-color-1: aliceblue;
+	--background-color-2: #ededed;*/
+	--background-color-1: #041f36;
+	--background-color-2: #0a394d;
 	--background-color-3: #f8f8ff; /* footer */
 	--background-color-4: #c6c6c6; /* mobile menu options on hover */
 
-	--color-1: #707070;
+	--color-1: #f6f6ff;
 	--color-2: ghostwhite;
 	--color-3: #c3c3c3;
 

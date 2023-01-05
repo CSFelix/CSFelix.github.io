@@ -34,7 +34,8 @@
 #container404 h2 { 
 	text-align:  center; 
 	font-size:  30px; 
-	text-shadow: 2px 2px var(--text-shadow-color); 
+	text-shadow: 2px 2px var(--text-shadow-color);
+	color: var(--color-1); 
 }
 
 #container404 #stickersContainer404 {
@@ -44,7 +45,7 @@
 	flex-wrap: wrap;
 }
 
-.sticker404 { width:  150px; height:  auto; }
+.sticker404 { width:  250px; height:  auto; }
 
 #container404 #btnContainer404 {
 	width: 35vw;
@@ -79,5 +80,5 @@
 */
 @media only screen and (max-width: 625px) {
 	#errorContainer h2 { font-size: 25px; }
-	.sticker404 { width: 100px; }	
+	.sticker404 { width: 250px; }	
 }
