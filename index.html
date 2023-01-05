@@ -129,7 +129,9 @@
 
 			<!-- content -->
 			<div class="containerContent">
-				<img class="sticker" id='aboutMeSticker' alt="Hey there!"/>
+				<img class="sticker" id='aboutMeSticker' alt="Hey there!" hidden/>
+
+				<img class="sticker" src='./assets/stickers/robot/hi.gif' alt="Hey there!"/>
 				
 				<span>🌱 I'm CSFelix, a passionate Programmer and Student from Brazil.</span>
 				
@@ -165,8 +167,10 @@
 
 			<!-- content -->
 			<div class="containerContent">
-				<img class="sticker" id="skillsSticker" alt="Hey there!"/>
+				<img class="sticker" id="skillsSticker" alt="Skills!" hidden />
 				
+				<img class="sticker" src='./assets/stickers/robot/skills.gif' alt="Hey there!"/>
+
 				<br />
 
 				<!--
@@ -264,6 +268,31 @@
 						<img src="./assets/icons/star.png" alt="Active Star" />
 						<img src="./assets/icons/star.png" alt="Active Star" />
 						<img src="./assets/icons/star.png" alt="Active Star" />
+					</div>
+				</div>
+
+				<br />
+
+				<!--
+					***************
+					** Streamlit **
+					***************
+				-->
+				<div class="skillsSubContainer">	
+					<div class="skillsInfoContainer">
+						<img class="skillsLogo" src="./assets/icons/streamlit.svg" alt="Streamlit Logo" />
+
+						<a href="https://streamlit.io" target="_blank">
+							&nbsp<span>Streamlit</span>
+						</a>
+					</div>
+
+					<div class="skillsStarsContainer">
+						<img src="./assets/icons/star.png" alt="Active Star" />
+						<img src="./assets/icons/star.png" alt="Active Star" />
+						<img src="./assets/icons/star.png" alt="Active Star" />
+						<img src="./assets/icons/star.png" alt="Active Star" />
+						<img class="active" src="./assets/icons/star.png" alt="Active Star" />
 					</div>
 				</div>
 
@@ -388,8 +417,10 @@
 
 			<!-- content -->
 			<div class="containerContent">
-				<img class="sticker" id="projectsSticker" alt="Hey there!"/>
+				<img class="sticker" id="projectsSticker" alt="Hey there!" hidden />
 				
+				<img class="sticker" src='./assets/stickers/robot/projects.gif' alt="Proejcts!"/>
+
 				<br />
 
 				<div id="projectsSubContainer">
@@ -449,7 +480,9 @@
 
 			<!-- content -->
 			<div class="containerContent">
-				<img class="sticker" id="reachMeSticker" alt="Hey there!"/>
+				<img class="sticker" id="reachMeSticker" alt="Hey there!" hidden />
+
+				<img class="sticker" src='./assets/stickers/robot/skills.gif' alt="Hey there!"/>
 				
 				<br />
 
@@ -565,58 +598,62 @@
 
 		    <!-- items -->
 		    <div class="modalItems">
+		    	<img alt="Hey There" />
 		    	
+		    	&nbsp
+
+		    	<h3>Coming soon...</h3>
 		    	<!--
 		    		*******************
 					** Default Theme **
 					*******************
 		    	-->
-		    	<div class="themeGroup">
+		    	<!-- <div class="themeGroup">
 		    		<img id="defaultOptionSticker" alt="Default Theme" />
 		    		&nbsp
 		    		<input id="defaultOptionRadio" type="radio" name="actualTheme" value="0" />
 		    		&nbsp
 		    		<span>Default</span>
-		    	</div>
+		    	</div> -->
 
 		    	<!--
 		    		*********************
 					** Halloween Theme **
 					*********************
 		    	-->
-		    	<div class="themeGroup">
+		    	<!-- <div class="themeGroup">
 		    		<img id="halloweenOptionSticker" alt="Halloween Theme" />
 		    		&nbsp
 		    		<input id="halloweenOptionRadio" type="radio" name="actualTheme" value="1" />
 		    		&nbsp
 		    		<span>Halloween</span>
-		    	</div>
+		    	</div> -->
 
 		    	<!--
 		    		*********************
 					** Christmas Theme **
 					*********************
 		    	-->
-		    	<div class="themeGroup">
+		    	<!-- <div class="themeGroup">
 		    		<img id="christmasOptionSticker" alt="Christmas Theme" />
 		    		&nbsp
 		    		<input id="christmasOptionRadio" type="radio" name="actualTheme" value="2" />
 		    		&nbsp
 		    		<span>Christmas</span>
-		    	</div>
+		    	</div> -->
 
 		    	<!--
 		    		******************
 					** Easter Theme **
 					******************
 		    	-->
-		    	<div class="themeGroup">
+		    	<!-- <div class="themeGroup">
 		    		<img id="easterOptionSticker" alt="Easter Theme" />
 		    		&nbsp
 		    		<input id="easterOptionRadio" type="radio" name="actualTheme" value="3" />
 		    		&nbsp
 		    		<span>Easter</span>
-		    	</div>
+		    	</div> -->
 
 		    </div>
 
@@ -625,6 +662,7 @@
 		    	** Sponsor Btn **
 		    	*****************
 		    -->
+		    <br />
 		    <hr />
 		    <br />
 
@@ -667,7 +705,8 @@
 
 		    <!-- items -->
 		    <div class="modalItems">
-		    	<img id="kaggleModalSticker" alt="Hey There" />
+		    	<img id="kaggleModalSticker" alt="Hey There" hidden />
+		    	<img class="sticker" src='./assets/stickers/robot/projects.gif' alt="Projects!"/>
 		    	&nbsp
 
 		    	<!-- cards -->
@@ -745,7 +784,7 @@
 
 		    <!-- title -->
 		    <div class="modalTitle">
-		    	<img src="./assets/icons/tensorflow.svg" alt="Kaggle Logo" />
+		    	<img src="./assets/icons/tensorflow.svg" alt="Tensor Flow Logo" />
 		    	&nbsp
 		    	<span>ML Algorithms</span>
 		    </div>
@@ -754,7 +793,8 @@
 
 		    <!-- items -->
 		    <div class="modalItems">
-		    	<img id="mlAlgorithmsModalSticker" alt="Hey There" />
+		    	<img id="mlAlgorithmsModalSticker" alt="Hey There" hidden />
+		    	<img class="sticker" src='./assets/stickers/robot/projects.gif' alt="Projects!"/>
 		    	&nbsp
 		    	
 		    	<!-- cards -->
@@ -817,7 +857,8 @@
 
 		    <!-- items -->
 		    <div class="modalItems">
-		    	<img id="dashboardModalSticker" alt="Hey There" />
+		    	<img id="dashboardModalSticker" alt="Hey There" hidden />
+		    	<img class="sticker" src='./assets/stickers/robot/projects.gif' alt="Projects!"/>
 		    	&nbsp
 		    	<span>Coming soon on March 2023...</span>
 		    </div>
