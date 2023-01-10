@@ -49,7 +49,7 @@ header nav #desktopMenu > li:hover {
 	border-bottom-style: solid;
 }
 
-header nav #sponsorThemeBtn a #sponsorBtn, header nav #sponsorThemeBtn #themeBtn {
+header nav #sponsorThemeBtn a #sponsorBtn, header nav #sponsorThemeBtn a #stripeBtn, header nav #sponsorThemeBtn #themeBtn {
 	height: 35px;
 	border:  0;
 	border-radius: 5px;
@@ -57,10 +57,11 @@ header nav #sponsorThemeBtn a #sponsorBtn, header nav #sponsorThemeBtn #themeBtn
 	transition: -webkit-filter 0.3s ease;
 }
 
-header nav #sponsorThemeBtn a #sponsorBtn { width: 116px; }
+header nav #sponsorThemeBtn a #sponsorBtn, header nav #sponsorThemeBtn a #stripeBtn { width: 116px; }
 header nav #sponsorThemeBtn #themeBtn { width: 50px; }
 
 header nav #sponsorThemeBtn a #sponsorBtn:hover,
+header nav #sponsorThemeBtn a #stripeBtn:hover,
 header nav #sponsorThemeBtn #themeBtn:hover
 { -webkit-filter: brightness(80%); }
 
@@ -86,7 +87,7 @@ header nav #sponsorThemeBtn #themeBtn:hover
 
 #mobileMenuToggle {
 	width: auto;
-	background-color:  rgba(255,255,255,0.4);
+	background-color:  rgba(0,255,255,0.2);
 
   display: none;
   position: absolute;
