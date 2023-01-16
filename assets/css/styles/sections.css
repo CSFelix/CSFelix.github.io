@@ -35,6 +35,17 @@
 	-webkit-filter: brightness(87%);
 }
 
+#aboutMeContainer .containerContent #profilePic {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+#aboutMeContainer .containerContent #profilePic img { width: min(20rem, 40rem); height: auto; }
+#aboutMeContainer .containerContent #profilePic figcaption { color: var(--color-3); }
+
 /*
 	**********************
 	** Skills Container **
