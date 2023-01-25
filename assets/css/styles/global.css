@@ -28,8 +28,6 @@
 	***************
 */
 :root {
-	/*--background-color-1: aliceblue;
-	--background-color-2: #ededed;*/
 	--background-color-1: #041f36;
 	--background-color-2: #0a394d;
 	--background-color-3: #f8f8ff; /* footer */
@@ -44,6 +42,9 @@
 	--font-1: Roboto Mono;
 	--font-2: Roboto;
 	--font-3: sans-serif;
+
+	--skills-card-height: 200px;
+  	--skills-card-width: calc(var(--skills-card-height) / 1.5);
 }
 
 /*
