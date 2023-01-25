@@ -80,7 +80,8 @@
 .skillsSubContainer .skillsStarsContainer img { width:  50px; height:  auto; }
 .skillsSubContainer .skillsStarsContainer .inactive { -webkit-filter: grayscale(100%); filter: grayscale(100%); }
 
-#skillsCardsContainer {
+#skillsCardsContainer
+, #projectsSubContainer {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -93,16 +94,6 @@
 	** Projects Container **
 	************************
 */
-
-#projectsSubContainer {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: row;
-	flex-wrap: wrap;
-	gap: 15px;
-}
-
 #projectsSubContainer .projectBtn {
 	display: flex;
 	align-items: center;
