@@ -1,0 +1,50 @@
+hr {
+	width: 100%;
+	border: 1px solid var(--background-color-3);
+	background-color: var(--background-color-3);
+}
+
+#contactForm {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	width: 100%;
+}
+
+#contactForm fieldset {
+	padding: 10px;
+	border-radius: 5px;
+	position: relative;
+}
+
+#contactForm fieldset legend {
+	text-align: left;
+}
+
+.contactFormField {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+button[type=submit] {
+  background-color: var(--background-color-3);
+  cursor: pointer;
+  color: #363636;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition:  all 0.3s ease;
+}
+
+button[type=submit]:hover {
+  opacity: 0.75;
+}
