@@ -22,6 +22,7 @@
 		<link rel="stylesheet" type="text/css" href="./assets/css/styles/header.css">
 		<link rel="stylesheet" type="text/css" href="./assets/css/styles/sections.css">
 		<link rel="stylesheet" type="text/css" href="./assets/css/styles/skills_cards.css">
+		<link rel="stylesheet" type="text/css" href="./assets/css/styles/contact_form.css">
 		<link rel="stylesheet" type="text/css" href="./assets/css/styles/footer.css">
 		<link rel="stylesheet" type="text/css" href="./assets/css/styles/modal.css">
 
@@ -512,6 +513,28 @@
 						&nbsp<span>csfelix08@gmail.com</span>
 					</a>
 				</div>
+
+				<br />
+				<hr />
+				<br />
+
+				<!---
+					******************
+					** Contact Form **
+					******************
+				--->
+				<form id="contactForm" action="https://formsubmit.co/csfelix08@gmail.com" method="POST">
+					<fieldset>
+						<legend><h3>📧 Hit Me Up 📧</h3></legend>
+						<br />
+					    <input class="contactFormField" type="hidden" name="_captcha" value="false">
+					    <input type="hidden" name="_subject" value="Hey there, I have visited your Portfolio!">
+					    <input class="contactFormField" type="text" name="name" placeholder="Your name" required>
+					    <input class="contactFormField" type="email" name="email" placeholder="Your email" required>
+					    <textarea class="contactFormField" name="message" placeholder="Details of your message" required></textarea>
+					    <button type="submit">Send</button>
+					</fieldset>
+				</form>
 
 				<br />
 		</section>
