@@ -3,7 +3,7 @@
 	** All Containers **
 	********************
 */
-.container { width: 100vw; padding:  20px; color: var(--color-1); }
+.container { width: 100vw; color: var(--color-1); }
 #skillsContainer, #reachMeContainer { background-color: var(--background-color-2); }
 .containerTitle { text-align:  center; font-size: 30px; }
 .containerTitleText { text-decoration: underline; text-decoration-style: dashed; }
