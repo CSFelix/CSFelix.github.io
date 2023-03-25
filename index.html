@@ -31,7 +31,6 @@
 		<script type="text/javascript" src="./assets/js/libraries/scroll-reveal.js" defer></script>
 
 		<!-- scripts pre-loading -->
-		<script type="text/javascript" src="./assets/js/scripts/themes-toggle.js" defer></script>
 		<script type="text/javascript" src="./assets/js/scripts/text-shuffling-effect.js" defer></script>
 		<script type="text/javascript" src="./assets/js/scripts/scroll-to-reveal.js" defer></script>
 
@@ -47,7 +46,6 @@
 
 		<!-- Easter Eggs -->
 		<script type="text/javascript" src="./assets/js/libraries/easter-eggs.js" defer></script>
-		<script type="text/javascript" src="./assets/js/libraries/import-easter-eggs.js" defer></script>
 	</head>
 
 	<body>
@@ -86,7 +84,7 @@
 			<img 
 				id="headerImg" 
 				src="./assets/images/header.jpg" 
-				alt="Uh-Oh, something went wrong. But it's just two tiny robots looking at each other!" 
+				alt="Uh-Oh, something went wrong. But it's just two tiny robots looking at each other!"
 			/>
 
 			<nav>
@@ -160,9 +158,9 @@
 
 				<br /><br/>
 
-				<img class="sticker" id='aboutMeSticker' alt="Hey there!" hidden/>
-
-				<img class="sticker" src='./assets/stickers/robot/hi.gif' alt="Hey there!"/>
+				<video width="250px" height="auto" loop muted autoplay>
+					<source src="./assets/stickers/robot/hi.mp4" type="video/mp4" />
+				</video>
 				
 				<span>🌱 I'm CSFelix, a passionate Programmer and Student from Brazil.</span>
 				
@@ -204,9 +202,9 @@
 
 			<!-- content -->
 			<div class="containerContent">
-				<img class="sticker" id="skillsSticker" alt="Skills!" hidden />
-				
-				<img class="sticker" src='./assets/stickers/robot/skills.gif' alt="Hey there!"/>
+				<video width="250px" height="auto" loop muted autoplay>
+					<source src="./assets/stickers/robot/skills.mp4" type="video/mp4" />
+				</video>
 
 				<br /><br />
 				<br /><br />
@@ -221,10 +219,10 @@
 					<a href="https://www.python.org" target="_blank">
 					  <div class="skillsCard">
 					    <div class="wrapper">
-					      <img src="./assets/icons/skills/programming.png" class="cover-image" />
+					      <img src="./assets/icons/skills/programming.png" alt="Python 1" class="cover-image" />
 					    </div>
 					    <h2 class="skillsTitle">Python</h2>
-					    <img src="./assets/icons/python.svg" class="character" />
+					    <img src="./assets/icons/python.svg" class="character" alt="Python 2" />
 					  </div>
 					</a>
 
@@ -236,10 +234,10 @@
 					<a href="https://julialang.org" target="_blank">
 					  <div class="skillsCard">
 					    <div class="wrapper">
-					      <img src="./assets/icons/skills/computing.png" class="cover-image" />
+					      <img src="./assets/icons/skills/computing.png" alt="Julia 1" class="cover-image" />
 					    </div>
 					    <h2 class="skillsTitle">Julia</h2>
-					    <img src="./assets/icons/julia.svg" class="character" />
+					    <img src="./assets/icons/julia.svg" class="character" alt="Julia 2" />
 					  </div>
 					</a>
 
@@ -251,10 +249,10 @@
 					<a href="https://www.r-project.org" target="_blank">
 					  <div class="skillsCard">
 					    <div class="wrapper">
-					      <img src="./assets/icons/skills/analysis.png" class="cover-image" />
+					      <img src="./assets/icons/skills/analysis.png" class="cover-image" alt="R 1" />
 					    </div>
 					    <h2 class="skillsTitle">R</h2>
-					    <img src="./assets/icons/r.svg" class="character" />
+					    <img src="./assets/icons/r.svg" class="character" lat="R 2" />
 					  </div>
 					</a>
 
@@ -266,10 +264,10 @@
 					<a href="https://www.anaconda.com" target="_blank">
 					  <div class="skillsCard">
 					    <div class="wrapper">
-					      <img src="./assets/icons/skills/data-science.png" class="cover-image" />
+					      <img src="./assets/icons/skills/data-science.png" class="cover-image" alt="Anaconda 1" />
 					    </div>
 					    <h2 class="skillsTitle">DS Libraries</h2>
-					    <img src="./assets/icons/anaconda.svg" class="character" />
+					    <img src="./assets/icons/anaconda.svg" class="character" alt="Anaconda 2" />
 					  </div>
 					</a>
 
@@ -281,10 +279,10 @@
 					<a href="https://www.sqlite.org/index.html" target="_blank">
 					  <div class="skillsCard">
 					    <div class="wrapper">
-					      <img src="./assets/icons/skills/data.png" class="cover-image" />
+					      <img src="./assets/icons/skills/data.png" class="cover-image" alt="SQL 1" />
 					    </div>
 					    <h2 class="skillsTitle">SQL</h2>
-					    <img src="./assets/icons/sql.svg" class="character" />
+					    <img src="./assets/icons/sql.svg" class="character" alt="SQL 2" />
 					  </div>
 					</a>
 
@@ -296,10 +294,10 @@
 					<a href="https://neo4j.com" target="_blank">
 					  <div class="skillsCard">
 					    <div class="wrapper">
-					      <img src="./assets/icons/skills/analytics.png" class="cover-image" />
+					      <img src="./assets/icons/skills/analytics.png" class="cover-image" alt="Neo4J 1" />
 					    </div>
 					    <h2 class="skillsTitle">Neo4J</h2>
-					    <img src="./assets/icons/neo4j.svg" class="character" />
+					    <img src="./assets/icons/neo4j.svg" class="character" alt="Neo4J 2" />
 					  </div>
 					</a>
 
@@ -311,10 +309,10 @@
 					<a href="https://streamlit.io" target="_blank">
 					  <div class="skillsCard">
 					    <div class="wrapper">
-					      <img src="./assets/icons/skills/polling.png" class="cover-image" />
+					      <img src="./assets/icons/skills/polling.png" class="cover-image" alt="Streamlit 1" />
 					    </div>
 					    <h2 class="skillsTitle">Streamlit</h2>
-					    <img src="./assets/icons/streamlit.svg" class="character" />
+					    <img src="./assets/icons/streamlit.svg" class="character" alt="Streamlit 2" />
 					  </div>
 					</a>
 
@@ -326,10 +324,10 @@
 					<a href="https://www.khanacademy.org" target="_blank">
 					  <div class="skillsCard">
 					    <div class="wrapper">
-					      <img src="./assets/icons/skills/calculating.png" class="cover-image" />
+					      <img src="./assets/icons/skills/calculating.png" class="cover-image" alt="Math 1" />
 					    </div>
 					    <h2 class="skillsTitle">Math</h2>
-					    <img src="./assets/icons/math.svg" class="character" />
+					    <img src="./assets/icons/math.svg" class="character" alt= "Math 2" />
 					  </div>
 					</a>
 
@@ -341,10 +339,10 @@
 					<a href="https://spark.apache.org" target="_blank">
 					  <div class="skillsCard">
 					    <div class="wrapper">
-					      <img src="./assets/icons/skills/table.png" class="cover-image" />
+					      <img src="./assets/icons/skills/table.png" class="cover-image" alt="Apache Spark 1" />
 					    </div>
 					    <h2 class="skillsTitle">Apache Spark</h2>
-					    <img src="./assets/icons/apache-spark.svg" class="character" />
+					    <img src="./assets/icons/apache-spark.svg" class="character" alt="Apache Spark 2" />
 					  </div>
 					</a>
 
@@ -356,10 +354,10 @@
 					<a href="https://www.mongodb.com" target="_blank">
 					  <div class="skillsCard">
 					    <div class="wrapper">
-					      <img src="./assets/icons/skills/json-file.png" class="cover-image" />
+					      <img src="./assets/icons/skills/json-file.png" class="cover-image" alt="Mongo DB 1" />
 					    </div>
 					    <h2 class="skillsTitle">Mongo DB</h2>
-					    <img src="./assets/icons/mongodb.svg" class="character" />
+					    <img src="./assets/icons/mongodb.svg" class="character" alt="Mongo DB 2" />
 					  </div>
 					</a>
 
@@ -371,10 +369,10 @@
 					<a href="https://redis.io" target="_blank">
 					  <div class="skillsCard">
 					    <div class="wrapper">
-					      <img src="./assets/icons/skills/ram.png" class="cover-image" />
+					      <img src="./assets/icons/skills/ram.png" class="cover-image" alt="Redis 1" />
 					    </div>
 					    <h2 class="skillsTitle">Redis</h2>
-					    <img src="./assets/icons/redis.svg" class="character" />
+					    <img src="./assets/icons/redis.svg" class="character" alt="Redis 2" />
 					  </div>
 					</a>
 				</div>
@@ -404,9 +402,9 @@
 
 			<!-- content -->
 			<div class="containerContent">
-				<img class="sticker" id="projectsSticker" alt="Hey there!" hidden />
-				
-				<img class="sticker" src='./assets/stickers/robot/projects.gif' alt="Proejcts!"/>
+				<video width="250px" height="auto" loop muted autoplay>
+					<source src="./assets/stickers/robot/projects.mp4" type="video/mp4" />
+				</video>
 
 				<br /><br />
 				<br /><br />
@@ -420,10 +418,10 @@
 					-->
 					<div id="kaggleBtn" class="skillsCard">
 						<div class="wrapper">
-					      <img src="./assets/icons/projects/cards/notebook.png" class="cover-image" />
+					      <img src="./assets/icons/projects/cards/notebook.png" class="cover-image" alt="Kaggle Notebooks 1" />
 					    </div>
 					    <h2 class="skillsTitle">Kaggle</h2>
-					    <img src="./assets/icons/kaggle.svg" class="character" />
+					    <img src="./assets/icons/kaggle.svg" class="character" alt="Kaggle Notebooks 2" />
 					</div>
 
 					<!--
@@ -433,10 +431,10 @@
 					-->
 					<div id="mlAlgorithmsBtn" class="skillsCard">
 						<div class="wrapper">
-					      <img src="./assets/icons/projects/cards/neural.png" class="cover-image" />
+					      <img src="./assets/icons/projects/cards/neural.png" class="cover-image" alt="ML Algorithms 1" />
 					    </div>
 					    <h2 class="skillsTitle">Algorithms</h2>
-					    <img src="./assets/icons/tensorflow.svg" class="character" />
+					    <img src="./assets/icons/tensorflow.svg" class="character" alt="ML Algorithms 2" />
 					</div>
 
 					<br /><br />
@@ -448,10 +446,10 @@
 					-->
 					<div id="dashboardBtn" class="skillsCard">
 						<div class="wrapper">
-					      <img src="./assets/icons/projects/cards/growth.png" class="cover-image" />
+					      <img src="./assets/icons/projects/cards/growth.png" class="cover-image" alt="Dashboards 1" />
 					    </div>
 					    <h2 class="skillsTitle">Dashboards</h2>
-					    <img src="./assets/icons/dashboard.png" class="character" />
+					    <img src="./assets/icons/dashboard.png" class="character" alt="Dashboards 2" />
 					</div>
 				</div>
 				<br />
@@ -478,9 +476,9 @@
 
 			<!-- content -->
 			<div class="containerContent">
-				<img class="sticker" id="reachMeSticker" alt="Hey there!" hidden />
-
-				<img class="sticker" src='./assets/stickers/robot/skills.gif' alt="Hey there!"/>
+				<video width="250px" height="auto" loop muted autoplay>
+					<source src="./assets/stickers/robot/skills.mp4" type="video/mp4" />
+				</video>
 				
 				<br />
 
@@ -617,63 +615,13 @@
 
 		    <!-- items -->
 		    <div class="modalItems">
-		    	<img class="sticker" src='./assets/stickers/robot/projects.gif' alt="Proejcts!"/>
+		    	<video width="250px" height="auto" loop muted autoplay>
+					<source src="./assets/stickers/robot/projects.mp4" type="video/mp4" />
+				</video>
 		    	
 		    	&nbsp
 
 		    	<h3>Coming soon...</h3>
-		    	<!--
-		    		*******************
-					** Default Theme **
-					*******************
-		    	-->
-		    	<!-- <div class="themeGroup">
-		    		<img id="defaultOptionSticker" alt="Default Theme" />
-		    		&nbsp
-		    		<input id="defaultOptionRadio" type="radio" name="actualTheme" value="0" />
-		    		&nbsp
-		    		<span>Default</span>
-		    	</div> -->
-
-		    	<!--
-		    		*********************
-					** Halloween Theme **
-					*********************
-		    	-->
-		    	<!-- <div class="themeGroup">
-		    		<img id="halloweenOptionSticker" alt="Halloween Theme" />
-		    		&nbsp
-		    		<input id="halloweenOptionRadio" type="radio" name="actualTheme" value="1" />
-		    		&nbsp
-		    		<span>Halloween</span>
-		    	</div> -->
-
-		    	<!--
-		    		*********************
-					** Christmas Theme **
-					*********************
-		    	-->
-		    	<!-- <div class="themeGroup">
-		    		<img id="christmasOptionSticker" alt="Christmas Theme" />
-		    		&nbsp
-		    		<input id="christmasOptionRadio" type="radio" name="actualTheme" value="2" />
-		    		&nbsp
-		    		<span>Christmas</span>
-		    	</div> -->
-
-		    	<!--
-		    		******************
-					** Easter Theme **
-					******************
-		    	-->
-		    	<!-- <div class="themeGroup">
-		    		<img id="easterOptionSticker" alt="Easter Theme" />
-		    		&nbsp
-		    		<input id="easterOptionRadio" type="radio" name="actualTheme" value="3" />
-		    		&nbsp
-		    		<span>Easter</span>
-		    	</div> -->
-
 		    </div>
 
 		    <!--
@@ -732,8 +680,9 @@
 
 		    <!-- items -->
 		    <div class="modalItems">
-		    	<img id="kaggleModalSticker" alt="Hey There" hidden />
-		    	<img class="sticker" src='./assets/stickers/robot/projects.gif' alt="Projects!"/>
+		    	<video width="250px" height="auto" loop muted autoplay>
+					<source src="./assets/stickers/robot/projects.mp4" type="video/mp4" />
+				</video>
 		    	&nbsp
 
 		    	<!-- cards -->
@@ -820,8 +769,9 @@
 
 		    <!-- items -->
 		    <div class="modalItems">
-		    	<img id="mlAlgorithmsModalSticker" alt="Hey There" hidden />
-		    	<img class="sticker" src='./assets/stickers/robot/projects.gif' alt="Projects!"/>
+		    	<video width="250px" height="auto" loop muted autoplay>
+					<source src="./assets/stickers/robot/projects.mp4" type="video/mp4" />
+				</video>
 		    	&nbsp
 		    	
 		    	<!-- cards -->
@@ -884,8 +834,9 @@
 
 		    <!-- items -->
 		    <div class="modalItems">
-		    	<img id="dashboardModalSticker" alt="Hey There" hidden />
-		    	<img class="sticker" src='./assets/stickers/robot/projects.gif' alt="Projects!"/>
+		    	<video width="250px" height="auto" loop muted autoplay>
+					<source src="./assets/stickers/robot/projects.mp4" type="video/mp4" />
+				</video>
 		    	&nbsp
 		    	
 		    	<!-- cards -->
