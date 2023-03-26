@@ -11,7 +11,7 @@
     "icons": [
         {
             "src": "./assets/pwa-logos/logo512x512.png",
-            "sizes": "452x452",
+            "sizes": "512x512",
             "type": "image/png",
             "purpose": "maskable"
         },
