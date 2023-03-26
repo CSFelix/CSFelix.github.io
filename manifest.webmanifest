@@ -1,0 +1,20 @@
+{
+    "short_name": "CSFelix",
+    "name": "CSFelix - Portfolio",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "theme_color": "#041f36",
+    "theme-color": "#041f36",
+    "background_color": "#041f36",
+    "background-color": "#041f36",
+    "description": "Data Science and Machine Learning Portfolio",
+
+    "icons": [
+        {
+            "src": "./assets/pwa-logos/logo452x452.avif",
+            "sizes": "452x452",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}
