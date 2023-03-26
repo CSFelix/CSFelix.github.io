@@ -10,8 +10,14 @@
     "description": "Data Science and Machine Learning Portfolio",
     "icons": [
         {
-            "src": "./assets/pwa-logos/logo452x452.avif",
+            "src": "./assets/pwa-logos/logo512x512.png",
             "sizes": "452x452",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "./assets/pwa-logos/logo180x180.png",
+            "sizes": "180x180",
             "type": "image/png",
             "purpose": "maskable"
         }
