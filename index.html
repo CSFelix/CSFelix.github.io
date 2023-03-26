@@ -4,8 +4,11 @@
 	<head>
 		<title>CSFelix - Portfolio</title>
 
+		<!-- manifest -->
+		<link rel="manifest" href="./manifest.webmanifest">
+
 		<!-- logotipo -->
-		<link rel="icon" href="./assets/images/logo.png" />
+		<link rel="icon" href="./assets/images/logo.avif" />
 
 		<!-- metas -->
 		<meta charset="utf-8" />
@@ -13,7 +16,7 @@
 		<meta name="author" content="@CSFelix" />
 		<meta name="keywords" content="python, data science, data analysis, pandas, matplotlib, seaborn, scikit-learn, tensorflow, projects, programming, computing, computer, csfelix, github, github.io" />
 		<meta name="description" content="What's shakin, bacon? 👋 Welcome to my Personal Portfolio, enjoy the projects and let's learn together, shall we?" />
-		<meta property="og:image" content="./assets/images/logo.png" />
+		<meta property="og:image" content="./assets/images/logo.avif" />
 		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
 
 		<!-- css styles -->
@@ -25,6 +28,9 @@
 		<link rel="stylesheet" type="text/css" href="./assets/css/styles/contact_form.css">
 		<link rel="stylesheet" type="text/css" href="./assets/css/styles/footer.css">
 		<link rel="stylesheet" type="text/css" href="./assets/css/styles/modal.css">
+
+		<!-- Service Worker -->
+		<script type="text/javascript" src="./index.js" defer></script>
 
 		<!-- JS Libraries -->
 		<script type="text/javascript" src="./assets/js/libraries/shuffle-text.js" defer></script>
@@ -83,7 +89,7 @@
 		<header>
 			<img 
 				id="headerImg" 
-				src="./assets/images/header.jpg" 
+				src="./assets/images/header.avif" 
 				alt="Uh-Oh, something went wrong. But it's just two tiny robots looking at each other!"
 			/>
 
@@ -152,7 +158,7 @@
 			<!-- content -->
 			<div class="containerContent">
 				<figure id='profilePic'>
-					<img src='./assets/images/profile-pic.png' alt='My Profile Pic' />
+					<img src='./assets/images/profile-pic.avif' alt='My Profile Pic' />
 					<figcaption>What's shaking, bacon? Hope you enjoy my Portfolio!!</figcaption>
 				</figure>
 
@@ -219,7 +225,7 @@
 					<a href="https://www.python.org" target="_blank">
 					  <div class="skillsCard">
 					    <div class="wrapper">
-					      <img src="./assets/icons/skills/programming.png" alt="Python 1" class="cover-image" />
+					      <img src="./assets/icons/skills/programming.avif" alt="Python 1" class="cover-image" />
 					    </div>
 					    <h2 class="skillsTitle">Python</h2>
 					    <img src="./assets/icons/python.svg" class="character" alt="Python 2" />
@@ -234,7 +240,7 @@
 					<a href="https://julialang.org" target="_blank">
 					  <div class="skillsCard">
 					    <div class="wrapper">
-					      <img src="./assets/icons/skills/computing.png" alt="Julia 1" class="cover-image" />
+					      <img src="./assets/icons/skills/computing.avif" alt="Julia 1" class="cover-image" />
 					    </div>
 					    <h2 class="skillsTitle">Julia</h2>
 					    <img src="./assets/icons/julia.svg" class="character" alt="Julia 2" />
@@ -249,10 +255,10 @@
 					<a href="https://www.r-project.org" target="_blank">
 					  <div class="skillsCard">
 					    <div class="wrapper">
-					      <img src="./assets/icons/skills/analysis.png" class="cover-image" alt="R 1" />
+					      <img src="./assets/icons/skills/analysis.avif" class="cover-image" alt="R 1" />
 					    </div>
 					    <h2 class="skillsTitle">R</h2>
-					    <img src="./assets/icons/r.svg" class="character" lat="R 2" />
+					    <img src="./assets/icons/r.svg" class="character" alt="R 2" />
 					  </div>
 					</a>
 
@@ -264,7 +270,7 @@
 					<a href="https://www.anaconda.com" target="_blank">
 					  <div class="skillsCard">
 					    <div class="wrapper">
-					      <img src="./assets/icons/skills/data-science.png" class="cover-image" alt="Anaconda 1" />
+					      <img src="./assets/icons/skills/data-science.avif" class="cover-image" alt="Anaconda 1" />
 					    </div>
 					    <h2 class="skillsTitle">DS Libraries</h2>
 					    <img src="./assets/icons/anaconda.svg" class="character" alt="Anaconda 2" />
@@ -279,7 +285,7 @@
 					<a href="https://www.sqlite.org/index.html" target="_blank">
 					  <div class="skillsCard">
 					    <div class="wrapper">
-					      <img src="./assets/icons/skills/data.png" class="cover-image" alt="SQL 1" />
+					      <img src="./assets/icons/skills/data.avif" class="cover-image" alt="SQL 1" />
 					    </div>
 					    <h2 class="skillsTitle">SQL</h2>
 					    <img src="./assets/icons/sql.svg" class="character" alt="SQL 2" />
@@ -294,7 +300,7 @@
 					<a href="https://neo4j.com" target="_blank">
 					  <div class="skillsCard">
 					    <div class="wrapper">
-					      <img src="./assets/icons/skills/analytics.png" class="cover-image" alt="Neo4J 1" />
+					      <img src="./assets/icons/skills/analytics.avif" class="cover-image" alt="Neo4J 1" />
 					    </div>
 					    <h2 class="skillsTitle">Neo4J</h2>
 					    <img src="./assets/icons/neo4j.svg" class="character" alt="Neo4J 2" />
@@ -309,7 +315,7 @@
 					<a href="https://streamlit.io" target="_blank">
 					  <div class="skillsCard">
 					    <div class="wrapper">
-					      <img src="./assets/icons/skills/polling.png" class="cover-image" alt="Streamlit 1" />
+					      <img src="./assets/icons/skills/polling.avif" class="cover-image" alt="Streamlit 1" />
 					    </div>
 					    <h2 class="skillsTitle">Streamlit</h2>
 					    <img src="./assets/icons/streamlit.svg" class="character" alt="Streamlit 2" />
@@ -324,7 +330,7 @@
 					<a href="https://www.khanacademy.org" target="_blank">
 					  <div class="skillsCard">
 					    <div class="wrapper">
-					      <img src="./assets/icons/skills/calculating.png" class="cover-image" alt="Math 1" />
+					      <img src="./assets/icons/skills/calculating.avif" class="cover-image" alt="Math 1" />
 					    </div>
 					    <h2 class="skillsTitle">Math</h2>
 					    <img src="./assets/icons/math.svg" class="character" alt= "Math 2" />
@@ -339,7 +345,7 @@
 					<a href="https://spark.apache.org" target="_blank">
 					  <div class="skillsCard">
 					    <div class="wrapper">
-					      <img src="./assets/icons/skills/table.png" class="cover-image" alt="Apache Spark 1" />
+					      <img src="./assets/icons/skills/table.avif" class="cover-image" alt="Apache Spark 1" />
 					    </div>
 					    <h2 class="skillsTitle">Apache Spark</h2>
 					    <img src="./assets/icons/apache-spark.svg" class="character" alt="Apache Spark 2" />
@@ -354,7 +360,7 @@
 					<a href="https://www.mongodb.com" target="_blank">
 					  <div class="skillsCard">
 					    <div class="wrapper">
-					      <img src="./assets/icons/skills/json-file.png" class="cover-image" alt="Mongo DB 1" />
+					      <img src="./assets/icons/skills/json-file.avif" class="cover-image" alt="Mongo DB 1" />
 					    </div>
 					    <h2 class="skillsTitle">Mongo DB</h2>
 					    <img src="./assets/icons/mongodb.svg" class="character" alt="Mongo DB 2" />
@@ -369,7 +375,7 @@
 					<a href="https://redis.io" target="_blank">
 					  <div class="skillsCard">
 					    <div class="wrapper">
-					      <img src="./assets/icons/skills/ram.png" class="cover-image" alt="Redis 1" />
+					      <img src="./assets/icons/skills/ram.avif" class="cover-image" alt="Redis 1" />
 					    </div>
 					    <h2 class="skillsTitle">Redis</h2>
 					    <img src="./assets/icons/redis.svg" class="character" alt="Redis 2" />
@@ -418,7 +424,7 @@
 					-->
 					<div id="kaggleBtn" class="skillsCard">
 						<div class="wrapper">
-					      <img src="./assets/icons/projects/cards/notebook.png" class="cover-image" alt="Kaggle Notebooks 1" />
+					      <img src="./assets/icons/projects/cards/notebook.avif" class="cover-image" alt="Kaggle Notebooks 1" />
 					    </div>
 					    <h2 class="skillsTitle">Kaggle</h2>
 					    <img src="./assets/icons/kaggle.svg" class="character" alt="Kaggle Notebooks 2" />
@@ -431,7 +437,7 @@
 					-->
 					<div id="mlAlgorithmsBtn" class="skillsCard">
 						<div class="wrapper">
-					      <img src="./assets/icons/projects/cards/neural.png" class="cover-image" alt="ML Algorithms 1" />
+					      <img src="./assets/icons/projects/cards/neural.avif" class="cover-image" alt="ML Algorithms 1" />
 					    </div>
 					    <h2 class="skillsTitle">Algorithms</h2>
 					    <img src="./assets/icons/tensorflow.svg" class="character" alt="ML Algorithms 2" />
@@ -446,10 +452,10 @@
 					-->
 					<div id="dashboardBtn" class="skillsCard">
 						<div class="wrapper">
-					      <img src="./assets/icons/projects/cards/growth.png" class="cover-image" alt="Dashboards 1" />
+					      <img src="./assets/icons/projects/cards/growth.avif" class="cover-image" alt="Dashboards 1" />
 					    </div>
 					    <h2 class="skillsTitle">Dashboards</h2>
-					    <img src="./assets/icons/dashboard.png" class="character" alt="Dashboards 2" />
+					    <img src="./assets/icons/dashboard.avif" class="character" alt="Dashboards 2" />
 					</div>
 				</div>
 				<br />
@@ -488,7 +494,7 @@
 					**********
 				-->
 				<div class="reachMeSubContainer">
-					<img class="reachMeLogo" src="./assets/icons/debian.png" alt="Blog Logo" />
+					<img class="reachMeLogo" src="./assets/icons/debian.avif" alt="Blog Logo" />
 
 					<a href="https://csfelix.vercel.app" target="_blank">
 						&nbsp<span>Blog: csfelix.vercel.app</span>
@@ -585,7 +591,7 @@
 			************
 		-->
 		<footer>
-			<img src="./assets/icons/balance.png" alt="Balance Icon" />
+			<img src="./assets/icons/balance.avif" alt="Balance Icon" />
 			&nbsp
 			<span>GNU General Public License v3.0  - Copyrights 2018 - 2022</span>
 		</footer>
@@ -691,7 +697,7 @@
 					<!-- First Project -->
 		    		<a href="https://www.kaggle.com/code/dsfelix/predicting-future-sales" target="_blank">
 		    			<div class="card" data-tilt>
-		    				<img src="./assets/icons/projects/trade.png" alt="Predict Future Sales">
+		    				<img src="./assets/icons/projects/trade.avif" alt="Predict Future Sales">
 
 		    				<span>Predicting Future Sales</span>
 
@@ -702,7 +708,7 @@
 		    		<!-- Second Project -->
 		    		<a href="https://www.kaggle.com/code/dsfelix/predicting-us-stores-sales/notebook" target="_blank">
 		    			<div class="card" data-tilt>
-		    				<img src="./assets/icons/projects/store.png" alt="Predicting US Stores Sales">
+		    				<img src="./assets/icons/projects/store.avif" alt="Predicting US Stores Sales">
 
 		    				<span>Predicting US Stores Sales</span>
 
@@ -713,7 +719,7 @@
 		    		<!-- Third Project -->
 		    		<a href="https://www.kaggle.com/code/dsfelix/predicting-house-prices" target="_blank">
 		    			<div class="card" data-tilt>
-		    				<img src="./assets/icons/projects/house-for-sale.png" alt="Predicting House Prices">
+		    				<img src="./assets/icons/projects/house-for-sale.avif" alt="Predicting House Prices">
 
 		    				<span>Predicting House Prices</span>
 
@@ -724,7 +730,7 @@
 		    		<!-- Fourth Project -->
 		    		<a href="https://www.kaggle.com/code/dsfelix/prevendo-pre-o-de-casas/notebook" target="_blank">
 		    			<div class="card" data-tilt>
-		    				<img src="./assets/icons/projects/house-for-sale.png" alt="Predicting House Prices">
+		    				<img src="./assets/icons/projects/house-for-sale.avif" alt="Predicting House Prices">
 
 		    				<span>Predicting House Prices</span>
 		    				<span>(Portuguese Version)</span>
@@ -736,7 +742,7 @@
 		    		<!-- Fifth Project -->
 		    		<a href="https://www.kaggle.com/dsfelix/spaceship-titanic-competition" target="_blank">
 		    			<div class="card" data-tilt>
-		    				<img src="./assets/icons/projects/spaceship.png" alt="Spaceship Titanic">
+		    				<img src="./assets/icons/projects/spaceship.avif" alt="Spaceship Titanic">
 
 		    				<span>Spaceship Titanic -</span>
 		    				<span>Dimensional Transportation</span>
@@ -780,7 +786,7 @@
 					<!-- First Project -->
 		    		<a href="https://www.kaggle.com/code/dsfelix/random-forest-regressor-algorithm" target="_blank">
 		    			<div class="card" data-tilt>
-		    				<img src="./assets/icons/algorithms/trees.png" alt="Random Forest Regressor">
+		    				<img src="./assets/icons/algorithms/trees.avif" alt="Random Forest Regressor">
 
 		    				<span>Random Forest Regressor</span>
 
@@ -791,7 +797,7 @@
 		    		<!-- Second Project -->
 		    		<a href="https://www.kaggle.com/code/dsfelix/xgboost-regressor" target="_blank">
 		    			<div class="card" data-tilt>
-		    				<img src="./assets/icons/algorithms/logistic-regression.png" alt="XGB Regressor">
+		    				<img src="./assets/icons/algorithms/logistic-regression.avif" alt="XGB Regressor">
 
 		    				<span>XGB Regressor</span>
 
@@ -802,7 +808,7 @@
 		    		<!-- Third Project -->
 		    		<a href="https://www.kaggle.com/code/dsfelix/xgboost-classifier" target="_blank">
 		    			<div class="card" data-tilt>
-		    				<img src="./assets/icons/algorithms/clustering.png" alt="XGB Classifier">
+		    				<img src="./assets/icons/algorithms/clustering.avif" alt="XGB Classifier">
 
 		    				<span>XGB Classifier</span>
 
@@ -825,7 +831,7 @@
 
 		    <!-- title -->
 		    <div class="modalTitle">
-		    	<img src="./assets/icons/dashboard.png" alt="Dashboards Logo" />
+		    	<img src="./assets/icons/dashboard.avif" alt="Dashboards Logo" />
 		    	&nbsp
 		    	<span>Dashboards</span>
 		    </div>
@@ -845,7 +851,7 @@
 					<!-- First Project -->
 		    		<a href="https://csfelix-dashboard-us-stores-sales-app-26nuvr.streamlit.app" target="_blank">
 		    			<div class="card" data-tilt>
-		    				<img src="./assets/icons/projects/store.png" alt="Dashboard US Store Sales">
+		    				<img src="./assets/icons/projects/store.avif" alt="Dashboard US Store Sales">
 
 		    				<span>US Store Sales</span>
 
@@ -856,7 +862,7 @@
 		    		<!-- Second Project -->
 		    		<a href="https://csfelix-programming-languages-poll-1--poll-6k70pi.streamlit.app" target="_blank">
 		    			<div class="card" data-tilt>
-		    				<img src="./assets/icons/dashboards/polling.png" alt="Programming Languages Poll">
+		    				<img src="./assets/icons/dashboards/polling.avif" alt="Programming Languages Poll">
 
 		    				<span>Programming Languages Poll</span>
 
@@ -867,7 +873,7 @@
 		    		<!-- Third Project -->
 		    		<a href="https://csfelix-csv-analyser-app-c389q5.streamlit.app" target="_blank">
 		    			<div class="card" data-tilt>
-		    				<img src="./assets/icons/dashboards/investigation.png" alt="Dashboard CSV Analyser">
+		    				<img src="./assets/icons/dashboards/investigation.avif" alt="Dashboard CSV Analyser">
 
 		    				<span>CSV Analyser</span>
 
