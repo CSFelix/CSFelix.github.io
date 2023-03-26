@@ -157,5 +157,5 @@ header nav #sponsorThemeBtn #themeBtn:hover
 @media only screen and (max-width: 625px) {
 	header nav #gitHubProfile { display: none; }
 	#titleAndSubtitle { display: none; }
-  #headerImg { content:url("../../images/header-mobile.jpg"); }
+  #headerImg { content:url("../../images/header-mobile.avif"); }
 }
