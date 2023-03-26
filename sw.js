@@ -121,7 +121,8 @@ self.addEventListener("install", function(event) {
                 "./assets/js/scripts/text-shuffling-effect.js",
 
                 // pwa-logos
-                "./assets/pwa-logos/logo452x452.avif",
+                "./assets/pwa-logos/logo180x180.png",
+                "./assets/pwa-logos/logo512x512.png",
 
                 // stickers - robot
                 "./assets/stickers/robot/404.mp4",
