@@ -13,13 +13,13 @@
             "src": "./assets/pwa-logos/logo512x512.png",
             "sizes": "512x512",
             "type": "image/png",
-            "purpose": "maskable"
+            "purpose": "any"
         },
         {
             "src": "./assets/pwa-logos/logo180x180.png",
             "sizes": "180x180",
             "type": "image/png",
-            "purpose": "maskable"
+            "purpose": "any"
         }
     ]
 }
