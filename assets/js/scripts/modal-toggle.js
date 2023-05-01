@@ -16,6 +16,14 @@ const kaggleClose = document.getElementById('kaggleClose');
 kaggleBtn.onclick = function() { kaggleModal.style.display = "block"; }
 kaggleClose.onclick = function() { kaggleModal.style.display = "none"; }
 
+/* Live Projects */
+const liveProjectsModal = document.getElementById('liveProjectsModal');
+const liveProjectsBtn = document.getElementById('liveProjectsBtn');
+const liveProjectsClose = document.getElementById('liveProjectsClose');
+
+liveProjectsBtn.onclick = function() { liveProjectsModal.style.display = "block"; }
+liveProjectsClose.onclick = function() { liveProjectsModal.style.display = "none"; }
+
 /* ML Algorithms */
 const mlAlgorithmsModal = document.getElementById('mlAlgorithmsModal');
 const mlAlgorithmsBtn = document.getElementById('mlAlgorithmsBtn');
@@ -36,6 +44,7 @@ dashboardClose.onclick = function() { dashboardModal.style.display = "none"; }
 window.onclick = function(event) {
   if (event.target == themesModal) { themesModal.style.display = "none"; }
   else if (event.target == kaggleModal) { kaggleModal.style.display = "none"; }
+  else if (event.target == liveProjectsModal) { liveProjectsModal.style.display = "none"; }
   else if (event.target == mlAlgorithmsModal) { mlAlgorithmsModal.style.display = "none"; }
   else if (event.target == dashboardModal) { dashboardModal.style.display = "none"; }
 }
