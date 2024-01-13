@@ -1,0 +1,32 @@
+/*
+	********************
+	** Main Container **
+	********************
+*/
+.socialMediasMainContainer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 1em;					
+}
+
+
+
+
+/*
+	***********
+	** Icons **
+	***********
+*/
+.socialMediaIcon {
+	cursor: pointer;
+	filter: grayscale(0.80);
+	transition: all 0.3s ease;
+}
+
+.socialMediaIcon:hover {
+	filter: grayscale(0.00);
+	transform: translateY(-5px);
+}
