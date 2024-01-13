@@ -44,8 +44,11 @@ const circle = new mojs.Shape({
 document.onclick = (e) => {
 	const position = { x: e.pageX, y: e.pageY };
 
-	circle.tune(position);
-	circle.replay();
+	// - The circle object does not allow user to click on forms, buttons and other interactive
+	// elements in the page.
+	//
+	// circle.tune(position);
+	// circle.replay();
 
 	burst.tune(position);
 	burst.replay();
