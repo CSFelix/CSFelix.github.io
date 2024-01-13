@@ -80,8 +80,55 @@
 .skillsSubContainer .skillsStarsContainer img { width:  50px; height:  auto; }
 .skillsSubContainer .skillsStarsContainer .inactive { -webkit-filter: grayscale(100%); filter: grayscale(100%); }
 
-#skillsCardsContainer
-, #projectsSubContainer {
+#skillsCardsContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 5em;
+}
+
+.skillsCardsSubContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1em;
+}
+
+.skillsContentsContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+	gap: 1em;
+}
+
+.skillsContentsSubContainer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 1em;
+}
+
+.skillsProgress::-moz-progress-bar {
+	background: var(--color-4);
+	color: var(--color-4);
+}
+
+.skillsProgress::-webkit-progress-value {
+	background: var(--color-4);
+	color: var(--color-4);
+}
+
+.skillsProgress {
+	background: var(--color-4);
+	color: var(--color-4);
+}
+
+#projectsSubContainer {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -187,4 +234,13 @@
 	animation-name: scrollSign;
 	animation-duration: 1.5s;
 	animation-iteration-count: infinite;
+}
+
+/*
+  ************
+  ** Mobile **
+  ************
+*/
+@media only screen and (max-width: 850px) {
+  .skillsContentsSubContainer { justify-content: center; }
 }
