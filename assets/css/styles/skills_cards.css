@@ -8,6 +8,7 @@
   padding: 0 36px;
   perspective: 2500px;
   margin: 0 50px;
+  cursor: pointer;
 }
 
 .cover-image {

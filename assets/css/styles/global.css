@@ -20,6 +20,13 @@
 	text-decoration: none;
 	scroll-behavior: smooth;
 	vertical-align: baseline;
+
+	user-select: none;
+	user-drag: none;
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
 }
 
 /*
@@ -34,7 +41,7 @@
 	--background-color-4: #c6c6c6; /* mobile menu options on hover */
 
 	--color-1: #f6f6ff;
-	--color-2: ghostwhite;
+	--color-2: #f8f8ff;
 	--color-3: #c3c3c3;
 
 	--text-shadow-color: #7159c1; /* header */
