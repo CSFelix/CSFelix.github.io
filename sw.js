@@ -101,6 +101,7 @@ self.addEventListener("install", function(event) {
                 "./assets/images/header-mobile.avif",
                 "./assets/images/logo.avif",
                 "./assets/images/profile-pic.avif",
+                "./assets/images/profile-pic-new-version.avif",
 
                 // js - libraries
                 "./assets/js/libraries/easter-eggs.js",
