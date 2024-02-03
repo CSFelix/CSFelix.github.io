@@ -19,9 +19,10 @@
 		<meta name="keywords" content="python, data science, data analysis, pandas, matplotlib, seaborn, scikit-learn, tensorflow, projects, programming, computing, computer, csfelix, github, github.io" />
 		<meta name="description" content="What's shakin, bacon? 👋 Welcome to my Personal Portfolio, enjoy the projects and let's learn together, shall we?" />
 		<meta property="og:image" content="./assets/images/logo.avif" />
-		<!-- <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5" /> -->
 		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
 
+		<!--css libraries -->
+		<link rel="stylesheet" type="text/css" href="./assets/css/libraries/tippy.css" />
 
 		<!-- css styles -->
 		<link rel="stylesheet" type="text/css" href="./assets/css/styles/global.css" />
@@ -34,26 +35,22 @@
 		<link rel="stylesheet" type="text/css" href="./assets/css/styles/footer.css">
 		<link rel="stylesheet" type="text/css" href="./assets/css/styles/modal.css">
 
-		<!-- Service Worker -->
-		<!-- <script type="text/javascript" src="./index.js" defer></script> -->
-
-		<!-- JS Libraries -->
-		<script type="text/javascript" src="./assets/js/libraries/shuffle-text.js" defer></script>
-		<script type="text/javascript" src="./assets/js/libraries/scroll-reveal.js" defer></script>
-
-		<!-- scripts pre-loading -->
-		<script type="text/javascript" src="./assets/js/scripts/text-shuffling-effect.js" defer></script>
-		<script type="text/javascript" src="./assets/js/scripts/scroll-to-reveal.js" defer></script>
-
 		<!-- JS Libraries -->
 		<script type="text/javascript" src="./assets/js/libraries/mo.min.js" defer></script>
+		<script type="text/javascript" src="./assets/js/libraries/popper.min.js" defer></script>
+		<script type="text/javascript" src="./assets/js/libraries/scroll-reveal.js" defer></script>
+		<script type="text/javascript" src="./assets/js/libraries/shuffle-text.js" defer></script>
+		<script type="text/javascript" src="./assets/js/libraries/tippy.min.js" defer></script>
 		<script type="text/javascript" src="./assets/js/libraries/vanilla-tilt.min.js" defer></script>
 
-		<!-- scripts pos-loading -->
+		<!-- scripts -->
+		<script type="text/javascript" src="./assets/js/scripts/text-shuffling-effect.js" defer></script>
+		<script type="text/javascript" src="./assets/js/scripts/scroll-to-reveal.js" defer></script>
 		<script type="text/javascript" src="./assets/js/scripts/mobile-menu-btn-effect.js" defer></script>
 		<script type="text/javascript" src="./assets/js/scripts/mobile-menu-toggle-effect.js" defer></script>
 		<script type="text/javascript" src="./assets/js/scripts/modal-toggle.js" defer></script>
 		<script type="text/javascript" src="./assets/js/scripts/click-burst.js" defer></script>
+		<script type="text/javascript" src="./assets/js/scripts/tooltips.js" defer></script>
 
 		<!-- Easter Eggs -->
 		<script type="text/javascript" src="./assets/js/libraries/easter-eggs.js" defer></script>
@@ -488,12 +485,12 @@
 						****************
 					-->
 					<a href="https://github.com/CSFelix/data-science-studies/tree/main" target="_blank">
-						<div id="liveProjectsBtn" class="skillsCard">
+						<div id="dsStudiesBtn" class="skillsCard">
 							<div class="wrapper">
 					      	<img src="./assets/icons/projects/cards/ds-studies.avif" class="cover-image" alt="DS Studies 1" width="200px" height="200px" />
 					    	</div>
 					    	<h2 class="skillsTitle">DS Studies</h2>
-					  	  <img src="./assets/icons/ds-studies.avif" class="character" alt="DS Studies 2" width="200px" height="200px" />
+					  	  	<img src="./assets/icons/ds-studies.avif" class="character" alt="DS Studies 2" width="200px" height="200px" />
 						</div>
 					</a>
 				</div>
@@ -540,7 +537,7 @@
 						** Instagram **
 						***************
 					-->
-					<div class="reachMeSubContainer socialMediaIcon">
+					<div id='instagramSocialMediaBtn' class="reachMeSubContainer socialMediaIcon">
 						<a href="https://www.instagram.com/csfelix08/" target="_blank">
 							<img class="reachMeLogo" src="./assets/icons/instagram.png" alt="Instagram Logo" width="200px" height="200px" />
 						</a>
@@ -553,7 +550,7 @@
 						** GitHub **
 						************
 					-->
-					<div class="reachMeSubContainer socialMediaIcon">
+					<div id='githubSocialMediaBtn' class="reachMeSubContainer socialMediaIcon">
 						<a href="https://github.com/CSFelix" target="_blank">
 							<img class="reachMeLogo" src="./assets/icons/github.svg" alt="GitHub Logo" width="200px" height="200px" />
 						</a>
@@ -566,7 +563,7 @@
 						** Kaggle **
 						************
 					-->
-					<div class="reachMeSubContainer socialMediaIcon">
+					<div id='kaggleSocialMediaBtn' class="reachMeSubContainer socialMediaIcon">
 						<a href="https://www.kaggle.com/dsfelix" target="_blank">
 							<img class="reachMeLogo" src="./assets/icons/kaggle.svg" alt="Kaggle Logo" width="200px" height="200px" />
 						</a>
@@ -579,7 +576,7 @@
 						** LinkedIn **
 						**************
 					-->
-					<div class="reachMeSubContainer socialMediaIcon">
+					<div id='linkedinSocialMediaBtn' class="reachMeSubContainer socialMediaIcon">
 						<a href="https://www.linkedin.com/in/csfelix/" target="_blank">
 							<img class="reachMeLogo" src="./assets/icons/linkedin.svg" alt="LinkedIn Logo" width="200px" height="200px" />
 						</a>
@@ -592,7 +589,7 @@
 						** Gmail **
 						***********
 					-->
-					<div class="reachMeSubContainer socialMediaIcon">
+					<div id='gmailSocialMediaBtn' class="reachMeSubContainer socialMediaIcon">
 						<a href="mailto:csfelix08@gmail.com">
 							<img class="reachMeLogo" src="./assets/icons/google.svg" alt="Google Logo" width="200px" height="200px" />
 						</a>
