@@ -30,3 +30,20 @@
 	filter: grayscale(0.00);
 	transform: translateY(-5px);
 }
+
+
+
+
+/*
+	**********************
+	** Hire Me - Contra **
+	**********************
+*/
+.contraHireMeButton {
+	transition: all 0.3s ease;
+}
+
+.contraHireMeButton:hover {
+	transform: translateY(-5px);
+	filter: brightness(87%);
+}
