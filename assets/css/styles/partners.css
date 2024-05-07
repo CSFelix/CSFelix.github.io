@@ -1,0 +1,32 @@
+/*
+	*******************
+	** Sub Container **
+	*******************
+*/
+.partnersSubContainer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 1em;
+}
+
+
+
+
+/*
+	***********
+	** Icons **
+	***********
+*/
+.partnerIcon {
+	cursor: pointer;
+	filter: grayscale(0.80);
+	transition: all 0.3s ease;
+}
+
+.partnerIcon:hover {
+	filter: grayscale(0.00);
+	transform: translateY(-5px);
+}
