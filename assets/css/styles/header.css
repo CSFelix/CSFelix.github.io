@@ -24,12 +24,15 @@ header nav {
   color: var(--color-2);
 }
 
-header nav #gitHubProfile { transition: all 0.3s ease; }
+header nav #contraProfile {
+	cursor: pointer;
+	margin-top: 0.50em;
+	transition: all 0.3s ease;
+}
 
-header nav #gitHubProfile:hover {
-	border-bottom-style: dashed;
-  border-bottom-width: 3.1px;
-	-webkit-filter: brightness(87%);
+header nav #contraProfile:hover {
+	transform: translateY(-5px);
+	filter: brightness(87%);
 }
 
 header nav #desktopMenu { display: flex; justify-content: center; }
@@ -155,7 +158,7 @@ header nav #sponsorThemeBtn #themeBtn:hover
 }
 
 @media only screen and (max-width: 625px) {
-	header nav #gitHubProfile { display: none; }
+	header nav #contraProfile { display: none; }
 	#titleAndSubtitle { display: none; }
   #headerImg { content:url("../../images/header-mobile.avif"); }
 }

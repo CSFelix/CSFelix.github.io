@@ -60,35 +60,7 @@
   flex-direction: column;
 }
 
-.modalContent .modalItems .themeGroup {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.modalContent .modalItems .themeGroup img { width: 125px; height: auto; }
-.modalContent .modalItems .themeGroup span { font-size: 20px; }
 .modalContent .modalItems img { width: 200px; height: auto; }
-
-.modalContent .sponsorGroup {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.modalContent .sponsorGroup a button {
-  width: 116px;
-  height: 35px;
-  border:  0;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: -webkit-filter 0.3s ease;
-}
-
-.modalContent .sponsorGroup a button:hover { -webkit-filter: brightness(80%); }
 
 /*
   ******************
@@ -96,7 +68,7 @@
   ******************
 */
 .close { color: var(--color-1); float: right; font-size: 28px; font-weight: bold; }
-.close:hover, .close:focus { color: #000; text-decoration: none; cursor: pointer; }
+.close:hover, .close:focus { color: #E72929; text-decoration: none; cursor: pointer; }
 
 /*
   ***********

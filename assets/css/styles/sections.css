@@ -44,7 +44,7 @@
 }
 
 #aboutMeContainer .containerContent #profilePic img { width: min(20rem, 40rem); height: auto; }
-#aboutMeContainer .containerContent #profilePic figcaption { color: var(--color-3); }
+#aboutMeContainer .containerContent #profilePic figcaption { color: var(--color-3); font-size: 1.25em; }
 
 /*
 	**********************
@@ -201,11 +201,6 @@
 	transition: all 0.3s ease;
 }
 
-.reachMeSubContainer a:hover {
-	border-bottom-style: dashed;
-  	border-bottom-width: 2.5px;
-	-webkit-filter: brightness(87%);	
-}
 
 /*
 	****************
