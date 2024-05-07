@@ -4,7 +4,7 @@
 	********************
 */
 .container { width: 100vw; color: var(--color-1); }
-#skillsContainer, #reachMeContainer { background-color: var(--background-color-2); }
+#skillsContainer, #partnersContainer { background-color: var(--background-color-2); }
 .containerTitle { text-align:  center; font-size: 30px; }
 .containerTitleText { text-decoration: underline; text-decoration-style: dashed; }
 
@@ -28,6 +28,7 @@
 	color:  var(--color-1);
 	border-bottom-style: dashed;
 	border-bottom-width: 3.1px;
+	top: 200px;
 }
 
 #aboutMeContainer .containerContent span a:hover {
