@@ -9,7 +9,8 @@
 
 		<!-- logotipo -->
 		<link rel="icon" href="./assets/pwa-logos/logo512x512.png" />
-		<link rel="apple-touch-icon" href="./assets/pwa-logos/logo180x180.png">
+		<link rel="apple-touch-icon" href="./assets/pwa-logos/logo180x180.png" />
+		<link rel="shortcut icon" href="./assets/pwa-logos/logo180x180.png" />
 
 		<!-- metas -->
 		<meta charset="utf-8" />
@@ -17,9 +18,18 @@
 		<meta name="theme-color" content="#05031c" />
 		<meta name="author" content="@CSFelix" />
 		<meta name="keywords" content="python, data science, data analysis, pandas, matplotlib, seaborn, scikit-learn, tensorflow, projects, programming, computing, computer, csfelix, github, github.io" />
-		<meta name="description" content="What's shaking, bacon? 👋 Welcome to my Personal Portfolio, enjoy the projects and let's learn together, shall we?" />
-		<meta property="og:image" content="./assets/images/logo.avif" />
+		<meta name="description" content="👋 What's shaking, bacon? Welcome to my Personal Portfolio, enjoy the projects, let's learn together and remember: Data's Tale Needs a Narrator!" />
 		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+
+		<!-- Open Graph (OG)
+			https://stackoverflow.com/questions/19778620/provide-an-image-for-whatsapp-link-sharing
+		-->
+		<meta property="og:image" content="./assets/pwa-logos/logo300x300.png" />
+		<meta property="og:title" content="CSFelix - Portfolio" />
+		<meta property="og:url" content="https://csfelix.github.io/" />
+		<meta property="og:description" content="👋 What's shaking, bacon? Welcome to my Personal Portfolio!" />
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="en_US" />
 
 		<!--css libraries -->
 		<link rel="stylesheet" type="text/css" href="./assets/css/libraries/tippy.css" />
@@ -217,9 +227,14 @@
 							<div class="skillsContentsSubContainer">
 								<img src="./assets/icons/python.svg" alt="Python Logo" width="40px" height="40px" />
 								<span>Python</span>
-								<progress class="skillsProgress" value="100" max="100"></progress>
+						    <div class="skillsProgress">
+								  <span style="width: 100%"><span></span></span>
+								</div>
 								<span>Advanced</span>
 							</div>
+  
+						  
+  
 
 							<hr />
 
@@ -227,7 +242,9 @@
 							<div class="skillsContentsSubContainer">
 								<img src="./assets/icons/julia.svg" alt="Julia Logo" width="40px" height="40px" />
 								<span>Julia</span>
-								<progress class="skillsProgress" value="50" max="100"></progress>
+								<div class="skillsProgress">
+								  <span style="width: 50%"><span></span></span>
+								</div>
 								<span>Intermediate</span>
 							</div>
 
@@ -237,19 +254,13 @@
 							<div class="skillsContentsSubContainer">
 								<img src="./assets/icons/r.svg" alt="R Logo" width="40px" height="40px" />
 								<span>R</span>
-								<progress class="skillsProgress" value="50" max="100"></progress>
-								<span>Intermediate</span>
+								<div class="skillsProgress">
+								  <span style="width: 25%"><span></span></span>
+								</div>
+								<span>Beginner</span>
 							</div>
 
 							<hr />
-
-							<!-- Solidity -->
-							<!-- <div class="skillsContentsSubContainer">
-								<img src="./assets/icons/solidity.svg" alt="Solidity Logo" width="40px" height="40px" />
-								<span>Solidity</span>
-								<progress class="skillsProgress" value="10" max="100"></progress>
-								<span>Real Beginner</span>
-							</div> -->
 						</div>
 					</div>
 
@@ -265,7 +276,9 @@
 							<div class="skillsContentsSubContainer">
 								<img src="./assets/icons/sql.svg" alt="SQL Logo" width="40px" height="40px" />
 								<span>SQL</span>
-								<progress class="skillsProgress" value="100" max="100"></progress>
+								<div class="skillsProgress">
+								  <span style="width: 100%"><span></span></span>
+								</div>
 								<span>Advanced</span>
 							</div>
 
@@ -275,7 +288,9 @@
 							<div class="skillsContentsSubContainer">
 								<img src="./assets/icons/neo4j.svg" alt="Neo4J Logo" width="40px" height="40px" />
 								<span>Neo4J</span>
-								<progress class="skillsProgress" value="85" max="100"></progress>
+								<div class="skillsProgress">
+								  <span style="width: 85%"><span></span></span>
+								</div>
 								<span>Upper Intermediate</span>
 							</div>
 
@@ -285,7 +300,9 @@
 							<div class="skillsContentsSubContainer">
 								<img src="./assets/icons/mongodb.svg" alt="MongoDB Logo" width="40px" height="40px" />
 								<span>MongoDB</span>
-								<progress class="skillsProgress" value="50" max="100"></progress>
+								<div class="skillsProgress">
+								  <span style="width: 50%"><span></span></span>
+								</div>
 								<span>Intermediate</span>
 							</div>
 
@@ -295,7 +312,9 @@
 							<div class="skillsContentsSubContainer">
 								<img src="./assets/icons/redis.svg" alt="Redis Logo" width="40px" height="40px" />
 								<span>Redis</span>
-								<progress class="skillsProgress" value="25" max="100"></progress>
+								<div class="skillsProgress">
+								  <span style="width: 25%"><span></span></span>
+								</div>
 								<span>Beginner</span>
 							</div>
 						</div>
@@ -313,7 +332,9 @@
 							<div class="skillsContentsSubContainer">
 								<img src="./assets/icons/anaconda.svg" alt="Anaconda Logo" width="40px" height="40px" />
 								<span>DS Libraries</span>
-								<progress class="skillsProgress" value="100" max="100"></progress>
+								<div class="skillsProgress">
+								  <span style="width: 100%"><span></span></span>
+								</div>
 								<span>Advanced</span>
 							</div>
 
@@ -323,7 +344,9 @@
 							<div class="skillsContentsSubContainer">
 								<img src="./assets/icons/math.svg" alt= "Math Logo" width="40px" height="40px" />
 								<span>Math</span>
-								<progress class="skillsProgress" value="85" max="100"></progress>
+								<div class="skillsProgress">
+								  <span style="width: 85%"><span></span></span>
+								</div>
 								<span>Upper Intermediate</span>
 							</div>
 
@@ -333,7 +356,9 @@
 							<div class="skillsContentsSubContainer">
 								<img src="./assets/icons/streamlit.svg" alt="Streamlit Logo" width="40px" height="40px" />
 								<span>Streamlit</span>
-								<progress class="skillsProgress" value="85" max="100"></progress>
+								<div class="skillsProgress">
+								  <span style="width: 85%"><span></span></span>
+								</div>
 								<span>Upper Intermediate</span>
 							</div>
 
@@ -343,7 +368,9 @@
 							<div class="skillsContentsSubContainer">
 								<img src="./assets/icons/apache-spark.svg" alt="Spark Logo" width="40px" height="40px" />
 								<span>Spark</span>
-								<progress class="skillsProgress" value="75" max="100"></progress>
+								<div class="skillsProgress">
+								  <span style="width: 75%"><span></span></span>
+								</div>
 								<span>Intermediate</span>
 							</div>
 						</div>
@@ -594,7 +621,13 @@
 
 				<br />
 
-				<!-- here -->
+				<!--
+					************************* 
+					** Freelancing Buttons **
+					*************************
+				-->
+
+				<!-- Contra -->
 				<div class="contra-hire-me-button contraHireMeButton" data-analyticsUserId="7f7e2ac5-22dd-4496-8878-fc01b0288c54" data-theme="dark" data-username="_csfelix08_"></div>
 
 				<br />
@@ -606,24 +639,31 @@
 				--->
 				<span>🌐 Desiring to hit me up? Consider using one of these languages: American English and Brazilian Portuguese.</span>
 
-				<form id="contactForm" action="https://formsubmit.co/csfelix08@gmail.com" method="POST">
+				<form
+					action="https://formsubmit.co/csfelix08@gmail.com"
+					id="contactForm"
+					method="POST"
+				>
 					<fieldset style="background-color: #041f36">
 						<legend><h3>📧 Hit Me Up 📧</h3></legend>
 
 						<br />
-					    <input class="contactFormField" type="hidden" name="_captcha" value="false">
-					    <input type="hidden" name="_next" value="https://csfelix.github.io">
-					    <input type="hidden" name="_subject" value="Hey there, I have visited your Portfolio!">
 
-					    <input class="contactFormField" type="text" name="name" placeholder="Your name" required style="background-color: #f8f8ff">
-					    <input class="contactFormField" type="email" name="email" placeholder="Your email" required style="background-color: #f8f8ff">
-					    <textarea class="contactFormField" name="message" placeholder="Details of your message" required style="background-color: #f8f8ff"></textarea>
+				    <input class="contactFormField" type="hidden" name="_captcha" value="false">
+				    <input type="hidden" name="_next" value="https://csfelix.github.io">
+				    <input type="hidden" name="_subject" value="Hey there, I have visited your Portfolio!">
+				    <input type="hidden" name="_template" value="basic">
 
-					    <button type="submit" style="background-color: #f8f8ff">Send</button>
+				    <input class="contactFormField" type="text" name="name" placeholder="Your name" required style="background-color: #f8f8ff">
+				    <input class="contactFormField" type="email" name="email" placeholder="Your email" required style="background-color: #f8f8ff">
+				    <textarea class="contactFormField" name="message" placeholder="Details of your message" required style="background-color: #f8f8ff"></textarea>
+
+				    <button type="submit" style="background-color: #f8f8ff">Send</button>
 					</fieldset>
 				</form>
 
 				<br />
+			</div>
 		</section>
 
 		<!--
