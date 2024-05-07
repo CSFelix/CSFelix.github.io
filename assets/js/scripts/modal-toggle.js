@@ -1,13 +1,3 @@
-/* Themes */
-const themesModal = document.getElementById('themesModal');
-const themesBtn = document.getElementById('themeBtn');
-const mobileThemesBtn = document.getElementById('mobileThemeBtn');
-const themesClose = document.getElementById('themesClose');
-
-themesBtn.onclick = function() { themesModal.style.display = "block"; }
-mobileThemesBtn.onclick = function() { themesModal.style.display = "block"; }
-themesClose.onclick = function() { themesModal.style.display = "none"; }
-
 /* Kaggle Notebooks */
 const kaggleModal = document.getElementById('kaggleModal');
 const kaggleBtn = document.getElementById('kaggleBtn');
@@ -50,10 +40,20 @@ dashboardClose.onclick = function() { dashboardModal.style.display = "none"; }
 
 /* Closing modals when user taps outside the modal */
 window.onclick = function(event) {
-  if (event.target == themesModal) { themesModal.style.display = "none"; }
-  else if (event.target == kaggleModal) { kaggleModal.style.display = "none"; }
+  if (event.target == kaggleModal) { kaggleModal.style.display = "none"; }
   else if (event.target == liveProjectsModal) { liveProjectsModal.style.display = "none"; }
   else if (event.target == datasetsModal) { datasetsModal.style.display = "none"; }
   else if (event.target == mlAlgorithmsModal) { mlAlgorithmsModal.style.display = "none"; }
   else if (event.target == dashboardModal) { dashboardModal.style.display = "none"; }
+}
+
+/* Closing modals when user presses Escape (Esc) */
+window.onkeydown = function(event) {
+  if (event.key == 'Escape') {
+    if (kaggleModal.style.display == 'block') { kaggleModal.style.display = 'none'; }
+    else if (liveProjectsModal.style.display == 'block') { liveProjectsModal.style.display = 'none'; }
+    else if (datasetsModal.style.display == 'block') { datasetsModal.style.display = 'none'; }
+    else if (mlAlgorithmsModal.style.display == 'block') { mlAlgorithmsModal.style.display = 'none'; }
+    else if (dashboardModal.style.display == 'block') { dashboardModal.style.display = 'none'; }
+  }
 }

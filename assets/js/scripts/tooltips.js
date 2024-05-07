@@ -51,6 +51,11 @@ tippy('#dsStudiesBtn', {
 // 	******************************
 // 	** Tooltips - Social Medias **
 // 	******************************
+tippy('#contraSocialMediaBtn', {
+	...tippyParams,
+	content: 'Contra!',
+});
+
 tippy('#instagramSocialMediaBtn', {
 	...tippyParams,
 	content: 'Instagram!',
