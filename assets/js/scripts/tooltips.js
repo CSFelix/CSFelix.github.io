@@ -48,6 +48,16 @@ tippy('#dsStudiesBtn', {
 
 
 
+// 	*************************
+// 	** Tooltips - Partners **
+// 	*************************
+tippy('#partnerMateusMaffiBtn', {
+	...tippyParams,
+	content: 'Mateus Maffi!',
+});
+
+
+
 // 	******************************
 // 	** Tooltips - Social Medias **
 // 	******************************
