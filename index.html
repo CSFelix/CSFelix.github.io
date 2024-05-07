@@ -8,7 +8,7 @@
 		<link rel="manifest" href="./manifest.webmanifest">
 
 		<!-- logotipo -->
-		<link rel="icon" href="./assets/images/logo.avif" />
+		<link rel="icon" href="./assets/pwa-logos/logo512x512.png" />
 		<link rel="apple-touch-icon" href="./assets/pwa-logos/logo180x180.png">
 
 		<!-- metas -->
@@ -17,7 +17,7 @@
 		<meta name="theme-color" content="#05031c" />
 		<meta name="author" content="@CSFelix" />
 		<meta name="keywords" content="python, data science, data analysis, pandas, matplotlib, seaborn, scikit-learn, tensorflow, projects, programming, computing, computer, csfelix, github, github.io" />
-		<meta name="description" content="What's shakin, bacon? 👋 Welcome to my Personal Portfolio, enjoy the projects and let's learn together, shall we?" />
+		<meta name="description" content="What's shaking, bacon? 👋 Welcome to my Personal Portfolio, enjoy the projects and let's learn together, shall we?" />
 		<meta property="og:image" content="./assets/images/logo.avif" />
 		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
 
@@ -42,6 +42,7 @@
 		<script type="text/javascript" src="./assets/js/libraries/shuffle-text.js" defer></script>
 		<script type="text/javascript" src="./assets/js/libraries/tippy.min.js" defer></script>
 		<script type="text/javascript" src="./assets/js/libraries/vanilla-tilt.min.js" defer></script>
+		<script async type="text/javascript" src="https://contra.com/static/embed/sdk.js" defer></script>
 
 		<!-- scripts -->
 		<script type="text/javascript" src="./assets/js/scripts/text-shuffling-effect.js" defer></script>
@@ -77,10 +78,6 @@
 			<a href="#skillsContainer"><li>Skills</li></a>
 			<a href="#projectsContainer"><li>Projects</li></a>
 			<a href="#reachMeContainer"><li>Reach Me</li></a>
-
-			<hr />
-
-			<li id="mobileThemeBtn">Settings</li>
 		</ul>
 
 		<!--
@@ -98,11 +95,13 @@
 			/>
 
 			<nav>
-				<!-- GitHub Profile -->
-				<a id="gitHubProfile" 
-				   href="https://github.com/CSFelix" 
-				   target="_blank">
-					CSFelix  	
+				<!-- Contra Profile -->
+				<a
+					id="contraProfile" 
+				  href="https://contra.com/_csfelix08_?utm_campaign=HireMeOnContra&utm_medium=7f7e2ac5-22dd-4496-8878-fc01b0288c54" 
+				  target="_blank"
+				 >
+					<img src="./assets/pwa-logos/logo180x180.png" alt="CSFelix" width="50px" height="50px" />
 				</a>
 
 				<!-- Menu Options -->
@@ -112,23 +111,6 @@
 					<li><a href="#projectsContainer">Projects</a></li>
 					<li><a href="#reachMeContainer">Reach Me</a></li>
 				</ul>
-
-				<!-- Sponsor Me and Theme Buttons -->
-				<div id="sponsorThemeBtn">
-					<a 
-					  href="https://github.com/sponsors/CSFelix" 
-					  target="_blank">
-						<button id="sponsorBtn">💗 Sponsor Me!</button>	
-					</a>
-
-					<a 
-					  href="https://buy.stripe.com/bIY2bC8okbzldJ6288" 
-					  target="_blank">
-					    <button id="stripeBtn">🌐 Stripe!</button>	
-					</a>
-
-					<button id="themeBtn">🎨</button>
-				</div>
 			</nav>
 		</header>
 
@@ -170,7 +152,8 @@
 				 -->
 				<figure id='profilePic'>
 					<img src='./assets/images/profile-pic-new-version.avif' alt='My Profile Pic' width="250px" height="250px" />
-					<figcaption>What's shaking, bacon? Welcome and hope you enjoy my Portfolio!!</figcaption>
+					<!-- <figcaption>What's shaking, bacon? Welcome and hope you enjoy my Portfolio!!</figcaption> -->
+					<figcaption><q>📊 Data's Tale Needs a Narrator</q></figcaption>
 				</figure>
 
 				<br /><br/>
@@ -533,6 +516,19 @@
 				-->
 				<div class="socialMediasMainContainer">
 					<!--
+						************ 
+						** Contra **
+						************
+					-->
+					<div id="contraSocialMediaBtn" class="reachMeSubContainer socialMediaIcon">
+						<a href="https://contra.com/_csfelix08_?utm_campaign=HireMeOnContra&utm_medium=7f7e2ac5-22dd-4496-8878-fc01b0288c54" target="_blank">
+							<img class="reachMeLogo" src="./assets/icons/contra.png" alt="Contra Logo" width="200px" height="200px" />
+						</a>
+					</div>
+
+					<br />
+
+					<!--
 						***************
 						** Instagram **
 						***************
@@ -597,6 +593,10 @@
 				</div>
 
 				<br />
+
+				<!-- here -->
+				<div class="contra-hire-me-button contraHireMeButton" data-analyticsUserId="7f7e2ac5-22dd-4496-8878-fc01b0288c54" data-theme="dark" data-username="_csfelix08_"></div>
+
 				<br />
 
 				<!---
@@ -605,6 +605,7 @@
 					******************
 				--->
 				<span>🌐 Desiring to hit me up? Consider using one of these languages: American English and Brazilian Portuguese.</span>
+
 				<form id="contactForm" action="https://formsubmit.co/csfelix08@gmail.com" method="POST">
 					<fieldset style="background-color: #041f36">
 						<legend><h3>📧 Hit Me Up 📧</h3></legend>
@@ -641,68 +642,6 @@
 			** Modals **
 			************
 		-->
-
-		<!-- Themes -->
-		<div id="themesModal" class="modal">
-		  <div class="modalContent">
-
-		  	<!-- close button -->
-		    <span id="themesClose" class="close">&times;</span>
-
-		    <!-- title -->
-		    <div class="modalTitle">
-		    	<span>🎨</span>
-		    	&nbsp
-		    	<span>Themes</span>
-		    </div>
-
-		    <br /><br />
-
-		    <!-- items -->
-		    <div class="modalItems">
-		    	<video width="175px" height="auto" loop muted autoplay>
-					<source src="./assets/stickers/robot/projects.mp4" type="video/mp4" />
-				</video>
-		    	
-		    	&nbsp
-
-		    	<h3>Coming soon...</h3>
-		    </div>
-
-		    <!--
-		    	*****************
-		    	** Sponsor Btn **
-		    	*****************
-		    -->
-		    <br />
-		    <hr />
-		    <br />
-
-		    <div class="sponsorGroup">
-
-		    	<!-- title -->
-			    <div class="modalTitle">
-			    	<span>💗</span>
-			    	&nbsp
-			    	<span>Sponsorship</span>
-			    </div>
-
-			    <div>
-			    	<a 
-					  href="https://github.com/sponsors/CSFelix" 
-					  target="_blank">
-					    <button>💗 Sponsor Me!</button>	
-					</a>
-
-					<a 
-					  href="https://buy.stripe.com/bIY2bC8okbzldJ6288" 
-					  target="_blank">
-					    <button>🌐 Stripe!</button>	
-					</a>
-				</div>
-		    </div>
-		  </div>
-		</div>
 
 		<!-- Algorithms -->
 		<div id="mlAlgorithmsModal" class="modal">
@@ -1056,8 +995,8 @@
 		    <!-- items -->
 		    <div class="modalItems">
 		    	<video width="175px" height="auto" loop muted autoplay>
-					<source src="./assets/stickers/robot/projects.mp4" type="video/mp4" />
-				</video>
+						<source src="./assets/stickers/robot/projects.mp4" type="video/mp4" />
+					</video>
 		    	&nbsp
 
 		    	<!-- cards -->
