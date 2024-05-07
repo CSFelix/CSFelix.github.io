@@ -25,15 +25,28 @@ ScrollReveal({
 });
 
 /*
-	**********************
+	************************
 	** Projects Container **
-	**********************
+	************************
 */
 ScrollReveal({ 
 	reset: false 
 }).reveal('#projectsContainer', { 
 	delay: 100,  
 	distance: '150px', 
+	origin: 'top',
+});
+
+/*
+	************************
+	** Partners Container **
+	************************
+*/
+ScrollReveal({
+	reset: false
+}).reveal('#partnersContainer', {
+	delay: 100,
+	distance: '150px',
 	origin: 'top',
 });
 
