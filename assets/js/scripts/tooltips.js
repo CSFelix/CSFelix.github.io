@@ -51,6 +51,11 @@ tippy('#dsStudiesBtn', {
 // 	*************************
 // 	** Tooltips - Partners **
 // 	*************************
+tippy('#partnerLuisFelipeBtn', {
+	...tippyParams,
+	content: 'Luis Felipe!',
+});
+
 tippy('#partnerMateusMaffiBtn', {
 	...tippyParams,
 	content: 'Mateus Maffi!',
