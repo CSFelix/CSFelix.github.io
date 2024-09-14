@@ -61,6 +61,11 @@ tippy('#partnerMateusMaffiBtn', {
 	content: 'Mateus Maffi!',
 });
 
+tippy('#partnerMenceBtn', {
+	...tippyParams,
+	content: 'Mence!',
+});
+
 
 
 // 	******************************
