@@ -82,6 +82,9 @@
 .skillsSubContainer .skillsStarsContainer .inactive { -webkit-filter: grayscale(100%); filter: grayscale(100%); }
 
 #skillsCardsContainer {
+	max-width: 95%;
+	min-width: 95%;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -97,80 +100,30 @@
 	gap: 1em;
 }
 
-.skillsContentsContainer {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: start;
-	gap: 1em;
-}
-
 .skillsContentsSubContainer {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: flex-start;
+	justify-content: space-around;
 	align-items: center;
-	gap: 1em;
+	gap: 1.20em;
 }
 
-.skillsProgress {
-  box-sizing: content-box;
-  width: 200px;
-  height: 20px;
-  position: relative;
-  background-color: var(--progress-bar-background-color);
-  border-radius: 25px;
-  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
-}
-
-.skillsProgress > span {
-  display: block;
-  height: 100%;
-  border-radius: 20px;
-	background-color: var(--color-4);
-  background-image: linear-gradient(center bottom, rgb(43, 194, 83) 37%, rgb(84, 240, 84) 69%);
-  box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4);
-  position: relative;
-  overflow: hidden;
-}
-
-.skillsProgress > span:after, .animate > span > span {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-image: linear-gradient(
-    -45deg,
-    rgba(255, 255, 255, 0.2) 25%,
-    transparent 25%,
-    transparent 50%,
-    rgba(255, 255, 255, 0.2) 50%,
-    rgba(255, 255, 255, 0.2) 75%,
-    transparent 75%,
-    transparent
-  );
-  z-index: 1;
-  background-size: 50px 50px;
-  animation: move 2s linear infinite;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  overflow: hidden;
+.skillsContentsItems {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	gap: 5px;
 }
 
 
 
-
-
-
-
-
-
-
+/*
+	************************
+	** Projects Container **
+	************************
+*/
 #projectsSubContainer {
 	display: flex;
 	align-items: center;
@@ -179,11 +132,6 @@
 	row-gap: var(--skills-card-height);
 }
 
-/*
-	************************
-	** Projects Container **
-	************************
-*/
 #projectsSubContainer .projectBtn {
 	display: flex;
 	align-items: center;
@@ -272,13 +220,4 @@
 	animation-name: scrollSign;
 	animation-duration: 1.5s;
 	animation-iteration-count: infinite;
-}
-
-/*
-  ************
-  ** Mobile **
-  ************
-*/
-@media only screen and (max-width: 850px) {
-  .skillsContentsSubContainer { justify-content: center; }
 }
