@@ -16,11 +16,6 @@ tippyParams = {
 // 	*************************
 // 	** Tooltips - Projects **
 // 	*************************
-tippy('#mlAlgorithmsBtn', {
-	...tippyParams,
-	content: 'Explanation about Machine and Deep Learning Algorithms!',
-});
-
 tippy('#dashboardBtn', {
 	...tippyParams,
 	content: 'Live Dashboards made with Streamlit!',
@@ -41,6 +36,11 @@ tippy('#liveProjectsBtn', {
 	content: 'Test out Live Projects (Google Chrome is Recommended)!',
 });
 
+tippy('#recommendationSystemBtn', {
+	...tippyParams,
+	content: 'How to build an Anime Recommendation step-by-step!',
+});
+
 tippy('#dsStudiesBtn', {
 	...tippyParams,
 	content: 'Data Science Contents on GitHub!',
@@ -56,9 +56,9 @@ tippy('#partnerLuisFelipeBtn', {
 	content: 'Luis Felipe!',
 });
 
-tippy('#partnerMateusMaffiBtn', {
+tippy('#partnerMMaffiBtn', {
 	...tippyParams,
-	content: 'Mateus Maffi!',
+	content: 'MMaffi!',
 });
 
 tippy('#partnerMenceBtn', {

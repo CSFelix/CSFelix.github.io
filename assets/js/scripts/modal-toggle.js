@@ -30,14 +30,6 @@ const dashboardClose = document.getElementById('dashboardClose');
 dashboardBtn.onclick = function() { dashboardModal.style.display = "block"; }
 dashboardClose.onclick = function() { dashboardModal.style.display = "none"; }
 
-/* ML Algorithms */
-const mlAlgorithmsModal = document.getElementById('mlAlgorithmsModal');
-const mlAlgorithmsBtn = document.getElementById('mlAlgorithmsBtn');
-const mlAlgorithmsClose = document.getElementById('mlAlgorithmsClose');
-
-mlAlgorithmsBtn.onclick = function() { mlAlgorithmsModal.style.display = "block"; }
-mlAlgorithmsClose.onclick = function() { mlAlgorithmsModal.style.display = "none"; }
-
 /* Recommendation System */
 const recommendationSystemModal = document.getElementById('recommendationSystemModal');
 const recommendationSystemBtn = document.getElementById('recommendationSystemBtn');
@@ -46,21 +38,9 @@ const recommendationSystemClose = document.getElementById('recommendationSystemC
 recommendationSystemBtn.onclick = function() { recommendationSystemModal.style.display = 'block'; }
 recommendationSystemClose.onclick = function() { recommendationSystemModal.style.display = 'none'; }
 
-/* Statistic and Probability */
-const statisticProbabilityModal = document.getElementById('statisticProbabilityModal');
-const statisticProbabilityBtn = document.getElementById('statisticProbabilityBtn');
-const statisticProbabilityClose = document.getElementById('statisticProbabilityClose');
-
-statisticProbabilityBtn.onclick = function() { statisticProbabilityModal.style.display = 'block'; }
-statisticProbabilityClose.onclick = function() { statisticProbabilityModal.style.display = 'none'; }
-
 /* Closing modals when user taps outside the modal */
 window.onclick = function(event) {
-  const modalsArray = [
-    kaggleModal, liveProjectsModal, datasetsModal, dashboardModal
-    , mlAlgorithmsModal, recommendationSystemModal, statisticProbabilityModal
-  ]
-
+  const modalsArray = [kaggleModal, liveProjectsModal, datasetsModal, dashboardModal, recommendationSystemModal];
   if (modalsArray.includes(event.target)) { event.target.style.display = 'none'; }
 }
 
@@ -71,8 +51,6 @@ window.onkeydown = function(event) {
     else if (liveProjectsModal.style.display == 'block') { liveProjectsModal.style.display = 'none'; }
     else if (datasetsModal.style.display == 'block') { datasetsModal.style.display = 'none'; }
     else if (dashboardModal.style.display == 'block') { dashboardModal.style.display = 'none'; }
-    else if (mlAlgorithmsModal.style.display == 'block') { mlAlgorithmsModal.style.display = 'none'; }
     else if (recommendationSystemModal.style.display == 'block') { recommendationSystemModal.style.display = 'none'; }
-    else if (statisticProbabilityModal.style.display == 'block') { statisticProbabilityModal.style.display = 'none'; }
   }
 }
