@@ -38,9 +38,17 @@ const recommendationSystemClose = document.getElementById('recommendationSystemC
 recommendationSystemBtn.onclick = function() { recommendationSystemModal.style.display = 'block'; }
 recommendationSystemClose.onclick = function() { recommendationSystemModal.style.display = 'none'; }
 
+/* NLP */
+const nlpModal = document.getElementById('nlpModal');
+const nlpBtn = document.getElementById('nlpBtn');
+const nlpClose = document.getElementById('nlpClose');
+
+nlpBtn.onclick = function() { nlpModal.style.display = 'block'; }
+nlpClose.onclick = function() { nlpModal.style.display = 'none'; }
+
 /* Closing modals when user taps outside the modal */
 window.onclick = function(event) {
-  const modalsArray = [kaggleModal, liveProjectsModal, datasetsModal, dashboardModal, recommendationSystemModal];
+  const modalsArray = [kaggleModal, liveProjectsModal, datasetsModal, dashboardModal, recommendationSystemModal, nlpModal];
   if (modalsArray.includes(event.target)) { event.target.style.display = 'none'; }
 }
 
@@ -52,5 +60,6 @@ window.onkeydown = function(event) {
     else if (datasetsModal.style.display == 'block') { datasetsModal.style.display = 'none'; }
     else if (dashboardModal.style.display == 'block') { dashboardModal.style.display = 'none'; }
     else if (recommendationSystemModal.style.display == 'block') { recommendationSystemModal.style.display = 'none'; }
+    else if (nlpModal.style.display == 'block') { nlpModal.style.display = 'none'; }
   }
 }

@@ -41,6 +41,11 @@ tippy('#recommendationSystemBtn', {
 	content: 'How to build an Anime Recommendation step-by-step!',
 });
 
+tippy('#nlpBtn', {
+	...tippyParams,
+	content: 'My Natural Language Processing journey!',
+});
+
 tippy('#dsStudiesBtn', {
 	...tippyParams,
 	content: 'Data Science Contents on GitHub!',
