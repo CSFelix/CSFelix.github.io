@@ -352,6 +352,24 @@
 
 				<div class="projectsSubContainer">
 					<!--
+						*********
+						** NLP **
+						*********
+					-->
+					<div id="nlpBtn" class="skillsCard">
+						<div class="wrapper">
+							<img src="./assets/icons/projects/cards/nlp-1.avif" class="cover-image" alt="NLP 1" width="200px" height="200px" />
+						</div>
+						<h2 class="skillsTitle">NLP</h2>
+						<img src="./assets/icons/nlp-2.avif" class="character" alt="NLP 2" width="200px" height="200px" />
+					</div>
+				</div>
+
+				<br /><br />
+				<br /><br />
+
+				<div class="projectsSubContainer">
+					<!--
 						****************
 						** Dashboards **
 						****************
@@ -409,55 +427,38 @@
 				</div>
 
 				<br /><br />
-
-				<div class="containerContent">
-					<br /><br />
-					<div class="projectsSubContainer">
-						<!--
-							*************************** 
-							** Recommendation System **
-							***************************
-						-->
-						<div id="recommendationSystemBtn" class="skillsCard">
-							<div class="wrapper">
-								<img src="./assets/icons/projects/cards/rating.avif" class="cover-image" alt="Recommendation System 1" width="200px" height="200px" />
-							</div>
-							<h2 class="skillsTitle">Recommendation System</h2>
-							<img src="./assets/icons/recommendation-system.avif" class="character" alt="Recommendation System 2" width="200px" height="200px" />
+				<br /><br />
+					
+				<div class="projectsSubContainer">
+					<!--
+						*************************** 
+						** Recommendation System **
+						***************************
+					-->
+					<div id="recommendationSystemBtn" class="skillsCard">
+						<div class="wrapper">
+							<img src="./assets/icons/projects/cards/rating.avif" class="cover-image" alt="Recommendation System 1" width="200px" height="200px" />
 						</div>
-
-						<br /><br />
-
-						<!--
-							*********
-							** NLP **
-							*********
-						-->
-						<div id="nlpBtn" class="skillsCard">
-							<div class="wrapper">
-								<img src="./assets/icons/projects/cards/nlp-1.avif" class="cover-image" alt="NLP 1" width="200px" height="200px" />
-							</div>
-							<h2 class="skillsTitle">NLP</h2>
-							<img src="./assets/icons/nlp-2.avif" class="character" alt="NLP 2" width="200px" height="200px" />
-						</div>
-
-						<br /><br />
-
-						<!--
-							****************
-							** DS Studies **
-							****************
-						-->
-						<a href="https://github.com/CSFelix/data-science-studies/tree/main" target="_blank">
-							<div id="dsStudiesBtn" class="skillsCard">
-								<div class="wrapper">
-						      	<img src="./assets/icons/projects/cards/ds-studies.avif" class="cover-image" alt="DS Studies 1" width="200px" height="200px" />
-						    	</div>
-						    	<h2 class="skillsTitle">DS Studies</h2>
-						  	  	<img src="./assets/icons/ds-studies.avif" class="character" alt="DS Studies 2" width="200px" height="200px" />
-							</div>
-						</a>
+						<h2 class="skillsTitle">Recommendation System</h2>
+						<img src="./assets/icons/recommendation-system.avif" class="character" alt="Recommendation System 2" width="200px" height="200px" />
 					</div>
+
+					<br /><br />
+
+					<!--
+						****************
+						** DS Studies **
+						****************
+					-->
+					<a href="https://github.com/CSFelix/data-science-studies/tree/main" target="_blank">
+						<div id="dsStudiesBtn" class="skillsCard">
+							<div class="wrapper">
+					      	<img src="./assets/icons/projects/cards/ds-studies.avif" class="cover-image" alt="DS Studies 1" width="200px" height="200px" />
+					    	</div>
+					    	<h2 class="skillsTitle">DS Studies</h2>
+					  	  	<img src="./assets/icons/ds-studies.avif" class="character" alt="DS Studies 2" width="200px" height="200px" />
+						</div>
+					</a>
 				</div>
 
 				<br />
@@ -701,6 +702,79 @@
 			******************************
 			** Modals - Projects Part I **
 			******************************
+		-->
+
+		<!-- NLP -->
+		<div id="nlpModal" class="modal">
+		  
+		  <div class="modalContent">
+
+		  	<!-- close button -->
+		    <span id="nlpClose" class="close">&times;</span>
+
+		    <!-- title -->
+		    <div class="modalTitle">
+		    	<img src="./assets/icons/nlp-2.avif" alt="NLP Logo" width="200px" height="200px" />
+		    	&nbsp
+		    	<span>NLP</span>
+		    </div>
+
+		    <br />
+
+		    <!-- items -->
+		    <div class="modalItems">
+		    	<video width="175px" height="auto" loop muted autoplay>
+					<source src="./assets/stickers/robot/projects.mp4" type="video/mp4" />
+				</video>
+		    	&nbsp
+
+		    	<!-- cards -->
+		    	<div class="cardsGroup">
+		    		
+		    		<!-- Part 0 -->
+		    		<a href="https://www.kaggle.com/code/dsfelix/0-spacy-chapter-0-finding-words-phrases-name" target="_blank">
+		    			<div class="card" data-tilt>
+		    				<img src="./assets/icons/spacy.avif" alt="Spacy 0" width="200px" height="200px">
+
+		    				<span>Spacy 0</span>
+		    			</div>
+		    		</a>
+
+		    		<!-- Part 1 -->
+		    		<a href="https://www.kaggle.com/code/dsfelix/00-text-manipulation" target="_blank">
+		    			<div class="card" data-tilt>
+		    				<img src="./assets/icons/spacy.avif" alt="Spacy 1" width="200px" height="200px">
+
+		    				<span>Spacy 1</span>
+		    			</div>
+		    		</a>
+
+		    		<!-- Part 2.0 -->
+		    		<a href="https://www.kaggle.com/code/dsfelix/00-introduction-to-vectors" target="_blank">
+		    			<div class="card" data-tilt>
+		    				<img src="./assets/icons/math.avif" alt="Linear Algebra" width="200px" height="200px">
+
+		    				<span>Linear Algebra</span>
+		    			</div>
+		    		</a>
+
+		    		<!-- Part 2.1 -->
+		    		<a href="https://www.kaggle.com/code/dsfelix/00-lu-decomposition" target="_blank">
+		    			<div class="card" data-tilt>
+		    				<img src="./assets/icons/math.avif" alt="Linear Algebra" width="200px" height="200px">
+
+		    				<span>Matrix Decomposition</span>
+		    			</div>
+		    		</a>
+		    	</div>
+		    </div>
+		  </div>
+		</div>
+
+		<!-- 
+			*******************************
+			** Modals - Projects Part II **
+			*******************************
 		-->
 
 		<!-- Dashboards -->
@@ -1037,9 +1111,9 @@
 		</div>
 
 		<!-- 
-			*******************************
-			** Modals - Projects Part II **
-			*******************************
+			********************************
+			** Modals - Projects Part III **
+			********************************
 		-->
 		<!-- Recommendation System -->
 		<div id="recommendationSystemModal" class="modal">
@@ -1146,73 +1220,6 @@
 		    				<img src="./assets/icons/projects/recommendation-system/benchmark.avif" alt="Benchmark Analysis" width="200px" height="200px">
 
 		    				<span>Benchmark Analysis</span>
-		    			</div>
-		    		</a>
-		    	</div>
-		    </div>
-		  </div>
-		</div>
-
-		<!-- NLP -->
-		<div id="nlpModal" class="modal">
-		  
-		  <div class="modalContent">
-
-		  	<!-- close button -->
-		    <span id="nlpClose" class="close">&times;</span>
-
-		    <!-- title -->
-		    <div class="modalTitle">
-		    	<img src="./assets/icons/nlp-2.avif" alt="NLP Logo" width="200px" height="200px" />
-		    	&nbsp
-		    	<span>NLP</span>
-		    </div>
-
-		    <br />
-
-		    <!-- items -->
-		    <div class="modalItems">
-		    	<video width="175px" height="auto" loop muted autoplay>
-					<source src="./assets/stickers/robot/projects.mp4" type="video/mp4" />
-				</video>
-		    	&nbsp
-
-		    	<!-- cards -->
-		    	<div class="cardsGroup">
-		    		
-		    		<!-- Part 0 -->
-		    		<a href="https://www.kaggle.com/code/dsfelix/0-spacy-chapter-0-finding-words-phrases-name" target="_blank">
-		    			<div class="card" data-tilt>
-		    				<img src="./assets/icons/spacy.avif" alt="Spacy 0" width="200px" height="200px">
-
-		    				<span>Spacy 0</span>
-		    			</div>
-		    		</a>
-
-		    		<!-- Part 1 -->
-		    		<a href="https://www.kaggle.com/code/dsfelix/00-text-manipulation" target="_blank">
-		    			<div class="card" data-tilt>
-		    				<img src="./assets/icons/spacy.avif" alt="Spacy 1" width="200px" height="200px">
-
-		    				<span>Spacy 1</span>
-		    			</div>
-		    		</a>
-
-		    		<!-- Part 2.0 -->
-		    		<a href="https://www.kaggle.com/code/dsfelix/00-introduction-to-vectors" target="_blank">
-		    			<div class="card" data-tilt>
-		    				<img src="./assets/icons/math.avif" alt="Linear Algebra" width="200px" height="200px">
-
-		    				<span>Linear Algebra</span>
-		    			</div>
-		    		</a>
-
-		    		<!-- Part 2.1 -->
-		    		<a href="https://www.kaggle.com/code/dsfelix/00-lu-decomposition" target="_blank">
-		    			<div class="card" data-tilt>
-		    				<img src="./assets/icons/math.avif" alt="Linear Algebra" width="200px" height="200px">
-
-		    				<span>Matrix Decomposition</span>
 		    			</div>
 		    		</a>
 		    	</div>
