@@ -23,7 +23,7 @@
 
 > **Access csfelix.github.io and enjoy yourself!! [https://csfelix.github.io](https://csfelix.github.io)**
 
-> **Lincense: [GNU General Public License v3.0](https://github.com/CSFelix/CSFelix.github.io/blob/main/LICENSE)**
+> **License: [GNU General Public License v3.0](https://github.com/CSFelix/CSFelix.github.io/blob/main/LICENSE)**
 
 ----
 <br>
