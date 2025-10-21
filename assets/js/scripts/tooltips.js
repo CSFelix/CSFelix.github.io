@@ -71,6 +71,11 @@ tippy('#partnerMenceBtn', {
 	content: 'Mence!',
 });
 
+tippy('#partnerBrenoBtn', {
+	...tippyParams,
+	content: 'Breno!',
+});
+
 
 
 // 	******************************
