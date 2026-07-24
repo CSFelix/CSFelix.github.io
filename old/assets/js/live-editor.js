@@ -47,7 +47,7 @@ function sampleCode() {
 
 	cssCode = "* { margin: 0;	padding: 0; }"
 		+ "body { background-color: ghostwhite; }"
-		+ ".main { width: 100%; height: 100vh; display: flex; justify-content: center; align-items: center; }"
+		+ ".main { width: 100%; height: 100dvh; display: flex; justify-content: center; align-items: center; }"
 		+ ".main span { width: 10px; height: 80px; margin: 0 3px; border-radius: 50px; }"
 		+ ".main span:nth-child(5) { background-color: #ff414d; animation: animate0 0.7s infinite; }"
 		+ ".main span:nth-child(4), span:nth-child(6) { background-color: #821752; animation: animate1 0.8s infinite; }"

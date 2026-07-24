@@ -10,8 +10,8 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100vw;
-	height:  100vh;
+	width: 100dvw;
+	height:  100dvh;
 	background-color: var(--background-color-1);
 }
 
@@ -26,8 +26,8 @@
 	flex-wrap: wrap;
 	min-height: 0;
 
-	width:  100vw;
-	height:  100vh;
+	width:  100dvw;
+	height:  100dvh;
 	padding:  10px;
 }
 
@@ -78,7 +78,7 @@
 	* Mobile *
 	**********
 */
-@media only screen and (max-width: 625px) {
-	#errorContainer h2 { font-size: 25px; }
-	.sticker404 { width: 250px; }	
+@media only screen and (max-width: 625.00px) {
+	#errorContainer h2 { font-size: 25.00px; }
+	.sticker404 { width: 250.00px; }	
 }

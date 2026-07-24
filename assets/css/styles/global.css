@@ -1,32 +1,88 @@
 /*
 	***********
-	** Fonts **
-	***********
-*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap');
-
-/*
-	***********
 	** Reset **
 	***********
 */
 * {
-	margin:  0;
-	padding:  0;
+	margin:  0.00px;
+	padding:  0.00px;
 	outline:  none;
 	list-style: none;
-	box-sizing: border-box;
 	text-decoration: none;
+	text-underline-offset: 5.00px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 	scroll-behavior: smooth;
 	vertical-align: baseline;
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
 
 	user-select: none;
+	-moz-user-select: none;
 	user-drag: none;
 	-webkit-user-drag: none;
 	-khtml-user-drag: none;
 	-moz-user-drag: none;
 	-o-user-drag: none;
+}
+
+/*
+  ***********
+  ** Fonts **
+  ***********
+
+  - downloads fonts in woff2 format in: https://gwfh.mranftl.com/fonts
+*/
+
+/* ---- Roboto ---- */
+@font-face {
+  font-family: 'Roboto';
+  src: url('/assets/fonts/roboto/roboto-v51-latin-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/assets/fonts/roboto/roboto-v51-latin-500.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/assets/fonts/roboto/roboto-v51-latin-700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ---- Roboto Mono ---- */
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('/assets/fonts/roboto-mono/roboto-mono-v31-latin-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('/assets/fonts/roboto-mono/roboto-mono-v31-latin-500.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('/assets/fonts/roboto-mono/roboto-mono-v31-latin-700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 /*
@@ -48,12 +104,12 @@
 	--text-shadow-color: #7159c1; /* header */
 	--progress-bar-background-color: #767676;
 
-	--font-1: Roboto Mono;
-	--font-2: Roboto;
+	--font-1: 'Roboto Mono';
+	--font-2: 'Roboto';
 	--font-3: sans-serif;
 
-	--skills-card-height: 200px;
-  	--skills-card-width: calc(var(--skills-card-height) / 1.5);
+	--skills-card-height: 200.00px;
+  --skills-card-width: calc(var(--skills-card-height) / 1.5);
 }
 
 /*
@@ -63,11 +119,9 @@
 */
 body {
 	overflow-x: hidden;
-	font: 400 18px var(--font-1), var(--font-3);
-	
-    background: var(--background-color-1);
-    -webkit-font-smoothing: antialiased;
+	font: 400 18.00px var(--font-1), var(--font-3);
+  background: var(--background-color-1);
 }
 
 a { color: var(--color-2); }
-button { font: 400 14px var(--font-2), var(--font-3); }
+button { font: 400 14.00px var(--font-2), var(--font-3); }

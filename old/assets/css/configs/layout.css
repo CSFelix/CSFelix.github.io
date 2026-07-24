@@ -9,7 +9,7 @@ body {
 
     display: grid;
     grid-template-areas: "nav" "content";
-    grid-template-rows: 50px calc(100vh - 50px);
+    grid-template-rows: 50px calc(100dvh - 50px);
 }
 
 .mainNav {  grid-area: nav;  background: var(--style-primary-purple); z-index: 10000; }
@@ -48,15 +48,15 @@ body {
     Mobile and Tablet
 */
 
-@media screen and (max-width: 700px) {
-    body { grid-template-areas: "content"; grid-template-rows: 100vh; }
+@media screen and (max-width: 700.00px) {
+    body { grid-template-areas: "content"; grid-template-rows: 100dvh; }
 
     /* ScrollBar is intuitive in mobiles */
-    ::-webkit-scrollbar { width: 0px; }
+    ::-webkit-scrollbar { width: 0.00px; }
 
     .mainNav {
         position: absolute; transition: all .4s; grid-area: content;
-        margin-left: -100%; margin-top: 50px; z-index: 1000;
+        margin-left: -100%; margin-top: 50.00px; z-index: 1000;
     }
-    .mainContent { padding-top: 70px; }
+    .mainContent { padding-top: 70.00px; }
 }

@@ -82,7 +82,7 @@ p a:hover { color: var(--style-primary-purple); text-decoration: underline;  }
     Mobile and Tablet
 */
 
-@media screen and (max-width: 700px) {
-    .refFieldSet legend { font-size: 25px; }
-    figure caption { font-size: 20px; }
+@media screen and (max-width: 700.00px) {
+    .refFieldSet legend { font-size: 25.00px; }
+    figure caption { font-size: 20.00px; }
 }

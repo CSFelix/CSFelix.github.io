@@ -26,18 +26,18 @@
 label[for="bt_menu"] {
     background-color: var(--style-terciary-purple);
     padding: 5px 0; text-align: center; font-size: 30px;
-    width: 100vw; height: 40px; display: none;
+    width: 100dvw; height: 40px; display: none;
 }
 
 /*
     Mobile and Tablet
 */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 700.00px) {
     /* menu */
-    #bt_menu:checked ~ .mainNav { margin-left: 0; width: 100%; }
+    #bt_menu:checked ~ .mainNav { margin-left: 0.00px; width: 100.00%; }
     label[for="bt_menu"] { grid-area: content; display: block; z-index: 1000; }
-    .mainNav ul li { width: 100%; float: none; }
-    .mainNav ul ul { position: static; overflow: hidden; max-height: 0; transition: all .4s; }
-    .mainNav ul li:hover ul { height: auto; max-height: 500px; }
+    .mainNav ul li { width: 100.00%; float: none; }
+    .mainNav ul ul { position: static; overflow: hidden; max-height: 0; transition: all 0.40s; }
+    .mainNav ul li:hover ul { height: auto; max-height: 500.00px; }
 }

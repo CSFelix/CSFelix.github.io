@@ -16,7 +16,7 @@
 .codeArea { resize: none; width: 350px; height: 350px; }
 .outputArea { width: 92.5%; height: 350px; }
 
-@media screen and (max-width: 1150px) { 
-	.codeArea, .outputArea { width: 95%; }
-	.circleButton { width: 40px; height: 40px; font-size: 18.5px; }
+@media screen and (max-width: 1150.00px) { 
+	.codeArea, .outputArea { width: 95.00%; }
+	.circleButton { width: 40.00px; height: 40.00px; font-size: 18.50px; }
 }
