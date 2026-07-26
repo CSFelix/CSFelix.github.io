@@ -16,6 +16,21 @@ tippyParams = {
 // 	*************************
 // 	** Tooltips - Projects **
 // 	*************************
+tippy('#whatsappApiBtn', {
+	...tippyParams,
+	content: 'Bridge API for Official Meta WhatsApp Business API!',
+});
+
+tippy('#bestzapBtn', {
+	...tippyParams,
+	content: 'WhatsApp messaging platform for managing groups and conversations!',
+});
+
+tippy('#notaCertaBtn', {
+	...tippyParams,
+	content: 'Platform for managing electronic invoices and tax documents!',
+});
+
 tippy('#dashboardBtn', {
 	...tippyParams,
 	content: 'Live Dashboards made with Streamlit!',
@@ -48,7 +63,7 @@ tippy('#nlpBtn', {
 
 tippy('#dsStudiesBtn', {
 	...tippyParams,
-	content: 'Data Science Contents on GitHub!',
+	content: 'Data Science Contents on GitHub Repo!',
 });
 
 
@@ -81,16 +96,6 @@ tippy('#partnerBrenoBtn', {
 // 	******************************
 // 	** Tooltips - Social Medias **
 // 	******************************
-tippy('#contraSocialMediaBtn', {
-	...tippyParams,
-	content: 'Contra!',
-});
-
-tippy('#instagramSocialMediaBtn', {
-	...tippyParams,
-	content: 'Instagram!',
-});
-
 tippy('#githubSocialMediaBtn', {
 	...tippyParams,
 	content: 'GitHub!',

@@ -154,7 +154,6 @@ header nav #sponsorThemeBtn #themeBtn:hover
   { display:  none; }
 
   #mobileMenuToggle { display: inline-block; }
-  #mobileMenu { display: inline-block; }
 }
 
 @media only screen and (max-width: 625.00px) {
