@@ -65,7 +65,7 @@
 
 .skillsCard:hover .wrapper::before, .wrapper::after { opacity: 1; }
 .skillsCard:hover .wrapper::after { height: 120px; }
-.skillsTitle { width: 100%; transition: transform 0.5s; }
+.skillsTitle { transition: transform 0.5s; background-color: rgba(0, 0, 0, 0.50); border-radius: 7.00px; }
 .skillsCard:hover .skillsTitle { transform: translate3d(0%, -50px, 100px); }
 
 .character {
