@@ -221,3 +221,14 @@
 	animation-duration: 1.5s;
 	animation-iteration-count: infinite;
 }
+
+/*
+	**************************
+	** Portability: Firefox **
+	**************************
+*/
+@supports (-moz-appearance: none) {
+  .containerContentFirefox {
+    gap: 5.00em;
+  }
+}
